@@ -1,0 +1,1 @@
+package regn;public class SsqComponent {	public double ssq;	public int df;	public SsqComponent(double ssq, int df) {		this.ssq = ssq;		this.df = df;	}}

@@ -1,0 +1,1 @@
+package dataView;public interface PositionInfo {	public boolean equals(PositionInfo otherPos);}

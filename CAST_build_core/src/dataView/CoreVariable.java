@@ -1,0 +1,1 @@
+package dataView;public class CoreVariable {	public String name;		public CoreVariable(String theName) {		name = theName;	}}

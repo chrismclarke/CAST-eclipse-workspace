@@ -1,0 +1,1 @@
+package dataView;public interface SampleInterface {	public void setSampleSize(int n);	public long generateNextSample();	public boolean setSampleFromSeed(long newSeed);	public void setNextSeed(long nextSeed);	public void clearSample();}

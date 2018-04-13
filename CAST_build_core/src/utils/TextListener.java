@@ -1,0 +1,1 @@
+package utils;public interface TextListener {	public void fixedText();	public void changedText();}

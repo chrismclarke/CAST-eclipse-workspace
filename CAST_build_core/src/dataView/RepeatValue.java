@@ -1,0 +1,1 @@
+package dataView;public class RepeatValue {	public int count;	public Value val;		public RepeatValue(Value val, int count) {		this.count = count;		this.val = val;	}}

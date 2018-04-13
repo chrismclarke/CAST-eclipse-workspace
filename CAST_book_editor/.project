@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CAST_book_editor</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>build.xml</name>
+			<type>1</type>
+			<location>/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_book_editor/build.xml</location>
+		</link>
+		<link>
+			<name>lib</name>
+			<type>2</type>
+			<location>/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_book_editor/lib</location>
+		</link>
+		<link>
+			<name>resources</name>
+			<type>2</type>
+			<location>/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_book_editor/resources</location>
+		</link>
+		<link>
+			<name>src</name>
+			<type>2</type>
+			<location>/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_book_editor/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

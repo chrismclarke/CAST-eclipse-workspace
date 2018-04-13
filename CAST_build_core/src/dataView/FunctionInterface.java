@@ -1,0 +1,1 @@
+package dataView;public interface FunctionInterface {	public boolean noteVariableChange(String key);	public void noteValueChange(int theIndex);}

@@ -1,0 +1,5 @@
+Permissions: all-permissions
+Codebase: *
+Application-Name: castManager
+Main-Class: CAST_manager
+Caller-Allowable-Codebase: stream.massey.ac.nz

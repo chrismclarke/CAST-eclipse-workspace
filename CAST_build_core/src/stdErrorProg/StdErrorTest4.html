@@ -1,0 +1,141 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="450">
+<!param name="appletName" value="stdErrorProg.MeanErrorDistnApplet">
+<!param name="varName" value="Annual rainfall (mm)">
+<!param name="random" value="20 1000 200 875636431 2.5">
+<!param name="dataAxis" value="500 1500 600 200">
+<!param name="errorName" value="Error in estimate">
+<!param name="errorAxis" value="-150 150 -150 50">
+<!param name="maxEstimate" value="9999.9">
+<!param name="customText" value="Target parameter=Target parameter#Target=Target#Estimate (sample mean)=Estimate (sample mean)#Estimate from sample=Estimate from sample#Peek at population=Peek at population">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="450">
+<!param name="appletName" value="stdErrorProg.PropnErrorDistnApplet">
+<!param name="catVarName" value="Outcome">
+<!param name="catLabels" value="Success Failure">
+<!param name="random" value="100 0.7 0.3">
+<!param name="errorName" value="Error in estimate">
+<!param name="errorAxis" value="-0.20 0.20 -0.2 0.1">
+<!param name="maxEstimate" value="-9.999">
+<!param name="customText" value="Target parameter=Target parameter#Estimate from sample=Estimate from sample#Peek at population=Peek at population">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<!param name="appletName" value="stdErrorProg.ErrorDistnTheoryApplet">
+<!param name="varName" value="Annual rainfall (mm)">
+<!param name="popnDistn" value="normal">
+<!param name="popnParams" value="1000 200">
+<!param name="dataAxis" value="500 1500 600 200">
+<!param name="meanErrorName" value="Error in estimate">
+<!param name="errorAxis" value="-500 500 -400 200">
+<!param name="errorSdDecimals" value="1">
+<!param name="sampleSize" value="1 64 16">
+<!param name="customText" value="Population distribution=Population distribution#Error distribution*for mean=Error distribution*for mean">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="200">
+<!param name="appletName" value="stdErrorProg.ErrorDistnTheory2Applet">
+<!param name="varName" value="Concentration (gramms per litre)">
+<!param name="popnDistn" value="normal">
+<!param name="popnParams" value="0.0 0.0068">
+<!param name="meanErrorName" value="Error in estimate">
+<!param name="errorAxis" value="-0.013 0.013 -0.012 0.002">
+<!param name="errorSdDecimals" value="5">
+<!param name="sampleSize" value="1 100 20">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="450">
+<!param name="appletName" value="stdErrorProg.MeanMedErrorDistnApplet">
+<!param name="varName" value="Annual rainfall (mm)">
+<!param name="random" value="20 1000 200 875636431 2.5">
+<!param name="dataAxis" value="500 1500 600 200">
+<!param name="errorName" value="Error in mean">
+<!param name="medianErrorName" value="Error in median">
+<!param name="errorAxis" value="-150 150 -150 50">
+<!param name="maxEstimate" value="9999.9">
+<!param name="customText" value="Target parameter=Target parameter#Estimates from sample=Estimates from sample">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<!param name="appletName" value="stdErrorProg.MeanMedTheoryApplet">
+<!param name="varName" value="Annual rainfall (mm)">
+<!param name="popnDistn" value="normal">
+<!param name="popnParams" value="1000 200">
+<!param name="dataAxis" value="500 1500 600 200">
+<!param name="meanErrorName" value="Error in mean">
+<!param name="medianErrorName" value="Error in median">
+<!param name="errorAxis" value="-240 240 -200 100">
+<!param name="errorSdDecimals" value="1">
+<!param name="sampleSize" value="10 100 16">
+<!param name="customText" value="Population*distribution=Population*distribution#Error*distribution*(approx)=Error*distribution*(approx)">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<!param name="appletName" value="stdErrorProg.MeanMedTheoryApplet">
+<!param name="varName" value="Lifetime">
+<!param name="popnDistn" value="gamma">
+<!param name="popnParams" value="1 4">
+<!param name="dataAxis" value="0 20 0 5">
+<!param name="meanErrorName" value="Error in mean">
+<!param name="medianErrorName" value="Error in median">
+<!param name="errorAxis" value="-5 5 -4 2">
+<!param name="errorSdDecimals" value="2">
+<!param name="sampleSize" value="10 100 16">
+<!param name="customText" value="Population*distribution=Population*distribution#Error*distribution*(approx)=Error*distribution*(approx)#skew=skew">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<!param name="appletName" value="stdErrorProg.MeanMedTheoryApplet">
+<!param name="varName" value="Annual rainfall (metres)">
+<!param name="popnDistn" value="normal">
+<!param name="popnParams" value="1 0.2">
+<!param name="dataAxis" value="0.5 1.5 0.6 0.2">
+<!param name="meanMedAxis" value="0.70 1.24 0.8 0.1">
+<!param name="errorSdDecimals" value="3">
+<!param name="sampleSize" value="10 100 16">
+<!param name="customText" value="Population*distribution=Population*distribution#Distribution*of estimate*(approx)=Distribution*of estimate*(approx)">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<!param name="appletName" value="stdErrorProg.MeanMedTheoryApplet">
+<!param name="varName" value="Lifetime">
+<!param name="popnDistn" value="gamma">
+<!param name="popnParams" value="1 4">
+<!param name="dataAxis" value="0 20 0 5">
+<!param name="meanMedAxis" value="-1 9 0 2">
+<!param name="errorSdDecimals" value="2">
+<!param name="sampleSize" value="10 100 16">
+<!param name="targetParam" value="median">
+<!param name="customText" value="Population*distribution=Population*distribution#Distribution*of estimate*(approx)=Distribution*of estimate*(approx)#skew=skew">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="280">
+<param name="appletName" value="stdErrorProg.PopnSeVsSdApplet">
+<param name="varName" value="Annual rainfall (mm)">
+<param name="popnDistn" value="normal">
+<param name="popnParams" value="1000 200">
+<param name="dataAxis" value="500 1500 600 200">
+<param name="meanErrorName" value="Error in estimate">
+<param name="errorAxis" value="-500 500 -400 200">
+<param name="errorSdDecimals" value="0">
+<param name="sampleSize" value="1 64 16">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="250">
+<!param name="appletName" value="stdErrorProg.SampSeVsSdApplet">
+<!param name="varName" value="Simulated rainfall (mm)">
+<!param name="random" value="1000 200 3.0">
+<!param name="dataAxis" value="500 1500 600 200">
+<!param name="errorName" value="Estimated distn of error">
+<!param name="errorAxis" value="-500 500 -400 200">
+<!param name="maxSD" value="999">
+<!param name="seDecimals" value="1">
+<!param name="sampleSize" value="*10 40 100">
+<!param name="customText" value="Sample estimate=Sample estimate">
+<!/APPLET>
+
+</BODY>
+</HTML>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Start_CAST" default="build" basedir=".">
+	<property name="src" location="src"/> <!-- java source folder -->
+	<property name="bin" location="bin"/> <!-- intermediate build products -->
+	<property name="jars" location="../../CAST"/> <!-- jar files -->
+	<property name="castJava" location="../../CAST/core/java/"/> <!-- coreCAST folder -->
+	<property name="signingDir" location="../Signing"/> <!-- folder with keystore -->
+	<property name="lib" location="lib"/> <!-- local libraries linked against -->
+	<property name="dist" location="dist"/> <!-- build product location -->
+	<property name="resources" location="resources"/> <!-- location of general java resources -->
+	<property name="resources_macosx" location="resources_macosx"/> <!-- location of Mac OS X specific resources -->
+	<property name="compile.debug" value="true"/>
+	<property name="apple.appstub" location="/System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub"/>
+	<property name="application.macos" location="${dist}/${ant.project.name}.app/Contents/MacOS"/>
+	<property name="application.macos.stub" location="${application.macos}/${ant.project.name}"/>
+	<property name="application.resources" location="${dist}/${ant.project.name}.app/Contents/Resources"/>
+	<property name="application.resources.java" location="${dist}/${ant.project.name}.app/Contents/Resources/Java"/>
+
+	<!-- lib directory should contain any pre-built jar files needed to build the project
+		 AppleJavaExtensions.jar is included to allow the built jars to run cross-platform if you depend on Apple eAWT or eIO classes.
+		 See http://developer.apple.com/samplecode/AppleJavaExtensions/index.html for more information -->
+	<fileset id="lib.jars" dir="${lib}">
+		<include name="**/*.jar"/>
+	</fileset>
+	
+	<fileset id="coreCAST.jar" dir="${castJava}">
+		<include name="coreCAST.jar"/>
+	</fileset>
+
+	<path id="lib.path">
+		<fileset refid="lib.jars"/>
+		<fileset refid="coreCAR.jar"/>
+	</path>
+
+	<!-- Initialization target, for any prelimary setup needed to build -->
+	<target name="init" description="Preparation">
+		<mkdir dir="${src}"/>
+		<mkdir dir="${lib}"/>
+	</target>
+
+	<target name="compile" depends="init" description="Compile code">
+		<mkdir dir="${bin}"/>
+		<javac deprecation="off" srcdir="${src}" destdir="${bin}"
+			   source="1.7" target="1.7"
+			   includeAntRuntime="no"
+			   classpathref="lib.path" debug="${compile.debug}"
+				 fork="true"
+				 memoryinitialsize="512m"
+				 memorymaximumsize="512m">
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile" description="Build jar">
+		<mkdir dir="${jars}"/>
+		<jar jarfile="${jars}/${ant.project.name}.jar" basedir="${bin}" manifest="${resources}/Manifest.txt" duplicate="preserve" filesetmanifest="skip">
+			<!-- Inject resources -->
+			<fileset dir="${resources}/"
+				excludes="${resources}/Manifest.txt"
+			/>
+			<!-- Merge library jars into final jar file -->
+			<zipgroupfileset refid="lib.jars"/>
+			<zipgroupfileset refid="coreCAST.jar"/>
+		</jar>
+	</target>
+
+	<target name="signjar" depends="jar" description="Sign jar">
+<!-- -->
+		<signjar jar="${jars}/${ant.project.name}.jar" keystore="${signingDir}/keystore" alias="castCert" storepass="castPass" tsaurl="http://timestamp.digicert.com">
+		</signjar>
+<!-- -->
+	</target>
+
+	<!-- Install target, for building the actual product -->
+	<target name="build" description="Create application" depends="signjar">
+	</target>
+
+
+  <target name="run" depends="signjar" description="Run the manager">
+   	<java jar="${jars}/${ant.project.name}.jar" dir="${jars}" fork="true">
+       <classpath>
+         <pathelement location="${ant.project.name}.jar"/>
+         <pathelement path="${jars}"/>
+       </classpath>
+   	</java>
+	</target>
+
+
+  <target name="runagain" description="Rerun the manager">
+   	<java jar="${jars}/${ant.project.name}.jar" dir="${jars}" fork="true">
+       <classpath>
+         <pathelement location="${ant.project.name}.jar"/>
+         <pathelement path="${jars}"/>
+       </classpath>
+   	</java>
+	</target>
+    
+  <target name="clean" description="Remove build and dist directories">
+		<delete dir="${bin}"/>
+<!--		<delete dir="${jars}"/>   Don't do this, otherwise all of CAST is deleted  -->
+		<delete dir="${dist}"/>
+	</target>
+</project>

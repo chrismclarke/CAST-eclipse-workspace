@@ -1,0 +1,1 @@
+package groupedDotPlotProg;public interface GroupingAppletInterface {	public void showGroups(boolean showNotHide);}

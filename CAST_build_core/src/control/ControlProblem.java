@@ -1,0 +1,1 @@
+package control;public class ControlProblem {	private String description;	private int previousValues;		public ControlProblem(String description, int previousValues) {		this.description = description;		this.previousValues = previousValues;	}		public int getPreviousValues() {		return previousValues;	}		public String getDescription() {		return description;	}}

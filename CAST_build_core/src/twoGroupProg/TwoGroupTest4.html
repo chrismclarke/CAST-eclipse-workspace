@@ -1,0 +1,208 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="300">
+<!param name="appletName" value="twoGroupProg.ProportionsApplet">
+<!param name="descriptionWidth" value="450">
+<!param name="noOfDataSets" value="3">
+
+<!param name="yVarName" value="Sex">
+<!param name="yLabels" value="boy girl">
+<!param name="yValues" value="46@0 31@1 35@0 29@1">
+<!param name="xVarName" value="Season">
+<!param name="xValues" value="77@0 64@1">
+<!param name="xLabels" value="winter summer">
+<!param name="dataName" value="Sex of births by season">
+<!param name="description" value="There were 77 children born in a certain hospital between 1-11 January 1986. Between 1-11 July in the same year, 64 children were born. The numbers of girls and boys were recorded in each group of births.">
+<!param name="question" value="Is there any evidence of a higher proportion of boys born in the winter (January) than in the summer (July)? If so, by how much?">
+
+<!param name="yVarName2" value="Crime record">
+<!param name="yLabels2" value="#record# #no record#">
+<!param name="yValues2" value="381@0 3715@1 8@0 28@1">
+<!param name="xVarName2" value="Defect?">
+<!param name="xValues2" value="4096@0 28@1">
+<!param name="xLabels2" value="#normal# #abnormal#">
+<!param name="dataName2" value="Criminality and chromosomes">
+<!param name="description2" value="4124 Danish males were classified as having a criminal record or not, based on penal registers. Each was also classified as having a normal male XY chromosome or one of the abnormalities XYY or XXY.">
+<!param name="question2" value="Do males with a chromosome defect seem to be more likely to have criminal records? If so, by how much?">
+
+<!param name="yVarName3" value="Apple quality">
+<!param name="yLabels3" value="good average">
+<!param name="yValues3" value="15@0 25@1 34@0 6@1">
+<!param name="xVarName3" value="Fertiliser?">
+<!param name="xValues3" value="40@0 40@1">
+<!param name="xLabels3" value="#control# #fertiliser#">
+<!param name="dataName3" value="Apple quality">
+<!param name="description3" value="Eighty apple trees in an orchard were randomly split into two groups. Forty trees were given supplementary fertiliser during the winter and the others were left as controls. In the Autumn, each tree was classified according to the colour of its apples.">
+<!param name="question3" value="Does the fertiliser improve the colour of the apples? If so, by how much?">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="380">
+<!param name="appletName" value="twoGroupProg.PDiffSampleApplet">
+<!param name="yVarName" value="response">
+<!param name="yLabels" value="success failure">
+<!param name="continProbs" value="0.3 0.7 0.4 0.6">
+<!param name="xVarName" value="Group">
+<!param name="xValues" value="100@0 100@1">
+<!param name="xLabels" value="#Group A# #Group B#">
+<!param name="summaryDecimals" value="2">
+<!param name="randomSeed" value="330045782">
+<!param name="propnDecimals" value="3">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" NAME="propnDistn" WIDTH="500" HEIGHT="460">
+<param name="appletName" value="twoGroupProg.PropnDiffApplet">
+<param name="yVarName" value="Response">
+<param name="yLabels" value="success failure">
+<param name="continProbs" value="0.3 0.7 0.4 0.6">
+<param name="xVarName" value="Group">
+<param name="xValues" value="100@0 100@1">
+<param name="xLabels" value="#Group A# #Group B#">
+<param name="summaryDecimals" value="2">
+<param name="maxSummary" value="999.99">
+<param name="summaryAxis" value="-1.1 1.1 -1.0 0.2">
+<param name="randomSeed" value="330045782">
+<param name="propnDecimals" value="3">
+<param name="customText" value="minus=minus">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" NAME="propnDistn" WIDTH="500" HEIGHT="460">
+<param name="appletName" value="twoGroupProg.PropnDiffApplet">
+<param name="yVarName" value="Response">
+<param name="yLabels" value="success failure">
+<param name="continProbs" value="0.3 0.7 0.3 0.7">
+<param name="xVarName" value="Group">
+<param name="xValues" value="100@0 100@1">
+<param name="xLabels" value="#Group A# #Group B#">
+<param name="summaryDecimals" value="2">
+<param name="maxSummary" value="999.99">
+<param name="summaryAxis" value="-0.2 0.2 -0.2 0.1">
+<param name="randomSeed" value="330045782">
+<param name="propnDecimals" value="3">
+<param name="commonProb" value="true">
+<param name="customText" value="minus=minus">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="300">
+<!param name="appletName" value="twoGroupProg.DiffPDistnFitApplet">
+<!param name="descriptionWidth" value="260">
+<!param name="noOfDataSets" value="3">
+
+<!param name="yVarName" value="Sex">
+<!param name="yLabels" value="boy girl">
+<!param name="yValues" value="46@0 31@1 35@0 29@1">
+<!param name="xVarName" value="Season">
+<!param name="xValues" value="77@0 64@1">
+<!param name="xLabels" value="winter summer">
+<!param name="dataName" value="Sex of births by season">
+<!param name="description" value="Difference in proportion of boys (summer - winter)">
+<!param name="summaryDecimals" value="3">
+<!param name="summaryAxis" value="-0.4 0.3 -0.4 0.1">
+
+<!param name="yVarName2" value="Crime record">
+<!param name="yLabels2" value="#record# #no record#">
+<!param name="yValues2" value="381@0 3715@1 8@0 28@1">
+<!param name="xVarName2" value="Defect?">
+<!param name="xValues2" value="4096@0 28@1">
+<!param name="xLabels2" value="#normal# #abnormal#">
+<!param name="dataName2" value="Criminality and chromosomes">
+<!param name="description2" value="Difference between proportion with criminal records (abnormal - normal)">
+<!param name="summaryDecimals2" value="3">
+<!param name="summaryAxis2" value="-0.1 0.6 -0.1 0.1">
+
+<!param name="yVarName3" value="Apple quality">
+<!param name="yLabels3" value="good average">
+<!param name="yValues3" value="15@0 25@1 34@0 6@1">
+<!param name="xVarName3" value="Fertiliser?">
+<!param name="xValues3" value="40@0 40@1">
+<!param name="xLabels3" value="#control# #fertiliser#">
+<!param name="dataName3" value="Apple quality">
+<!param name="description3" value="Distribution of increase in proportion of good apples when fertiliser is used.">
+<!param name="summaryDecimals3" value="3">
+<!param name="summaryAxis3" value="0.2 0.8 0.2 0.1">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="300">
+<!param name="appletName" value="twoGroupProg.DiffPDistnFitApplet">
+<!param name="descriptionWidth" value="260">
+<!param name="noOfDataSets" value="4">
+
+<!param name="yVarName" value="Risk level">
+<!param name="yLabels" value="#high risk# #low risk#">
+<!param name="yValues" value="446@0 940@1 564@0 569@1">
+<!param name="xVarName" value="Deer rank">
+<!param name="xValues" value="1386@0 1133@1">
+<!param name="xLabels" value="#low rank# #high rank#">
+<!param name="dataName" value="Deer aggression during rutting">
+<!param name="description" value="Difference in proportion of high-risk behaviour (high rank - low rank)">
+<!param name="summaryDecimals" value="4">
+<!param name="summaryAxis" value="0.12 0.23 0.12 0.02">
+
+<!param name="yVarName2" value="Crime record">
+<!param name="yLabels2" value="#record# #no record#">
+<!param name="yValues2" value="381@0 3715@1 8@0 28@1">
+<!param name="xVarName2" value="Defect?">
+<!param name="xValues2" value="4096@0 28@1">
+<!param name="xLabels2" value="#normal# #abnormal#">
+<!param name="dataName2" value="Criminality and chromosomes">
+<!param name="description2" value="Difference between proportion with criminal records (abnormal - normal)">
+<!param name="summaryDecimals2" value="3">
+<!param name="summaryAxis2" value="-0.1 0.6 -0.1 0.1">
+
+<!param name="yVarName3" value="Apple quality">
+<!param name="yLabels3" value="good average">
+<!param name="yValues3" value="15@0 25@1 34@0 6@1">
+<!param name="xVarName3" value="Fertiliser?">
+<!param name="xValues3" value="40@0 40@1">
+<!param name="xLabels3" value="#control# #fertiliser#">
+<!param name="dataName3" value="Apple quality">
+<!param name="description3" value="Distribution of increase in proportion of good apples when fertiliser is used">
+<!param name="summaryDecimals3" value="3">
+<!param name="summaryAxis3" value="0.2 0.8 0.2 0.1">
+
+<!param name="yVarName4" value="Sex">
+<!param name="yLabels4" value="boy girl">
+<!param name="yValues4" value="46@0 31@1 35@0 29@1">
+<!param name="xVarName4" value="Season">
+<!param name="xValues4" value="77@0 64@1">
+<!param name="xLabels4" value="winter summer">
+<!param name="dataName4" value="Sex of births by season">
+<!param name="description4" value="Difference in proportion of boys (summer - winter)">
+<!param name="summaryDecimals4" value="3">
+<!param name="summaryAxis4" value="-0.4 0.3 -0.4 0.1">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="650" HEIGHT="430">
+<!param name="appletName" value="twoGroupProg.PDiffCIApplet">
+<!param name="question" value="Out of #n1# widgets produced by production line A, there are #suc1# are defective. From production line B, there are #suc2# defective widgets out of #n2#. Find a 95% confidence interval for the difference in the proportion of defectives (line B - line A).">
+<!param name="initialValues" value="xxx 4 4 60 6 50">
+<!param name="paramRange" value="xxx 4 0.02 0.10 40 100 0.10 0.20 40 100">
+<!param name="question2" value="#n1# students are taught a Maths topic using method A and a different #n2# students are taught using method B. Of the students getting method A, #suc1# pass and #suc2# of the students getting method B pass. Find a 95% confidence interval for the difference in the proportion of passing (method B - method A).">
+<!param name="paramRange2" value="xxx 4 0.50 0.90 30 50 0.50 0.90 30 50">
+<!param name="accuracy" value="0.005 0.02">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="550">
+<!param name="appletName" value="twoGroupProg.PDiffTestQnApplet">
+<!param name="yVarName" value="y">
+<!param name="yLabels" value="success failure">
+<!param name="yValues" value="1@0 1@1 1@0 1@1">
+<!param name="xVarName" value="group">
+<!param name="xValues" value="2@0 2@1">
+<!param name="xLabels" value="A B">
+
+<!param name="question" value="Out of #n1# widgets produced by production line A, there are #suc1# are defective. From production line B, there are #suc2# defective widgets out of #n2#. Are the proportions of defectives from both production lines the same?">
+<!param name="initialValues" value="two-sided 4 5 60 15 50">
+<!param name="paramRange" value="two-sided 4 0.85 0.98 200 500 0.85 0.98 200 500">
+<!param name="question2" value="In a survey of young adults, #suc1# out of #n1# male subjects stated that they preferred pop music to classical music. Of the female subjects, the proportion was #suc2# out of #n2#. Is there any difference between male and female preferences?">
+<!param name="paramRange2" value="two-sided 4 0.30 0.70 100 200 0.30 0.70 100 200">
+<!param name="question3" value="In an experiment assessing the effect of a food additive, #suc1# out of #n1# rats whose diets included the additive had unusually high blood pressure. In a control group, #suc2# out of #n2# had high blood pressure. Does the additive increase blood pressure?">
+<!param name="paramRange3" value="high 4 0.50 0.80 20 50 0.5 0.5 20 50">
+<!param name="question4" value="In a statistics class, there were #n1# students who had never before studied statistics and #suc1# of these passed. Out of the #n2# students who knew some statistics before the course, #suc2# passed. Does previous study of statistics improve the probability of passing?">
+<!param name="paramRange4" value="low 4 0.70 0.90 40 100 0.8 0.95 50 150">
+
+<!param name="accuracy" value="0.005 0.02">
+<!/APPLET>
+
+</BODY>
+</HTML>

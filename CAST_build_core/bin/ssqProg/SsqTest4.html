@@ -1,0 +1,363 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Cuckoo eggs">
+<!param name="yVarName" value="Egg length">
+<!param name="xVarName" value="Host species">
+<!param name="yValues" value="22.0 23.9 20.9 23.8 25.0 23.4 21.7 23.8 22.8 23.1 23.1 23.5 23.0 23.0 21.8 23.0 23.3 22.4 22.4 23.0 23.0 23.0 23.9 22.3 22.0 22.6 22.0 22.1 21.1 23.0 19.8 22.1 21.5 20.9 22.0 21.0 22.3 21.0 20.3 20.9 22.0 20.0 20.8 21.2 21.0">
+<!param name="xLabels" value="Sparrow Robin Wren">
+<!param name="xValues" value="14@0 16@1 15@2">
+<!param name="yAxis" value="19.5 25.2 20 1">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Antibiotics">
+<!param name="yVarName" value="Binding %">
+<!param name="xVarName" value="Antibiotic">
+<!param name="yValues" value="29.6 24.3 28.5 32.0 27.3 32.6 30.8 34.8 5.8 6.2 11.0 8.3 21.6 17.4 18.3 19.0 29.2 32.8 25.0 24.2">
+<!param name="xLabels" value="Penicillin Tetracycline Streptomycin Erythromycin Chloramphenicol">
+<!param name="xValues" value="4@0 4@1 4@2 4@3 4@4">
+<!param name="yAxis" value="0 35 0 5">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Teaching methods">
+<!param name="yVarName" value="Test score">
+<!param name="xVarName" value="Student group">
+<!param name="yValues" value="4 6 9 12 16 15 14 12 12 8 13 9 12 12 12 10 8 12 11 8 7 9 7 7 12 10 16 15 9 8 13 12 7 6 8 9 9 8 9 13 10 8 8 10 11 7 4 7 7 6 11 14 13 9 12 13 4 13 6 12 6 11 14 8 5 8">
+<!param name="xLabels" value="Basal DRTA Strategies">
+<!param name="xValues" value="22@0 22@1 22@2">
+<!param name="yAxis" value="0 18 0 2">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Expired air">
+<!param name="yVarName" value="Volume of air (l)">
+<!param name="xVarName" value="Medical Centre">
+<!param name="yValues" value="3.23 3.47 1.86 2.47 3.01 1.69 2.10 2.81 3.28 3.36 2.61 2.91 1.98 2.57 2.08 2.47 2.47 2.74 2.88 2.63 2.53 3.22 2.88 1.71 2.89 3.77 3.29 3.39 3.86 2.64 2.71 2.71 3.41 2.87 2.61 3.39 3.17 2.79 3.22 2.25 2.98 2.47 2.77 2.95 3.56 2.88 2.63 3.38 3.07 2.81 3.17 2.23 2.19 4.06 1.98 2.81 2.85 2.43 3.20 3.53">
+<!param name="xLabels" value="#Johns Hopkins# #Rancho Los Amigos# #St Louis#">
+<!param name="xValues" value="21@0 16@1 23@2">
+<!param name="yAxis" value="1.5 4.1 1.5 0.5">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="Price promotion data">
+<param name="yVarName" value="Expected price ($)">
+<param name="xVarName" value="Number of promotions">
+<param name="yValues" value="3.78 3.82 4.18 4.46 4.31 4.56 4.36 4.54 3.89 4.13 3.97 4.38 3.98 3.91 4.34 4.24 4.22 4.32 3.96 4.73 3.62 4.27 4.79 4.58 4.46 4.18 4.40 4.36 4.37 4.23 4.06 3.86 4.26 4.33 4.10 3.94 3.97 4.60 4.50 4.00 4.12 3.91 3.96 4.22 3.88 4.14 4.17 4.07 4.16 4.12 3.84 4.01 4.42 4.01 3.84 3.95 4.26 3.95 4.30 4.33 4.17 3.97 4.32 3.87 3.91 4.21 3.86 4.14 3.93 4.08 4.07 4.08 3.95 3.92 4.36 4.05 3.96 4.29 3.60 4.11 3.32 3.86 4.15 3.65 3.71 3.78 3.93 3.73 3.71 4.10 3.69 3.83 3.58 4.08 3.99 3.72 4.41 4.12 3.73 3.56 3.25 3.76 3.56 3.48 3.47 3.58 3.76 3.57 3.87 3.92 3.39 3.54 3.86 3.77 4.37 3.77 3.81 3.71 3.58 3.69 3.45 3.64 3.37 3.27 3.58 4.01 3.67 3.74 3.50 3.60 3.97 3.57 3.50 3.81 3.55 3.08 3.78 3.86 3.29 3.77 3.25 3.07 3.21 3.55 3.23 2.97 3.86 3.14 3.43 3.84 3.65 3.45 3.73 3.12 3.82 3.70 3.46 3.73 3.79 3.94">
+<param name="xLabels" value="1 3 5 7">
+<param name="xValues" value="40@0 40@1 40@2 40@3">
+<param name="yAxis" value="3.0 5.0 3.0 0.5">
+<param name="maxSsq" value="9999.999">
+<param name="maxMeanSsq" value="9999.999">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="Stock fund volatility">
+<param name="yVarName" value="Volatility">
+<param name="xVarName" value="Fund type">
+<param name="yValues" value="20.6 18.0 18.3 22.0 17.6 18.4 13.2 20.6 18.4 25.1 28.5 17.1 19.8 18.0 18.2 13.0 13.5 16.2 12.9 13.5 19.7 17.3 22.8 21.9 15.7 20.0 15.7 20.0 16.7 13.0 13.3 12.0 13.3 14.1 15.0 13.3 13.3 13.0 13.7 13.7 19.9 14.4 15.5 12.7 12.2 14.3 14.7 12.9 15.2 14.1">
+<param name="xLabels" value="#Aggressive growth# #Small company# Growth #Growth & income# International">
+<param name="xValues" value="10@0 10@1 10@2 10@3 10@4">
+<param name="yAxis" value="10 30 10 5">
+<param name="maxSsq" value="9999.999">
+<param name="maxMeanSsq" value="9999.999">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="Hospital cost for operation">
+<param name="yVarName" value="Cost of laminectomy ($000)">
+<param name="xVarName" value="Hospital type">
+<param name="yValues" value="5.223 5.782 8.892 7.405 8.460 4.353 9.296 5.227 6.535 10.238 4.346 1.973 11.191 5.225 4.027 6.538 7.455 4.142 6.278 9.158 7.733 4.288 7.054 8.308 11.391 3.339 6.801 3.835 7.224 5.445 5.841 5.807 6.943 4.925 4.556 2.696 6.177 5.477 5.656 5.621 4.324 5.493 6.306 5.073 8.435 5.450">
+<param name="xLabels" value="Rural Regional Metropolitan">
+<param name="xValues" value="16@0 15@1 15@2">
+<param name="yAxis" value="3 12 4 2">
+<param name="maxSsq" value="9999.999">
+<param name="maxMeanSsq" value="999.999">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="El Nino weather">
+<param name="yVarName" value="Storms in year">
+<param name="xVarName" value="El Nino type">
+<param name="yValues" value="13 10 7 14 11 12 8 8 10 11 7 11 5 9 12 6 11 8 7 17 10 13 4 7 7 8 8 6 11 8 11 11 5 4 12 11 6 7 12 11 14 8 6 8 7 17">
+<param name="xLabels" value="cold neutral warm">
+<param name="xValues" value="0 2 1 2 0 0 1 2 1 1 1 0 1 1 0 2 1 0 1 1 0 0 2 0 0 0 2 2 1 1 1 1 2 2 1 0 2 2 0 0 1 2 2 2 2 0">
+<param name="yAxis" value="0 20 0 5">
+<param name="maxSsq" value="9999.999">
+<param name="maxMeanSsq" value="999.999">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="Cement packaging">
+<param name="yVarName" value="Actual bag weight">
+<param name="xVarName" value="Packing machine">
+<param name="yValues" value="49.89 48.80 49.22 49.34 48.77 48.71 50.06 49.51 49.11 49.98 49.64 48.91 50.30 49.67 50.39 50.18 49.09 48.72 49.46 49.30 50.69 51.50 52.09 50.87 50.69 51.05 51.60 50.69 50.48 51.13 51.16 51.49 50.84 51.11 50.94 51.15 52.12 50.84 50.39 51.48 49.36 49.92 49.52 50.22 50.23 49.78 48.67 49.98 50.86 50.51 48.95 49.85 49.49 49.29 49.16 50.07 49.64 49.93 49.68 49.62">
+<param name="xLabels" value="#M/C 1# #M/C 2# #M/C 3#">
+<param name="xValues" value="20@0 20@1 20@2">
+<param name="yAxis" value="48.5 52.2 48.5 0.5">
+<param name="maxSsq" value="9999.999">
+<param name="maxMeanSsq" value="999.999">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="Radiocarbon dating">
+<param name="yVarName" value="Date of pottery shard">
+<param name="xVarName" value="Pottery type">
+<param name="yValues" value="-547 -437 -177 -787 -387 -457 -347 -317 -477 -227 -467 -307 -347 -357 -287 -157 -317 -137 -597 -197 -247 -77 -227 -137 -397 -237 -227 -107 -227 -487 -537 -347 -107 -157 -47 -117 -127 -77 -7 -187 -57 -177 -217 -317 -77 -187 -387 -137 -167 3 -277 -107 -137 -17 -147 83">
+<param name="xLabels" value="#Phase 1# #Phase 2# #Phase 3# #Phase 4#">
+<param name="xValues" value="11@0 9@1 17@2 23@3">
+<param name="yAxis" value="-600 100 -600 100">
+<param name="maxSsq" value="9999999.">
+<param name="maxMeanSsq" value="9999999.">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<param name="appletName" value="ssqProg.DataFApplet">
+<param name="dataName" value="Vitamin E in bread">
+<param name="yVarName" value="Vitamin E">
+<param name="xVarName" value="Days after baking">
+<param name="yValues" value="94.6 96.0 95.7 93.2 97.4 94.3 95.0 97.7 92.3 95.1">
+<param name="xLabels" value="Immediately One Three Five Seven">
+<param name="xValues" value="2@0 2@1 2@2 2@3 2@4">
+<param name="yAxis" value="91 98 91 1">
+<param name="maxSsq" value="9999.999">
+<param name="maxMeanSsq" value="9999.999">
+<param name="maxF" value="999.99">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Cancer and radiation">
+<!param name="yVarName" value="Deaths">
+<!param name="xVarName" value="Exposure">
+<!param name="yValues" value="147 130 130 114 138 162 208 178 210">
+<!param name="xValues" value="2.5 2.6 3.4 1.3 1.6 3.8 11.6 6.4 8.3">
+<!param name="yAxis" value="100 250 100 50">
+<!param name="xAxis" value="0 12 0 2">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Deer jaw length">
+<!param name="yVarName" value="Jaw length (mm)">
+<!param name="xVarName" value="Weight (kg)">
+<!param name="yValues" value="226 254 252 224 254 247 273 231 219 226 245 252 249 219 214 247 232 226 211 216 218 232 235 202 253 211 211 236 230 243 240 217 257 236 257 234 227 252 249 279 247 237 273 256 247 267 239 243 262 157 268 267 245 273 256 244 270 257 269 233 276 267 258 253 229 253 272 262 270 267 277 293 254 259 283 245 225 225 262 282 277 229 275 287 296 281 265 293 278 262 257 283 253 289 287 284 301 282 260 292 275 290 294 308 291 301 293 300 280 285 264 291 272 284 292 298 303 290 280 279 265 311 288 290 287 292 258 360">
+<!param name="xValues" value="36 45 43 37 47 43 56 43 34 41 47 45 44 34 32 46 36 35 35 29 29 43 40 21 53 32 36 42 40 49 46 33 57 47 48 48 44 52 57 66 45 43 58 62 53 70 44 48 53 55 62 62 38 57 55 43 60 52 63 55 63 54 48 48 55 53 64 50 54 50 67 82 42 57 57 40 41 41 56 71 75 77 67 74 95 85 53 82 76 51 55 68 46 76 79 81 76 86 72 85 41 93 83 85 84 89 70 88 73 72 77 71 38 82 89 89 92 80 75 67 81 101 73 87 91 73 65 97">
+<!param name="yAxis" value="150 380 150 50">
+<!param name="xAxis" value="20 105 20 20">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Butterfat in milk">
+<!param name="yVarName" value="% Butterfat">
+<!param name="xVarName" value="Temperature">
+<!param name="yValues" value="4.65 4.58 4.67 4.60 4.83 4.55 5.14 4.71 4.69 4.65 4.36 4.82 4.65 4.66 4.95 4.60 4.68 4.65 4.60 4.46">
+<!param name="xValues" value="64 65 65 64 61 55 39 41 46 59 56 56 62 37 37 45 57 58 60 55">
+<!param name="yAxis" value="4.3 5.2 4.4 0.2">
+<!param name="xAxis" value="35 68 35 5">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Alcoholism and strength">
+<!param name="yVarName" value="Strength (kg)">
+<!param name="xVarName" value="Alcohol consumption">
+<!param name="yValues" value="10 10 10.8 12.2 13.1 14 15.5 15.5 15.2 15.2 15.2 15.5 16.2 16.2 16.2 17.9 18.2 18.2 19.1 18.8 19.3 20.9 20.9 20.9 20.9 20.9 20.9 20.9 21.1 21.1 21.2 22.3 22.1 21.8 22.2 22.2 23.3 23.9 24 24.1 25.1 25.1 25.1 26.2 26.3 28.2 28.2 28.4 28.2 29.5">
+<!param name="xValues" value="36.2 39.7 39.5 18.2 29.2 32.5 13.2 14.8 28.6 30.8 34.5 39.7 28.3 34.5 40.3 19.1 27.7 40.8 17.7 22.8 28.3 4 5.2 11.7 12.5 13.7 15.7 17.4 18.9 20 32.3 3.5 9.8 14 18.3 19.7 29.8 9.7 11.1 32.9 10.8 14 17.5 12.6 22.6 5.2 9.4 13.5 19.1 7.4">
+<!param name="yAxis" value="5 31 5 5">
+<!param name="xAxis" value="0 45 0 10">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Zinc in lakes">
+<!param name="yVarName" value="Zinc in plants">
+<!param name="xVarName" value="Zinc in sediment">
+<!param name="yValues" value="15.9 42.7 85.7 52.6 49.1 59.0 53.6 77.8 63.2 62.3 22.7 66.1 47.4 59.4 50.9">
+<!param name="xValues" value="37.5 72.5 85.2 76.5 64.5 86.8 90.8 105.8 85.8 87.9 53.9 102.3 90.7 86.0 79.0">
+<!param name="yAxis" value="0 100 0 20">
+<!param name="xAxis" value="20 120 20 20">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Oxygen intake">
+<!param name="yVarName" value="Oxygen intake (VO2)">
+<!param name="xVarName" value="Heart rate">
+<!param name="yValues" value=".473 .753 .929 .939 .832 .983 1.049 1.178 1.176 1.292 1.403 1.499 1.529 1.599 1.749 1.746 1.897 2.040 2.231">
+<!param name="xValues" value="94 96 95 95 94 95 94 104 104 106 108 110 113 113 118 115 121 127 131">
+<!param name="yAxis" value="0.4 2.4 0.5 0.5">
+<!param name="xAxis" value="90 135 90 10">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="xVarName" value="Body wt (kg)">
+<!param name="yVarName" value="Heart wt (g)">
+<!param name="xValues" value="2.3 3 2.9 2.4 2.3 2 2.2 2.1 2.3 2.1 2.1 2.2 2 2.3 2.2 2.3 2.1 2 2.9 2.7 2.6 2.3 2.6 2.1 2.1 2.7 2.2 2.3 2.1 2.4 2.7 2.3 2.1 2.2 2.3 2.1 2.9 3 2.2 2.4 2.4 2.5 2.5 2.3 2.3 2.6 2.3">
+<!param name="yValues" value="9.6 10.6 9.9 8.7 10.1 7 11 8.2 9 7.3 8.5 9.7 7.4 7.3 7.1 9 7.6 9.5 10.1 10.2 10.1 9.5 8.7 7.2 9.8 10.8 9.1 11.2 8.1 10.2 8.5 10.1 8.7 10.9 7.9 8.3 10.1 13 8.7 6.3 8.8 10.9 9 9.7 8.4 10.1 10.6">
+<!param name="xAxis" value="1.8 3.2 1.8 0.2">
+<!param name="yAxis" value="5 14 6 2">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Phone survey response rates">
+<!param name="yVarName" value="Refusal rate">
+<!param name="xVarName" value="Mean income per capita">
+<!param name="yValues" value="0.296 0.498 0.386 0.327 0.5 0.333 0.429 0.422 0.441 0.191 0.526 0.405">
+<!param name="xValues" value="7737 12330 12058 9927 6904 9463 11466 10000 10052 8636 7445 9059">
+<!param name="yAxis" value="0.15 0.55 0.2 0.1">
+<!param name="xAxis" value="6000 13000 6000 2000">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="dataName" value="Mountain people">
+<!param name="yVarName" value="Height at 18 (in)">
+<!param name="xVarName" value="Length at birth (in)">
+<!param name="yValues" value="67.2 69.1 67.0 72.4 63.6 72.7 68.5 69.7 68.4 70.4 67.5 73.3 70.0 69.8 63.6 64.3 68.5 70.5 68.1 66.1">
+<!param name="xValues" value="19.7 19.6 19.4 19.4 19.7 19.6 19.8 19.7 19.7 19.9 18.9 20.8 20.3 19.7 19.9 19.6 21.3 20.1 20.2 19.2">
+<!param name="yAxis" value="62 75 62 2">
+<!param name="xAxis" value="18.5 21.5 18.5 0.5">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="yVarName" value="Tourist arrivals (millions)">
+<!param name="xVarName" value="Year">
+<!param name="yValues" value="56.398 53.773 55.723 53.837 57.170 57.341 57.937 57.373 57.447 60.020 61.721 57.760 60.069">
+<!param name="xValues" value="1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002">
+<!param name="xAxis" value="1989.5 2002.5 1990 5">
+<!param name="yAxis" value="53 63 54 2">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.999">
+<!param name="maxMeanSsq" value="9999.999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="yVarName" value="Retaliation index">
+<!param name="xVarName" value="Salary (thousand dollars)">
+<!param name="yValues" value="301 550 755 327 500 377 290 452 535 455 615 700 650 630 360">
+<!param name="xValues" value="62.0 36.5 21.6 24.0 30.1 35.0 47.5 54.0 19.8 44.0 46.6 15.1 70.0 21.0 19.9">
+<!param name="yAxis" value="200 800 200 100">
+<!param name="xAxis" value="0 80 0 20">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="99999">
+<!param name="maxMeanSsq" value="99999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="yVarName" value="Auction price (dollars)">
+<!param name="xVarName" value="Age (years)">
+<!param name="yValues" value="1235 1080 845 1522 1047 1979 1822 1253 1297 946 1713 1024 1147 1092 1152 1336 2131 1550 1884 2041 845 1483 1055 1545 729 1792 1175 1593 785 744 1356 1262">
+<!param name="xValues" value="127 115 127 150 156 182 156 132 137 113 137 117 137 153 117 126 170 182 162 184 143 159 108 175 108 179 111 187 111 115 194 168">
+<!param name="yAxis" value="0 2500 0 500">
+<!param name="xAxis" value="100 200 100 20">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999999">
+<!param name="maxMeanSsq" value="9999999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="yVarName" value="Petrol (c/gal)">
+<!param name="xVarName" value="Crude ($/barrel)">
+<!param name="yValues" value="57 59 62 63 86 119 131 122 116 113 112 86 90 90 100 115 72 71 75">
+<!param name="xValues" value="10.38 10.89 11.96 12.46 17.72 28.07 35.24 31.87 28.99 28.63 26.75 14.55 17.9 14.67 17.97 22.23 16.54 15.99 14.24">
+<!param name="yAxis" value="50 150 50 50">
+<!param name="xAxis" value="8 38 10 10">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="9999.99">
+<!param name="maxMeanSsq" value="9999.99">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataFApplet">
+<!param name="yVarName" value="Reading distance (ft)">
+<!param name="xVarName" value="Age">
+<!param name="yValues" value="490 450 380 350 390">
+<!param name="xValues" value="25 46 49 63 70">
+<!param name="yAxis" value="340 500 350 50">
+<!param name="xAxis" value="20 75 20 10">
+<!param name="labelAxes" value="true">
+<!param name="maxSsq" value="999999">
+<!param name="maxMeanSsq" value="999999">
+<!param name="maxF" value="999.99">
+<!/APPLET>
+
+</BODY>
+</HTML>

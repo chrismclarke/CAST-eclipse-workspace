@@ -1,0 +1,1 @@
+package cast.index;import java.io.*;class IndexReference implements Serializable {	Page page;	String comment;		IndexReference(Page page, String comment) {		this.page = page;		this.comment = comment;	}}

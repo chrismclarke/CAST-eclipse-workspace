@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/AppleJavaExtensions.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/commons-net-3.2.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/jlatexmath-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/serializer.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/Users/dstirlin/From Documents drive/CAST/CAST eclipse workspace/CAST_build_core/lib/xml-apis.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

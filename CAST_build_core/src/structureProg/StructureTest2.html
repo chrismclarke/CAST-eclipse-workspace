@@ -1,0 +1,137 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="300">
+<!param name="appletName" value="structureProg.MultiLevelDataApplet">
+<!param name="nCoreVars" value="1 3">
+<!param name="indexName" value="ID#Hh ID">
+<!param name="higherDataName" value="Household level">
+<!param name="higherLabelName" value="Hh name">
+<!param name="higherLabels" value="Muthowa Mazinga Marichi Mvula Magomero Naluso Nangwale Yasini Kalonga Costa January Sukali Wisikesi Namangwiyo Mukhumba Anderson Chigonamadzi Chimvula">
+<!param name="higherVarName0" value="Water">
+<!param name="higherValues0" value="1.2 0.4 0.2 0.6 1.3 0.1 0.2 0.6 0.3 0.5 1.0 0.1 0.3 0.2 0.6 0.1 0.4 0.4">
+<!param name="lowerDataName" value="Person level">
+<!param name="linkIndices" value="0 0 0 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 3 3 3 3 4 4 4 5 5 5 5 5 6 6 6 6 6 7 8 9 9 9 9 10 10 10 10 10 10 10 10 10 11 11 11 11 12 12 13 13 14 14 14 14 15 15 15 16 16 16 16 16 16 17 17">
+<!param name="lowerLabelName" value="Person name">
+<!param name="lowerLabels" value="#Mr Muthowa# #Mai M.# #Musowa B# #Mr Naluso# #Agnes N# #Elaton N# #Christopher N# #Esther N# #Juma N# #Victoria N# #Felisita N# #Jimmy N# #Mr January# #Esther J# #Roderick M# #Joyce M# #Charles M# #Dyson S# #Chrissie J# #Mercy# #Tokozani# #Charity# #Mai M# #Mr Nangwale# #Martha# #Enifa# #Frank# #Femia# #Roderick# #Regina# #Mundelanji# #Mr Mukhumba# #Olaliya# #Donata# #Gladys# #Charles# #Hilda# #Uncle# #Elizabeth# #Enoch M# #Binette M# #Mai# #Mr Yasini# #Lestina Y# #Lyton Y# #Theresa Y# #Kassim Y# #Jalassi Y# #Mistake Y# #Thamandani Y# #Mayi Y# #Leverson W# #Chrissie# #Witness W# #Egly W# #Matheus A# #Stellia A# #Ephraim M# #Theresa M# #Mai K# #Mr Nakatha# #Alekereni D# #Christina D# #Mr Namangwiyo# #Elube D# #Mphatso N# #Mr Chigonamadzi# #Essube C# #Divason C# #Joyce C# #Masauko C# #Masauko C# #Masauko C# #Masauko C#">
+<!param name="lowerVarName0" value="Age">
+<!param name="lowerValues0" value="70 60 17 37 38 21 16 14 10 6 3 7 45 35 20 10 7 4 1 18 15 1 55 40 31 11 30 27 5 2 8 30 25 8 6 3 20 65 45 23 21 70 45 38 18 16 10 6 3 0 7 23 19 17 14 30 22 90 70 40 45 16 9 30 20 1 60 49 22 20 14 8 35 28">
+<!param name="lowerVarName1" value="Gender">
+<!param name="lowerCatLabels1" value="M F">
+<!param name="lowerValues1" value="0 1 0 0 1 0 0 1 1 1 1 0 0 1 0 1 0 0 1 1 0 1 1 0 1 1 0 1 0 1 1 0 1 1 1 0 1 0 1 0 1 1 0 1 0 1 0 0 0 1 1 0 1 0 1 0 1 0 1 1 0 1 1 0 1 0 0 1 0 1 0 1 0 1">
+<!param name="lowerVarName2" value="Reln">
+<!param name="lowerCatLabels2" value="Head Spse Chld FaMo GdCh ORel Labr Visi Othr Poly">
+<!param name="lowerValues2" value="0 1 2 0 1 2 2 2 2 2 2 2 0 1 2 2 2 2 2 2 2 5 0 0 1 2 9 1 2 2 2 0 1 2 2 2 2 6 0 2 2 3 0 1 2 2 2 2 2 2 2 5 5 5 5 0 1 0 1 1 0 2 2 0 1 2 0 1 2 2 2 2 0 1">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="500">
+<!param name="appletName" value="structureProg.MultiLevelDataApplet">
+<!param name="nCoreVars" value="1 3">
+<!param name="indexName" value="ID#Hh ID">
+<!param name="higherDataName" value="Household level">
+<!param name="higherLabelName" value="Hh name">
+<!param name="higherLabels" value="Muthowa Mazinga Marichi Mvula Magomero Naluso Nangwale Yasini Kalonga Costa January Sukali Wisikesi Namangwiyo Mukhumba Anderson Chigonamadzi Chimvula">
+<!param name="higherVarName0" value="Water">
+<!param name="higherValues0" value="1.2 0.4 0.2 0.6 1.3 0.1 0.2 0.6 0.3 0.5 1.0 0.1 0.3 0.2 0.6 0.1 0.4 0.4">
+<!param name="lowerDataName" value="Person level">
+<!param name="linkIndices" value="0 0 0 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 3 3 3 3 4 4 4 5 5 5 5 5 6 6 6 6 6 7 8 9 9 9 9 10 10 10 10 10 10 10 10 10 11 11 11 11 12 12 13 13 14 14 14 14 15 15 15 16 16 16 16 16 16 17 17">
+<!param name="lowerLabelName" value="Person name">
+<!param name="lowerLabels" value="#Mr Muthowa# #Mai M.# #Musowa B# #Mr Naluso# #Agnes N# #Elaton N# #Christopher N# #Esther N# #Juma N# #Victoria N# #Felisita N# #Jimmy N# #Mr January# #Esther J# #Roderick M# #Joyce M# #Charles M# #Dyson S# #Chrissie J# #Mercy# #Tokozani# #Charity# #Mai M# #Mr Nangwale# #Martha# #Enifa# #Frank# #Femia# #Roderick# #Regina# #Mundelanji# #Mr Mukhumba# #Olaliya# #Donata# #Gladys# #Charles# #Hilda# #Uncle# #Elizabeth# #Enoch M# #Binette M# #Mai# #Mr Yasini# #Lestina Y# #Lyton Y# #Theresa Y# #Kassim Y# #Jalassi Y# #Mistake Y# #Thamandani Y# #Mayi Y# #Leverson W# #Chrissie# #Witness W# #Egly W# #Matheus A# #Stellia A# #Ephraim M# #Theresa M# #Mai K# #Mr Nakatha# #Alekereni D# #Christina D# #Mr Namangwiyo# #Elube D# #Mphatso N# #Mr Chigonamadzi# #Essube C# #Divason C# #Joyce C# #Masauko C# #Masauko C# #Masauko C# #Masauko C#">
+<!param name="lowerVarName0" value="Age">
+<!param name="lowerValues0" value="70 60 17 37 38 21 16 14 10 6 3 7 45 35 20 10 7 4 1 18 15 1 55 40 31 11 30 27 5 2 8 30 25 8 6 3 20 65 45 23 21 70 45 38 18 16 10 6 3 0 7 23 19 17 14 30 22 90 70 40 45 16 9 30 20 1 60 49 22 20 14 8 35 28">
+<!param name="lowerVarName1" value="Gender">
+<!param name="lowerCatLabels1" value="M F">
+<!param name="lowerValues1" value="0 1 0 0 1 0 0 1 1 1 1 0 0 1 0 1 0 0 1 1 0 1 1 0 1 1 0 1 0 1 1 0 1 1 1 0 1 0 1 0 1 1 0 1 0 1 0 0 0 1 1 0 1 0 1 0 1 0 1 1 0 1 1 0 1 0 0 1 0 1 0 1 0 1">
+<!param name="lowerVarName2" value="Reln">
+<!param name="lowerCatLabels2" value="Head Spse Chld FaMo GdCh ORel Labr Visi Othr Poly">
+<!param name="lowerValues2" value="0 1 2 0 1 2 2 2 2 2 2 2 0 1 2 2 2 2 2 2 2 5 0 0 1 2 9 1 2 2 2 0 1 2 2 2 2 6 0 2 2 3 0 1 2 2 2 2 2 2 2 5 5 5 5 0 1 0 1 1 0 2 2 0 1 2 0 1 2 2 2 2 0 1">
+<!param name="nDerivedVars" value="1 3">
+<!param name="copy0" value="y0#Water">
+<!param name="sum0" value="COUNT#Hh size#0">
+<!param name="sum1" value="MEAN#Ave age#1#y0">
+<!param name="sum2" value="MIN#Min age#0#y0">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="300">
+<!param name="appletName" value="structureProg.MultiLevelDataApplet">
+<!param name="nCoreVars" value="1 3">
+<!param name="indexName" value="ID#Hh ID">
+<!param name="higherDataName" value="Household level">
+<!param name="higherLabelName" value="Address">
+<!param name="higherLabels" value="#14 Station Rd# #20 New Rd# #2 Newalls Rise# #9 Walton Av# #2 Kendall Av# #14 Buckden St# #269 Norcot Rd# #46 Victoria Rd# #354 Wokingam Rd# #27 Churchill Cres# #227 Brook St# #5 Ardler Rd# #175 Peppard Rd# #70 Prospect St# #57 Shefford Cres# #17 Denmark Av# #5 Audley St# #58 Pitford Rd# #6 Eagle Cl# #78 New Bright St# #25 Eastcourt Av# #150 Hexham Rd#">
+<!param name="higherVarName0" value="Shops">
+<!param name="higherValues0" value="2.4 0.8 4.4 1.2 2.6 0.2 2.4 1.2 0.6 1.0 2.0 0.2 0.6 0.4 1.2 0.2 0.8 0.8 5.2 2.8 1.0 2.6">
+<!param name="lowerDataName" value="Person level">
+<!param name="linkIndices" value="0 0 0 1 1 1 2 2 3 3 3 3 4 4 4 5 5 5 5 5 6 6 6 6 6 7 8 9 9 9 9 10 10 11 11 11 11 12 12 13 13 14 14 14 14 15 15 15 16 16 16 16 16 16 17 17 18 18 18 18 18 18 19 19 19 19 19 20 20 20 20 20 21 21">
+<!param name="lowerLabelName" value="Person name">
+<!param name="lowerLabels" value="Luke Christine Rebecca David Eloise Brendon Robert Sarah Mark Rebecca Lucy Daniel Nicholas Natalie Rachel Keith Jessica Phillip Hannah Lucy James Margaret Katie Laura Philippa Kate Christopher Ruth Brendon Rebecca Daniel Richard Holly Krystle Sara Haydyn Brydee Hugh Tracey Jennifer Vanessa Douglas Rhys Tessa Phillip Vicki Sarah Nihaad Frank Paul Rachel Mariyam Louise Fiona Brook Sarah Luke Andrew John Julian Eloise Melissa Kurt Sarah Dana James Lucy Mary Aaron Natalie Rachel Robert Jack Cherie">
+<!param name="lowerVarName0" value="Age">
+<!param name="lowerValues0" value="65 60 17 37 38 12 26 25 51 46 22 17 40 31 11 30 27 5 3 1 76 47 12 8 5 35 65 45 23 21 14 45 38 23 19 17 21 58 55 90 70 43 20 16 14 25 22 24 85 49 49 20 14 8 25 28 23 22 25 21 23 25 30 32 7 4 1 66 45 34 6 3 74 70">
+<!param name="lowerVarName1" value="Gender">
+<!param name="lowerCatLabels1" value="M F">
+<!param name="lowerValues1" value="0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 1 1 0 1 1 1 0 1 0 1 0 1 1 0 1 1 1 0 1 0 1 1 1 0 0 1 0 1 1 0 0 0 1 1 1 1 1 1 0 0 0 0 1 1 0 1 1 0 1 0 1 0 1 0 0 1">
+<!param name="lowerVarName2" value="Income">
+<!param name="lowerValues2" value="56400 45000 0 34900 41300 0 33600 35100 78000 41400 28200 0 42300 21000 0 23800 0 0 0 0 0 65800 0 0 0 31900 66300 34100 24200 26400 0 58300 32500 24200 31600 25600 30900 69000 87300 0 0 51500 0 0 0 27900 14300 25000 0 34400 55700 0 0 0 18400 26500 24000 41200 18600 26400 36300 0 0 25700 0 0 0 16800 63600 46000 0 0 0 0">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="500">
+<!param name="appletName" value="structureProg.MultiLevelDataApplet">
+<!param name="nCoreVars" value="1 3">
+<!param name="indexName" value="ID#Hh ID">
+<!param name="higherDataName" value="Household level">
+<!param name="higherLabelName" value="Address">
+<!param name="higherLabels" value="#14 Station Rd# #20 New Rd# #2 Newalls Rise# #9 Walton Av# #2 Kendall Av# #14 Buckden St# #269 Norcot Rd# #46 Victoria Rd# #354 Wokingam Rd# #27 Churchill Cres# #227 Brook St# #5 Ardler Rd# #175 Peppard Rd# #70 Prospect St# #57 Shefford Cres# #17 Denmark Av# #5 Audley St# #58 Pitford Rd# #6 Eagle Cl# #78 New Bright St# #25 Eastcourt Av# #150 Hexham Rd#">
+<!param name="higherVarName0" value="Shops">
+<!param name="higherValues0" value="2.4 0.8 4.4 1.2 2.6 0.2 2.4 1.2 0.6 1.0 2.0 0.2 0.6 0.4 1.2 0.2 0.8 0.8 5.2 2.8 1.0 2.6">
+<!param name="lowerDataName" value="Person level">
+<!param name="linkIndices" value="0 0 0 1 1 1 2 2 3 3 3 3 4 4 4 5 5 5 5 5 6 6 6 6 6 7 8 9 9 9 9 10 10 11 11 11 11 12 12 13 13 14 14 14 14 15 15 15 16 16 16 16 16 16 17 17 18 18 18 18 18 18 19 19 19 19 19 20 20 20 20 20 21 21">
+<!param name="lowerLabelName" value="Person name">
+<!param name="lowerLabels" value="Luke Christine Rebecca David Eloise Brendon Robert Sarah Mark Rebecca Lucy Daniel Nicholas Natalie Rachel Keith Jessica Phillip Hannah Lucy James Margaret Katie Laura Philippa Kate Christopher Ruth Brendon Rebecca Daniel Richard Holly Krystle Sara Haydyn Brydee Hugh Tracey Jennifer Vanessa Douglas Rhys Tessa Phillip Vicki Sarah Nihaad Frank Paul Rachel Mariyam Louise Fiona Brook Sarah Luke Andrew John Julian Eloise Melissa Kurt Sarah Dana James Lucy Mary Aaron Natalie Rachel Robert Jack Cherie">
+<!param name="lowerVarName0" value="Age">
+<!param name="lowerValues0" value="65 60 17 37 38 12 26 25 51 46 22 17 40 31 11 30 27 5 3 1 76 47 12 8 5 35 65 45 23 21 14 45 38 23 19 17 21 58 55 90 70 43 20 16 14 25 22 24 85 49 49 20 14 8 25 28 23 22 25 21 23 25 30 32 7 4 1 66 45 34 6 3 74 70">
+<!param name="lowerVarName1" value="Gender">
+<!param name="lowerCatLabels1" value="M F">
+<!param name="lowerValues1" value="0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 0 1 0 1 1 0 1 1 1 0 1 0 1 0 1 1 0 1 1 1 0 1 0 1 1 1 0 0 1 0 1 1 0 0 0 1 1 1 1 1 1 0 0 0 0 1 1 0 1 1 0 1 0 1 0 1 0 0 1">
+<!param name="lowerVarName2" value="Income">
+<!param name="lowerValues2" value="56400 45000 0 34900 41300 0 33600 35100 78000 41400 28200 0 42300 21000 0 23800 0 0 0 0 0 65800 0 0 0 31900 66300 34100 24200 26400 0 58300 32500 24200 31600 25600 30900 69000 87300 0 0 51500 0 0 0 27900 14300 25000 0 34400 55700 0 0 0 18400 26500 24000 41200 18600 26400 36300 0 0 25700 0 0 0 16800 63600 46000 0 0 0 0">
+<!param name="nDerivedVars" value="1 3">
+<!param name="copy0" value="y0#Shops">
+<!param name="sum0" value="COUNT#Hh size#0">
+<!param name="sum1" value="MIN#Min age#0#y0">
+<!param name="sum2" value="TOTAL#Total income#0#y2">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="370" HEIGHT="200">
+<param name="appletName" value="structureProg.AddNoiseApplet">
+<param name="customText" value="Signal=Signal#Noise=Noise">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="320">
+<!param name="appletName" value="structureProg.PictValueApplet">
+<!param name="varName" value="Yield from tomato plants">
+<!param name="noOfCols" value="5">
+<!param name="pictName" value="tomatoPict">
+<!param name="pictSize" value="26 42">
+<!param name="decimals" value="2">
+<!param name="random" value="20 5.0 1.5 13489372 2.0">
+<!param name="sampleButtonName" value="Another 20 plants">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="360">
+<!param name="appletName" value="structureProg.PictTreatmentApplet">
+<!param name="varName" value="Tomato plant yield: no fertiliser">
+<!param name="noOfCols" value="5">
+<!param name="pictName" value="tomatoPict">
+<!param name="pictSize" value="26 42">
+<!param name="decimals" value="2">
+<!param name="random" value="10 5.0 1.5 13489372 2.0">
+<!param name="sampleButtonName" value="Another 20 plants">
+<!param name="varName2" value="Tomato plant yield: added fertiliser">
+<!param name="random2" value="10 5.0 1.5 58399372 2.0">
+<!param name="effectSize" value="0.00 2.00 0.50">
+<!param name="effectName" value="Fertiliser effect">
+<!param name="customText" value="Vary effect=Vary effect">
+<!/APPLET>
+
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+package test;import dataView.*;import coreGraphics.*;public class ScaledBackgroundArtist extends BackgroundNormalArtist {	private double maxDensity;		public ScaledBackgroundArtist(String distnKey, DataSet data, double maxDensity) {		super(distnKey, data);		this.maxDensity = maxDensity;	}		public double getMaxDensity() {		return maxDensity;	}}

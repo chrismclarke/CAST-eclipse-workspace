@@ -1,0 +1,174 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="400">
+<!param name="appletName" value="mixtureProg.DragMixtureApplet">
+<!param name="xVarName" value="CMC">
+<!param name="yVarName" value="Starch">
+<!param name="zVarName" value="Flour">
+<!param name="sumXYZ" value="0.08">
+<!param name="leftXScale" value="-1 -1 0 0.08">
+<!param name="leftYScale" value="-1 -1 0 0.08">
+<!param name="leftZScale" value="-1 -1 0 0.08">
+<!param name="leftXLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftYLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftZLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="rightXScale" value="-1 -1 0 0.08">
+<!param name="rightYScale" value="-1 -1 0 0.08">
+<!param name="rightZScale" value="-1 -1 0 0.08">
+<!param name="rightXLabels" value="6 (0% 0.0) (20% 0.016) (40% 0.032) (60% 0.048) (80% 0.064) (100% 0.08)">
+<!param name="rightYLabels" value="6 (0% 0.0) (20% 0.016) (40% 0.032) (60% 0.048) (80% 0.064) (100% 0.08)">
+<!param name="rightZLabels" value="6 (0% 0.0) (20% 0.016) (40% 0.032) (60% 0.048) (80% 0.064) (100% 0.08)">
+<!param name="leftHeading" value="Whole product">
+<!param name="rightHeading" value="Starch/CMC/Wheat mix">
+<!param name="maxPercent" value="9.99">
+<!param name="hundredPercent" value="100.0">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="400">
+<!param name="appletName" value="mixtureProg.MixConstraintsApplet">
+<!param name="xVarName" value="CMC">
+<!param name="yVarName" value="Starch">
+<!param name="zVarName" value="Flour">
+<!param name="xValues" value="0.08 0.00 0.00 0.04 0.04 0.00 0.02666667">
+<!param name="yValues" value="0.00 0.08 0.00 0.04 0.00 0.04 0.02666667">
+<!param name="zValues" value="0.00 0.00 0.08 0.00 0.04 0.04 0.02666667">
+<!param name="sumXYZ" value="0.08">
+<!param name="leftXScale" value="-1 -1 0 0.08">
+<!param name="leftYScale" value="-1 -1 0 0.08">
+<!param name="leftZScale" value="-1 -1 0 0.08">
+<!param name="leftXLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftYLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftZLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="rightXScale" value="-1 -1 0 0.08">
+<!param name="rightYScale" value="-1 -1 0 0.08">
+<!param name="rightZScale" value="-1 -1 0 0.08">
+<!param name="rightXLabels" value="6 (0% 0.0) (20% 0.016) (40% 0.032) (60% 0.048) (80% 0.064) (100% 0.08)">
+<!param name="rightYLabels" value="6 (0% 0.0) (20% 0.016) (40% 0.032) (60% 0.048) (80% 0.064) (100% 0.08)">
+<!param name="rightZLabels" value="6 (0% 0.0) (20% 0.016) (40% 0.032) (60% 0.048) (80% 0.064) (100% 0.08)">
+<!param name="leftHeading" value="Whole product">
+<!param name="rightHeading" value="Starch/CMC/Wheat mix">
+<!param name="maxPercent" value="9.99">
+<!param name="hundredPercent" value="100.0">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="450">
+<param name="appletName" value="mixtureProg.DragMixtureApplet">
+<param name="xVarName" value="CMC">
+<param name="yVarName" value="Starch">
+<param name="zVarName" value="Flour">
+<param name="sumXYZ" value="0.08">
+<param name="leftXScale" value="-1 -1 0 0.08">
+<param name="leftYScale" value="0.034 -1 0 0.08">
+<param name="leftZScale" value="-1 -1 0 0.08">
+<param name="leftXLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="leftYLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="leftZLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="rightXScale" value="-1 -1 0 0.046">
+<param name="rightYScale" value="-1 -1 0.034 0.08">
+<param name="rightZScale" value="-1 -1 0 0.046">
+<param name="rightXLabels" value="6 (0% 0.0) (20% 0.0092) (40% 0.0184) (60% 0.0276) (80% 0.0368) (100% 0.046)">
+<param name="rightYLabels" value="6 (0% 0.034) (20% 0.0432) (40% 0.0524) (60% 0.0616) (80% 0.0708) (100% 0.08)">
+<param name="rightZLabels" value="6 (0% 0.0) (20% 0.0092) (40% 0.0184) (60% 0.0276) (80% 0.0368) (100% 0.046)">
+<param name="rightScaleNames" value="Percent of rest of mix#Original units">
+<param name="rightXLabels2" value="5 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04)">
+<param name="rightYLabels2" value="5 (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="rightZLabels2" value="5 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04)">
+<param name="leftHeading" value="Whole product">
+<param name="rightHeading" value="In rest of mix">
+<param name="maxPercent" value="9.99">
+<param name="hundredPercent" value="100.0">
+</APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="400">
+<param name="appletName" value="mixtureProg.MixConstraintsApplet">
+<param name="xVarName" value="CMC">
+<param name="yVarName" value="Starch">
+<param name="zVarName" value="Flour">
+<param name="xValues" value="0.046 0.000 0.000 0.023 0.023 0.000 0.01533333">
+<param name="yValues" value="0.034 0.080 0.034 0.057 0.034 0.057 0.04933333">
+<param name="zValues" value="0.000 0.000 0.046 0.000 0.023 0.023 0.01533333">
+<param name="sumXYZ" value="0.08">
+<param name="leftXScale" value="-1 -1 0 0.08">
+<param name="leftYScale" value="0.034 -1 0 0.08">
+<param name="leftZScale" value="-1 -1 0 0.08">
+<param name="leftXLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="leftYLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="leftZLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="rightXScale" value="-1 -1 0 0.046">
+<param name="rightYScale" value="-1 -1 0.034 0.08">
+<param name="rightZScale" value="-1 -1 0 0.046">
+<param name="rightXLabels" value="6 (0% 0.0) (20% 0.0092) (40% 0.0184) (60% 0.0276) (80% 0.0368) (100% 0.046)">
+<param name="rightYLabels" value="6 (0% 0.034) (20% 0.0432) (40% 0.0524) (60% 0.0616) (80% 0.0708) (100% 0.08)">
+<param name="rightZLabels" value="6 (0% 0.0) (20% 0.0092) (40% 0.0184) (60% 0.0276) (80% 0.0368) (100% 0.046)">
+<param name="rightScaleNames" value="Percent of rest of mix#Original units">
+<param name="rightXLabels2" value="5 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04)">
+<param name="rightYLabels2" value="5 (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<param name="rightZLabels2" value="5 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04)">
+<param name="leftHeading" value="Whole product">
+<param name="rightHeading" value="Starch/CMC/Wheat mix">
+<param name="maxPercent" value="9.99">
+<param name="hundredPercent" value="100.0">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="450">
+<!param name="appletName" value="mixtureProg.DragMixtureApplet">
+<!param name="xVarName" value="CMC">
+<!param name="yVarName" value="Starch">
+<!param name="zVarName" value="Flour">
+<!param name="sumXYZ" value="0.08">
+<!param name="leftXScale" value="-1 0.007 0 0.08">
+<!param name="leftYScale" value="0.034 -1 0 0.08">
+<!param name="leftZScale" value="-1 0.018 0 0.08">
+<!param name="leftXLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftYLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftZLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="rightXScale" value="-1 0.007 0 0.025">
+<!param name="rightYScale" value="-1 -1 0.055 0.08">
+<!param name="rightZScale" value="-1 0.018 0 0.025">
+<!param name="rightXLabels" value="6 (0% 0.0) (20% 0.005) (40% 0.01) (60% 0.015) (80% 0.02) (100% 0.025)">
+<!param name="rightYLabels" value="6 (0% 0.055) (20% 0.06) (40% 0.065) (60% 0.07) (80% 0.075) (100% 0.08)">
+<!param name="rightZLabels" value="6 (0% 0.0) (20% 0.005) (40% 0.01) (60% 0.015) (80% 0.02) (100% 0.025)">
+<!param name="rightScaleNames" value="Percent of rest of mix#Original units">
+<!param name="rightXLabels2" value="6 (0% 0.0) (0.5% 0.005) (1% 0.01) (1.5% 0.015) (2% 0.02) (2.5% 0.025)">
+<!param name="rightYLabels2" value="6 (5.5% 0.055) (6% 0.06) (6.5% 0.065) (7% 0.07) (7.5% 0.075) (8% 0.08)">
+<!param name="rightZLabels2" value="6 (0% 0.0) (0.5% 0.005) (1% 0.01) (1.5% 0.015) (2% 0.02) (2.5% 0.025)">
+<!param name="leftHeading" value="Whole product">
+<!param name="rightHeading" value="In rest of mix">
+<!param name="maxPercent" value="9.99">
+<!param name="hundredPercent" value="100.0">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="450">
+<!param name="appletName" value="mixtureProg.MixConstraintsApplet">
+<!param name="xVarName" value="CMC">
+<!param name="yVarName" value="Starch">
+<!param name="zVarName" value="Flour">
+<!param name="xValues" value="0 0.007 0 0.007 0 0.0035 0.007 0.0035 0.0035">
+<!param name="yValues" value="0.08 0.073 0.062 0.055 0.071 0.0765 0.064 0.0585 0.0675">
+<!param name="zValues" value="0 0 0.018 0.018 0.009 0 0.009 0.18 0.009">
+<!param name="sumXYZ" value="0.08">
+<!param name="leftXScale" value="-1 0.007 0 0.08">
+<!param name="leftYScale" value="0.034 -1 0 0.08">
+<!param name="leftZScale" value="-1 0.018 0 0.08">
+<!param name="leftXLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftYLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="leftZLabels" value="9 (0% 0.0) (1% 0.01) (2% 0.02) (3% 0.03) (4% 0.04) (5% 0.05) (6% 0.06) (7% 0.07) (8% 0.08)">
+<!param name="rightXScale" value="-1 0.007 0 0.025">
+<!param name="rightYScale" value="-1 -1 0.055 0.08">
+<!param name="rightZScale" value="-1 0.018 0 0.025">
+<!param name="rightXLabels" value="6 (0% 0.0) (20% 0.005) (40% 0.01) (60% 0.015) (80% 0.02) (100% 0.025)">
+<!param name="rightYLabels" value="6 (0% 0.055) (20% 0.06) (40% 0.065) (60% 0.07) (80% 0.075) (100% 0.08)">
+<!param name="rightZLabels" value="6 (0% 0.0) (20% 0.005) (40% 0.01) (60% 0.015) (80% 0.02) (100% 0.025)">
+<!param name="rightScaleNames" value="Percent of rest of mix#Original units">
+<!param name="rightXLabels2" value="6 (0% 0.0) (0.5% 0.005) (1% 0.01) (1.5% 0.015) (2% 0.02) (2.5% 0.025)">
+<!param name="rightYLabels2" value="6 (5.5% 0.055) (6% 0.06) (6.5% 0.065) (7% 0.07) (7.5% 0.075) (8% 0.08)">
+<!param name="rightZLabels2" value="6 (0% 0.0) (0.5% 0.005) (1% 0.01) (1.5% 0.015) (2% 0.02) (2.5% 0.025)">
+<!param name="leftHeading" value="Whole product">
+<!param name="rightHeading" value="In rest of mix">
+<!param name="maxPercent" value="9.99">
+<!param name="hundredPercent" value="100.0">
+<!/APPLET>
+
+</BODY>
+</HTML>

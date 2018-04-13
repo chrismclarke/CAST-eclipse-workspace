@@ -1,0 +1,101 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="220">
+<!param name="appletName" value="glmAnovaProg.CombineNestedApplet">
+<!param name="yVarName" value="Glycogen">
+<!param name="yValues" value="131 130 131 125 136 142 150 148 140 143 160 150 157 145 154 142 147 153 151 155 147 147 162 152 134 125 138 138 135 136 138 140 139 138 134 127">
+<!param name="xVariables" value="Treat Rat Prep">
+<!param name="TreatVarName" value="Treatment">
+<!param name="TreatValues" value="12@0 12@1 12@2">
+<!param name="TreatLabels" value="T1 T2 T3">
+<!param name="RatVarName" value="Blocks">
+<!param name="RatValues" value="6@0 6@1 6@0 6@2 6@0 6@3">
+<!param name="RatLabels" value="R135 R2 R4 R6">
+<!param name="PrepVarName" value="Preparation">
+<!param name="PrepValues" value="2@0 2@1 2@2 2@0 2@3 2@4 2@0 2@5 2@6 2@0 2@7 2@8 2@0 2@9 2@10 2@0 2@11 2@12">
+<!param name="PrepLabels" value="P147... P2 P3 P5 P6 P8 P9 P11 P12 P14 P15 P17 P18">
+<!param name="maxSsq" value="9999.9 9 999.99 99.99">
+<!param name="componentNames" value="Treatment#Rats (within treat)#Preparations">
+<!param name="split" value="1:2:Split rats:Between all rats#3:2:Split samples:Samples within rats">
+<!param name="denomIndex" value="0 2 4 4">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="260">
+<!param name="appletName" value="glmAnovaProg.CombineNestedApplet">
+<!param name="yVarName" value="Yield of oats">
+<!param name="yValues" value="111 130 157 174  117 114 161 141  105 140 118 156   61 91 97 100  70 108 126 149  96 124 121 144   68 64 112 86  60 102 89 96  89 129 132 124   74 89 81 122  64 103 132 133  70 89 104 117   62 90 100 116  80 82 94 126  63 70 109 99   53 74 118 113  89 82 86 104  97 99 119 121">
+<!param name="xVariables" value="Block Var Plot Fert VF">
+<!param name="BlockVarName" value="Block">
+<!param name="BlockValues" value="12@0 12@1 12@2 12@3 12@4 12@5">
+<!param name="BlockLabels" value="B1 B2 B3 B4 B5 B6">
+<!param name="VarVarName" value="Variety">
+<!param name="VarValues" value="4@0 4@1 4@2  4@0 4@1 4@2  4@0 4@1 4@2  4@0 4@1 4@2  4@0 4@1 4@2 4@0 4@1 4@2">
+<!param name="VarLabels" value="V1 V2 V3">
+<!param name="PlotVarName" value="Main plot">
+<!param name="PlotValues" value="12@0  4@0 4@1 4@2  4@0 4@3 4@4  4@0 4@5 4@6  4@0 4@7 4@8  4@0 4@9 4@10">
+<!param name="PlotLabels" value="P0 P11 P12 P21 P22 P31 P32 P41 P42 P51 P52">
+<!param name="FertVarName" value="Fertiliser">
+<!param name="FertValues" value="0 1 2 3  0 1 2 3  0 1 2 3   0 1 2 3  0 1 2 3  0 1 2 3   0 1 2 3  0 1 2 3  0 1 2 3   0 1 2 3  0 1 2 3  0 1 2 3   0 1 2 3  0 1 2 3  0 1 2 3   0 1 2 3  0 1 2 3  0 1 2 3">
+<!param name="FertLabels" value="F1 F2 F3 F4">
+<!param name="VFVarName" value="Interaction">
+<!param name="VFValues" value="4@0  0 1 2 3  0 4 5 6   4@0  0 1 2 3  0 4 5 6   4@0  0 1 2 3  0 4 5 6   4@0  0 1 2 3  0 4 5 6   4@0  0 1 2 3  0 4 5 6   4@0  0 1 2 3  0 4 5 6">
+<!param name="VFLabels" value="VF0 VF11 VF12 VF13 VF21 FV22 VF23">
+<!param name="maxSsq" value="9999.9 9 999.99 99.99">
+<!param name="componentNames" value="Blocks#Varieties#Plots (within B & V)#Fertiliser#Variety-Fertiliser">
+<!param name="split" value="1:3:Split plots:Between all plots#4:3:Split sub-plots:Between sub-plots">
+<!param name="denomIndex" value="0 3 3 6 6 6">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="200">
+<!param name="appletName" value="glmAnovaProg.InterblockAnovaApplet">
+<!param name="yVarName" value="Weight gain">
+<!param name="yValues" value="2.20 1.84 2.18 2.05 0.85 1.86 0.73 1.60 1.76 1.19 1.20 1.15 2.26 1.07 1.45 2.12 2.03 1.63 1.81 1.16 1.11 1.76 2.16 1.80 1.71 1.57 1.13 1.77 1.57 1.43 1.50 1.60 1.42 2.04 0.93 1.78">
+<!param name="blockVarName" value="Blocks">
+<!param name="blockValues" value="3@0 3@1 3@2 3@3 3@4 3@5 3@6 3@7 3@8 3@9 3@10 3@11">
+<!param name="blockLabels" value="B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12">
+<!param name="factorVarName" value="Diet">
+<!param name="factorValues" value="0 1 2 3 4 5 6 7 8  0 3 6 1 4 7 2 5 8  0 4 8 1 5 6 2 3 7  0 5 7 1 3 8 2 4 6">
+<!param name="factorLabels" value="D1 D2 D3 D4 D5 D6 D7 D8 D9">
+<!param name="maxSsq" value="9.999 9 99.999 99.99">
+<!param name="componentNames" value="Diets (inter-block)#Blocks#Diets (intra-block)">
+<!param name="denomIndex" value="0 2 4 4 4">
+<!param name="decimals" value="3">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="450">
+<!param name="appletName" value="glmAnovaProg.InterIntraEstApplet">
+<!param name="yVarName" value="Weight gain">
+<!param name="yValues" value="2.20 1.84 2.18 2.05 0.85 1.86 0.73 1.60 1.76 1.19 1.20 1.15 2.26 1.07 1.45 2.12 2.03 1.63 1.81 1.16 1.11 1.76 2.16 1.80 1.71 1.57 1.13 1.77 1.57 1.43 1.50 1.60 1.42 2.04 0.93 1.78">
+<!param name="blockVarName" value="Blocks">
+<!param name="blockValues" value="3@0 3@1 3@2 3@3 3@4 3@5 3@6 3@7 3@8 3@9 3@10 3@11">
+<!param name="blockLabels" value="B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12">
+<!param name="factorVarName" value="Diet">
+<!param name="factorValues" value="0 1 2 3 4 5 6 7 8  0 3 6 1 4 7 2 5 8  0 4 8 1 5 6 2 3 7  0 5 7 1 3 8 2 4 6">
+<!param name="factorLabels" value="D1 D2 D3 D4 D5 D6 D7 D8 D9">
+<!param name="decimals" value="3">
+<!param name="maxParam" value="99.999">
+<!param name="showSe" value="true">
+<!param name="allowCombine" value="true">
+<!param name="customText" value="Intra-block=Intra-block#Inter-block=Inter-block#Combined=Combined#estimates=estimates#Display=Display#Estimated coefficients=Estimated coefficients#Estimated means=Estimated means#se(diff)=se(diff)#Combine estimates=Combine estimates">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="340">
+<param name="appletName" value="glmAnovaProg.InterIntraEstApplet">
+<param name="yVarName" value="Reaction time">
+<param name="yValues" value="73 73 75 74 75 75 67 68 72 71 72 75">
+<param name="blockVarName" value="Blocks">
+<param name="blockValues" value="3@0 3@1 3@2 3@3">
+<param name="blockLabels" value="B1 B2 B3 B4">
+<param name="factorVarName" value="Catalyst">
+<param name="factorValues" value="0 2 3 0 1 2 1 2 3 0 1 3">
+<param name="factorLabels" value="D1 D2 D3 D4">
+<param name="decimals" value="3">
+<param name="maxParam" value="99.999">
+<param name="showSe" value="true">
+<param name="allowCombine" value="true">
+<param name="customText" value="Intra-block=Intra-block#Inter-block=Inter-block#Combined=Combined#estimates=estimates#Display=Display#Estimated coefficients=Estimated coefficients#Estimated means=Estimated means#se(diff)=se(diff)#Combine estimates=Combine estimates">
+</APPLET>
+
+</BODY>
+</HTML>

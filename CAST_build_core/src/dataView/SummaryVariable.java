@@ -1,0 +1,1 @@
+package dataView;public interface SummaryVariable {	public void addSummary(DataSet sourceData);	public void redoLastSummary(DataSet sourceData);	public void clearSummaries();}

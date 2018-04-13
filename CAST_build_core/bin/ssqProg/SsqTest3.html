@@ -1,0 +1,191 @@
+<HTML>
+<BODY>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<param name="appletName" value="ssqProg.DataSsqApplet">
+<param name="noOfDataSets" value="5">
+<param name="maxSsq" value="9999.999">
+<param name="descriptionWidth" value="350">
+
+<param name="dataName" value="Cuckoo eggs">
+<param name="yVarName" value="Egg length">
+<param name="xVarName" value="Host species">
+<param name="yValues" value="22.0 23.9 20.9 23.8 25.0 23.4 21.7 23.8 22.8 23.1 23.1 23.5 23.0 23.0 21.8 23.0 23.3 22.4 22.4 23.0 23.0 23.0 23.9 22.3 22.0 22.6 22.0 22.1 21.1 23.0 19.8 22.1 21.5 20.9 22.0 21.0 22.3 21.0 20.3 20.9 22.0 20.0 20.8 21.2 21.0">
+<param name="xLabels" value="Sparrow Robin Wren">
+<param name="xValues" value="14@0 16@1 15@2">
+<param name="yAxis" value="19.5 25.2 20 1">
+<param name="description" value="Cuckoos are birds that lay their eggs in the nests of other species. These data are the lengths (mm) of cuckoo eggs found in the nests of three other species. How much of the variability in egg lengths can be explained by the host species?">
+
+<param name="dataName2" value="Antibiotics">
+<param name="yVarName2" value="Binding %">
+<param name="xVarName2" value="Antibiotic">
+<param name="yValues2" value="29.6 24.3 28.5 32.0 27.3 32.6 30.8 34.8 5.8 6.2 11.0 8.3 21.6 17.4 18.3 19.0 29.2 32.8 25.0 24.2">
+<param name="xLabels2" value="Penicillin Tetracycline Streptomycin Erythromycin Chloramphenicol">
+<param name="xValues2" value="4@0 4@1 4@2 4@3 4@4">
+<param name="yAxis2" value="0 35 0 5">
+<param name="description2" value="A percentage of any antibiotics bind to blood serum proteins, reducing the effectiveness of the medication. An experiment determined binding % for 5 common antibiotics. What proportion of variability is explained by antibiotic type?">
+
+<param name="dataName3" value="Teaching methods">
+<param name="yVarName3" value="Test score">
+<param name="xVarName3" value="Student group">
+<param name="yValues3" value="4 6 9 12 16 15 14 12 12 8 13 9 12 12 12 10 8 12 11 8 7 9 7 7 12 10 16 15 9 8 13 12 7 6 8 9 9 8 9 13 10 8 8 10 11 7 4 7 7 6 11 14 13 9 12 13 4 13 6 12 6 11 14 8 5 8">
+<param name="xLabels3" value="Basal DRTA Strategies">
+<param name="xValues3" value="22@0 22@1 22@2">
+<param name="yAxis3" value="0 18 0 2">
+<param name="description3" value="A researcher intends to trial three teaching methods with different groups of students. BEFORE the experiment, the 3 groups of 22 students were given a test to see whether there were differences. What proportion of variation can be attributed to the groups?">
+
+<param name="dataName4" value="Insecticides">
+<param name="yVarName4" value="Rice yield (tonnes/ha)">
+<param name="yValues4" value="2.537 2.069 2.104 1.797 3.366 2.591 2.211 2.544 2.536 2.459 2.827 2.385 2.387 2.453 1.556 2.116 1.997 1.679 1.649 1.859 1.796 1.704 1.904 1.320 1.401 1.516 1.270 1.077">
+<param name="xVarName4" value="Insecticide">
+<param name="xLabels4" value="#Dol-Mix (1 kg)# #Dol-Mix (2 kg)# #DDT + g-BHC# #Azodrin# #Dimecron-Boom# #Dimecron-Knap# #Control#">
+<param name="xValues4" value="4@0 4@1 4@2 4@3 4@4 4@5 4@6">
+<param name="yAxis4" value="1 3.5 1 0.5">
+<param name="description4" value="Six different insecticides and a control treatment were each randomly allocated to 4 out of 28 plots and the rice yield was recorded from each plot.">
+
+<param name="dataName5" value="Lambs">
+<param name="yVarName5" value="Weight gain">
+<param name="yValues5" value="47 52 62 51 54 65 75 59 50 54 67 57 57 53 69 57">
+<param name="xVarName5" value="Hormone">
+<param name="xLabels5" value="Control #Hormone A# #Hormone B# #Hormone C#">
+<param name="xValues5" value="4@0 4@1 4@2 4@3">
+<param name="yAxis5" value="45 80 45 5">
+<param name="description5" value="An experiment was conducted to determine the effects of three different hormones, each at a single dose, on the weight gained by lambs. The three hormones and a control treatment (no hormone) were randomly allocated to 16 lambs.">
+
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="400">
+<!param name="appletName" value="ssqProg.DataSsqApplet">
+<!param name="noOfDataSets" value="14">
+<!param name="maxSsq" value="99999.999">
+<!param name="descriptionWidth" value="250">
+
+<!param name="dataName" value="Cancer and radiation">
+<!param name="yVarName" value="Deaths">
+<!param name="xVarName" value="Exposure">
+<!param name="yValues" value="147 130 130 114 138 162 208 178 210">
+<!param name="xValues" value="2.5 2.6 3.4 1.3 1.6 3.8 11.6 6.4 8.3">
+<!param name="yAxis" value="100 250 100 50">
+<!param name="xAxis" value="0 12 0 2">
+<!param name="description" value="Cancer deaths per 100,000 residents and an index of potential exposure to radiation seeping from an Atomic Energy plant. What proportion of the variability in death rates is explained by the exposure index?">
+
+<!param name="dataName2" value="Deer jaw length">
+<!param name="yVarName2" value="Jaw length (mm)">
+<!param name="xVarName2" value="Weight (kg)">
+<!param name="yValues2" value="226 254 252 224 254 247 273 231 219 226 245 252 249 219 214 247 232 226 211 216 218 232 235 202 253 211 211 236 230 243 240 217 257 236 257 234 227 252 249 279 247 237 273 256 247 267 239 243 262 157 268 267 245 273 256 244 270 257 269 233 276 267 258 253 229 253 272 262 270 267 277 293 254 259 283 245 225 225 262 282 277 229 275 287 296 281 265 293 278 262 257 283 253 289 287 284 301 282 260 292 275 290 294 308 291 301 293 300 280 285 264 291 272 284 292 298 303 290 280 279 265 311 288 290 287 292 258 360">
+<!param name="xValues2" value="36 45 43 37 47 43 56 43 34 41 47 45 44 34 32 46 36 35 35 29 29 43 40 21 53 32 36 42 40 49 46 33 57 47 48 48 44 52 57 66 45 43 58 62 53 70 44 48 53 55 62 62 38 57 55 43 60 52 63 55 63 54 48 48 55 53 64 50 54 50 67 82 42 57 57 40 41 41 56 71 75 77 67 74 95 85 53 82 76 51 55 68 46 76 79 81 76 86 72 85 41 93 83 85 84 89 70 88 73 72 77 71 38 82 89 89 92 80 75 67 81 101 73 87 91 73 65 97">
+<!param name="yAxis2" value="150 380 150 50">
+<!param name="xAxis2" value="20 105 20 20">
+<!param name="description2" value="These data were obtained from male deer shot in the Ruahine Ranges in New Zealand between Nov 1981 and Nov 1982. What proportion of the variability in jaw lengths is explained by deer weight?">
+
+<!param name="dataName3" value="Butterfat in milk">
+<!param name="yVarName3" value="% Butterfat">
+<!param name="xVarName3" value="Temperature">
+<!param name="yValues3" value="4.65 4.58 4.67 4.60 4.83 4.55 5.14 4.71 4.69 4.65 4.36 4.82 4.65 4.66 4.95 4.60 4.68 4.65 4.60 4.46">
+<!param name="xValues3" value="64 65 65 64 61 55 39 41 46 59 56 56 62 37 37 45 57 58 60 55">
+<!param name="yAxis3" value="4.3 5.2 4.4 0.2">
+<!param name="xAxis3" value="35 68 35 5">
+<!param name="description3" value="In 20 successive days, the average butterfat content of 10 cows was recorded. How much of its variabiity can be explained by differences in temperature (degrees Fahrenheit)?">
+
+<!param name="dataName4" value="Alcoholism and strength">
+<!param name="yVarName4" value="Strength (kg)">
+<!param name="xVarName4" value="Alcohol consumption">
+<!param name="yValues4" value="10 10 10.8 12.2 13.1 14 15.5 15.5 15.2 15.2 15.2 15.5 16.2 16.2 16.2 17.9 18.2 18.2 19.1 18.8 19.3 20.9 20.9 20.9 20.9 20.9 20.9 20.9 21.1 21.1 21.2 22.3 22.1 21.8 22.2 22.2 23.3 23.9 24 24.1 25.1 25.1 25.1 26.2 26.3 28.2 28.2 28.4 28.2 29.5">
+<!param name="xValues4" value="36.2 39.7 39.5 18.2 29.2 32.5 13.2 14.8 28.6 30.8 34.5 39.7 28.3 34.5 40.3 19.1 27.7 40.8 17.7 22.8 28.3 4 5.2 11.7 12.5 13.7 15.7 17.4 18.9 20 32.3 3.5 9.8 14 18.3 19.7 29.8 9.7 11.1 32.9 10.8 14 17.5 12.6 22.6 5.2 9.4 13.5 19.1 7.4">
+<!param name="yAxis4" value="5 31 5 5">
+<!param name="xAxis4" value="0 45 0 10">
+<!param name="description4" value="A group of similar alcoholic men was selected. Total lifetime consumption of alcolol and strength were measured. How much of the variation in strength can be explained by alcohol consumption?">
+
+<!param name="dataName5" value="Zinc in lakes">
+<!param name="yVarName5" value="Zinc in plants">
+<!param name="xVarName5" value="Zinc in sediment">
+<!param name="yValues5" value="15.9 42.7 85.7 52.6 49.1 59.0 53.6 77.8 63.2 62.3 22.7 66.1 47.4 59.4 50.9">
+<!param name="xValues5" value="37.5 72.5 85.2 76.5 64.5 86.8 90.8 105.8 85.8 87.9 53.9 102.3 90.7 86.0 79.0">
+<!param name="yAxis5" value="0 100 0 20">
+<!param name="xAxis5" value="20 120 20 20">
+<!param name="description5" value="Biologists measured zinc concentrations in an aquatic plant and in lake sediments from 15 central Ontario lakes. How much of the variability in plant zinc is explained by zinc in sediments?">
+
+<!param name="dataName6" value="Oxygen intake">
+<!param name="yVarName6" value="Oxygen intake (VO2)">
+<!param name="xVarName6" value="Heart rate">
+<!param name="yValues6" value=".473 .753 .929 .939 .832 .983 1.049 1.178 1.176 1.292 1.403 1.499 1.529 1.599 1.749 1.746 1.897 2.040 2.231">
+<!param name="xValues6" value="94 96 95 95 94 95 94 104 104 106 108 110 113 113 118 115 121 127 131">
+<!param name="yAxis6" value="0.4 2.4 0.5 0.5">
+<!param name="xAxis6" value="90 135 90 10">
+<!param name="description6" value="Exercise scientists want to predict oxygen intake from heart rate (an easier quantity to record). Nineteen measurements were made from one individual. How much variability in VO2 is explained by heart rate?">
+
+<!param name="dataName7" value="Cat body and heart weight">
+<!param name="yVarName7" value="Heart wt (g)">
+<!param name="xVarName7" value="Body wt (kg)">
+<!param name="yValues7" value="9.6 10.6 9.9 8.7 10.1 7 11 8.2 9 7.3 8.5 9.7 7.4 7.3 7.1 9 7.6 9.5 10.1 10.2 10.1 9.5 8.7 7.2 9.8 10.8 9.1 11.2 8.1 10.2 8.5 10.1 8.7 10.9 7.9 8.3 10.1 13 8.7 6.3 8.8 10.9 9 9.7 8.4 10.1 10.6">
+<!param name="xValues7" value="2.3 3 2.9 2.4 2.3 2 2.2 2.1 2.3 2.1 2.1 2.2 2 2.3 2.2 2.3 2.1 2 2.9 2.7 2.6 2.3 2.6 2.1 2.1 2.7 2.2 2.3 2.1 2.4 2.7 2.3 2.1 2.2 2.3 2.1 2.9 3 2.2 2.4 2.4 2.5 2.5 2.3 2.3 2.6 2.3">
+<!param name="yAxis7" value="5.8 14 6 2">
+<!param name="xAxis7" value="1.7 3.2 2.0 0.5">
+<!param name="description7" value="The heart and body weights of 47 female cats were measured. What proportion of the variability in heart weight can be explained by body weight?">
+
+<!param name="dataName8" value="Phone survey response rates">
+<!param name="yVarName8" value="Refusal rate">
+<!param name="xVarName8" value="Mean income per capita">
+<!param name="yValues8" value="0.296 0.498 0.386 0.327 0.5 0.333 0.429 0.422 0.441 0.191 0.526 0.405">
+<!param name="xValues8" value="7737 12330 12058 9927 6904 9463 11466 10000 10052 8636 7445 9059">
+<!param name="yAxis8" value="0.15 0.55 0.2 0.1">
+<!param name="xAxis8" value="6000 13000 6000 2000">
+<!param name="description8" value="Non-response is a big problem for surveys. In a random-digit telephone survey in 12 Florida counties, the proportion refusing to take part and the mean county income were recorded.">
+
+<!param name="dataName9" value="Mountain people">
+<!param name="yVarName9" value="Height at 18 (in)">
+<!param name="xVarName9" value="Length at birth (in)">
+<!param name="yValues9" value="67.2 69.1 67.0 72.4 63.6 72.7 68.5 69.7 68.4 70.4 67.5 73.3 70.0 69.8 63.6 64.3 68.5 70.5 68.1 66.1">
+<!param name="xValues9" value="19.7 19.6 19.4 19.4 19.7 19.6 19.8 19.7 19.7 19.9 18.9 20.8 20.3 19.7 19.9 19.6 21.3 20.1 20.2 19.2">
+<!param name="yAxis9" value="62 75 62 2">
+<!param name="xAxis9" value="18.5 21.5 18.5 0.5">
+<!param name="description9" value="Heights at age 18 from a sample of males who have lived in mountain isolation for several generations.">
+
+<!param name="dataName10" value="Hawaii tourist arrivals">
+<!param name="yVarName10" value="Tourist arrivals (millions)">
+<!param name="xVarName10" value="Year">
+<!param name="yValues10" value="56.398 53.773 55.723 53.837 57.170 57.341 57.937 57.373 57.447 60.020 61.721 57.760 60.069">
+<!param name="xValues10" value="1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002">
+<!param name="yAxis10" value="53 63 54 2">
+<!param name="xAxis10" value="1989.5 2002.5 1990 5">
+<!param name="description10" value="Numbers of tourist arrivals in Hawaii.">
+
+<!param name="dataName11" value="Whistleblowers">
+<!param name="yVarName11" value="Retaliation index">
+<!param name="xVarName11" value="Salary (thousand dollars)">
+<!param name="yValues11" value="301 550 755 327 500 377 290 452 535 455 615 700 650 630 360">
+<!param name="xValues11" value="62.0 36.5 21.6 24.0 30.1 35.0 47.5 54.0 19.8 44.0 46.6 15.1 70.0 21.0 19.9">
+<!param name="yAxis11" value="200 800 200 100">
+<!param name="xAxis11" value="0 80 0 20">
+<!param name="description11" value="Retaliation index against whistleblowers, plotted against salary">
+
+<!param name="dataName12" value="Grandfather clock prices">
+<!param name="yVarName12" value="Auction price (dollars)">
+<!param name="xVarName12" value="Age (years)">
+<!param name="yValues12" value="1235 1080 845 1522 1047 1979 1822 1253 1297 946 1713 1024 1147 1092 1152 1336 2131 1550 1884 2041 845 1483 1055 1545 729 1792 1175 1593 785 744 1356 1262">
+<!param name="xValues12" value="127 115 127 150 156 182 156 132 137 113 137 117 137 153 117 126 170 182 162 184 143 159 108 175 108 179 111 187 111 115 194 168">
+<!param name="yAxis12" value="0 2500 0 500">
+<!param name="xAxis12" value="100 200 100 20">
+<!param name="description12" value="Sale prices at auction of grandfather clocks.">
+
+<!param name="dataName13" value="Petrol and crude oil prices">
+<!param name="yVarName13" value="Petrol (c/gal)">
+<!param name="xVarName13" value="Crude ($/barrel)">
+<!param name="yValues13" value="57 59 62 63 86 119 131 122 116 113 112 86 90 90 100 115 72 71 75">
+<!param name="xValues13" value="10.38 10.89 11.96 12.46 17.72 28.07 35.24 31.87 28.99 28.63 26.75 14.55 17.9 14.67 17.97 22.23 16.54 15.99 14.24">
+<!param name="yAxis13" value="50 150 50 50">
+<!param name="xAxis13" value="8 38 10 10">
+<!param name="description13" value="Price of petrol and price of crude oil between 1975 and 1993.">
+
+<!param name="dataName14" value="Reading highway signs">
+<!param name="yVarName14" value="Reading distance (ft)">
+<!param name="xVarName14" value="Age">
+<!param name="yValues14" value="490 450 380 350 390">
+<!param name="xValues14" value="25 46 49 63 70">
+<!param name="yAxis14" value="340 500 350 50">
+<!param name="xAxis14" value="20 75 20 10">
+<!param name="description14" value="Maximum distance at which a newly designed highway sign could be read for 5 drivers.">
+<!/APPLET>
+
+</BODY>
+</HTML>

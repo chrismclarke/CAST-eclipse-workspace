@@ -1,0 +1,1 @@
+package timeProg;import dataView.*;import time.*;public class LogSeasonalApplet extends SeasonalApplet {	protected SeasonSmoothVariable createSmoothedVariable(DataSet data, String key) {		return new LogSeasonSVariable(getParameter(SMOOTH_VAR_NAME_PARAM), data, key);	}}

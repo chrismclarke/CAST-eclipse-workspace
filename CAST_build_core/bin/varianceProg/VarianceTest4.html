@@ -1,0 +1,175 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="510" HEIGHT="440">
+<!param name="appletName" value="varianceProg.QuadComponentsApplet">
+<!param name="xVarName" value="Age (years)">
+<!param name="yVarName" value="Crown length (mm)">
+<!param name="xValues" value=".06 .08 .18 .28 .36 .56 .83 1.02 1.223 1.77 1.94 2.14 2.44">
+<!param name="yValues" value="5.05 4.95 4.85 4.40 5.25 4.40 5.15 4.30 4.15 3.35 3.40 3.05 2.65">
+<!param name="xAxis" value="0 2.5 0.0 0.5">
+<!param name="yAxis" value="2.5 5.3 2.5 0.5">
+<!param name="componentAxis" value="-2.0 2.0 -2.0 0.5">
+<!param name="decimals" value="4">
+<!param name="labelAxes" value="true">
+<!param name="dotPlotWidth" value="110">
+<!param name="maxSsq" value="99.999">
+<!param name="ssqNames" value="Total variation#Linear component#Quadratic component#Residuals">
+<!param name="customText" value="Component=Component">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="420">
+<!param name="appletName" value="varianceProg.QuadAdjustSsqApplet">
+<!param name="xVarName" value="Explanatory, x">
+<!param name="yVarName" value="Response, y">
+<!param name="xValues" value="6.68 6.28 5.06 7.84 5.65 7.46 8.00 6.16 7.00 6.60 7.24 7.97 3.32 3.72 4.94 2.16 4.35 2.54 2.00 3.84 3.00 3.40 2.76 2.03">
+<!param name="yValues" value="0.41995745 -0.14695729 1.45522541 -1.22504157 -0.79630577 1.62411083 -1.36583551 0.36436368 -0.22929266 1.90599525 0.54260520 -0.18546426 -0.38841614 -1.32044771 -0.90798888 0.99732066 0.26280628 -0.37906189 0.88845139 -1.66723944 -0.68089643 0.17837520 1.48765697 -0.83392079">
+<!param name="xAxis" value="2 8 2 1">
+<!param name="yAxis" value="20 30 20 2">
+<!param name="residAxis" value="-5.0 5.0 -4 2">
+<!param name="decimals" value="4">
+<!param name="maxSsq" value="99.999">
+<!param name="componentName" value="Total#Linear#Quadratic#Residuals">
+<!param name="r2Labels" value="Variation#All unexplained#All explained">
+<!param name="initialR2" value="0.7">
+<!param name="quadR2Labels" value="Curvature#Linear#Quadratic">
+<!param name="quadR2" value="0.5">
+<!param name="targetMeanSD" value="25 2">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="450">
+<!param name="appletName" value="varianceProg.QuadSsqDistnApplet">
+<!param name="yVarName" value="Response, y">
+<!param name="xVarName" value="Explanatory, x">
+<!param name="quadModel" value="5.5 0.0 0.0 0.7">
+<!param name="randomSeed" value="3895705671">
+<!param name="xAxis" value="0.5 4.5 1 1">
+<!param name="yAxis" value="2.5 9.5 3 1">
+<!param name="decimals" value="3">
+<!param name="maxSsq" value="999.999">
+<!param name="ssqAxis" value="0 50 0 5">
+<!param name="maxSlopeCurve" value="1.00 1.00">
+<!param name="noOfDataSets" value="3">
+<!param name="dataName" value="5">
+<!param name="dataName2" value="20">
+<!param name="dataName3" value="50">
+<!param name="xValues" value="1 1.75 2.5 3.25 4">
+<!param name="xValues2" value="1.00 1.16 1.32 1.47 1.63 1.79 1.95 2.11 2.26 2.42 2.58 2.74 2.89 3.05 3.21 3.37 3.53 3.68 3.84 4.00">
+<!param name="xValues3" value="1.00 1.06 1.12 1.18 1.24 1.31 1.37 1.43 1.49 1.55 1.61 1.67 1.73 1.80 1.86 1.92 1.98 2.04 2.10 2.16 2.22 2.29 2.35 2.41 2.47 2.53 2.59 2.65 2.71 2.78 2.84 2.90 2.96 3.02 3.08 3.14 3.20 3.27 3.33 3.39 3.45 3.51 3.57 3.63 3.69 3.76 3.82 3.88 3.94 4.00">
+<!param name="customText" value="Model slope=Model slope#Model curvature=Model curvature#Zero=Zero#Quadratic sum of squares=Quadratic sum of squares">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="520">
+<!param name="appletName" value="varianceProg.QuadFApplet">
+<!param name="yVarName" value="Response, y">
+<!param name="xVarName" value="Explanatory, x">
+<!param name="quadModel" value="5.5 0.0 0.0 0.7">
+<!param name="randomSeed" value="3895705671">
+<!param name="xAxis" value="0.5 4.5 1 1">
+<!param name="yAxis" value="2.5 8.8 3 1">
+<!param name="decimals" value="3">
+<!param name="maxSsq" value="999.999">
+<!param name="maxMeanSsq" value="999.999">
+<!param name="maxF" value="999.99">
+<!param name="ssqAxis" value="0 30 0 5">
+<!param name="maxSlopeCurve" value="1.00 1.00">
+<!param name="areaProportion" value="0.07">
+<!param name="componentName" value="Total#Linear#Quadratic#Residual">
+<!param name="noOfDataSets" value="3">
+<!param name="dataName" value="5">
+<!param name="dataName2" value="20">
+<!param name="dataName3" value="50">
+<!param name="xValues" value="1 1.75 2.5 3.25 4">
+<!param name="xValues2" value="1.00 1.16 1.32 1.47 1.63 1.79 1.95 2.11 2.26 2.42 2.58 2.74 2.89 3.05 3.21 3.37 3.53 3.68 3.84 4.00">
+<!param name="xValues3" value="1.00 1.06 1.12 1.18 1.24 1.31 1.37 1.43 1.49 1.55 1.61 1.67 1.73 1.80 1.86 1.92 1.98 2.04 2.10 2.16 2.22 2.29 2.35 2.41 2.47 2.53 2.59 2.65 2.71 2.78 2.84 2.90 2.96 3.02 3.08 3.14 3.20 3.27 3.33 3.39 3.45 3.51 3.57 3.63 3.69 3.76 3.82 3.88 3.94 4.00">
+<!param name="customText" value="Model slope=Model slope#Model curvature=Model curvature#Zero=Zero#Another data set=Another data set#F distn if true model is linear=F distn if true model is linear">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="400">
+<!param name="appletName" value="varianceProg.QuadDataFApplet">
+<!param name="xVarName" value="Body wt (kg)">
+<!param name="yVarName" value="Heart wt (g)">
+<!param name="xValues" value="2.3 3 2.9 2.4 2.3 2 2.2 2.1 2.3 2.1 2.1 2.2 2 2.3 2.2 2.3 2.1 2 2.9 2.7 2.6 2.3 2.6 2.1 2.1 2.7 2.2 2.3 2.1 2.4 2.7 2.3 2.1 2.2 2.3 2.1 2.9 3 2.2 2.4 2.4 2.5 2.5 2.3 2.3 2.6 2.3">
+<!param name="yValues" value="9.6 10.6 9.9 8.7 10.1 7 11 8.2 9 7.3 8.5 9.7 7.4 7.3 7.1 9 7.6 9.5 10.1 10.2 10.1 9.5 8.7 7.2 9.8 10.8 9.1 11.2 8.1 10.2 8.5 10.1 8.7 10.9 7.9 8.3 10.1 13 8.7 6.3 8.8 10.9 9 9.7 8.4 10.1 10.6">
+<!param name="xAxis" value="1.9 3.1 2 0.2">
+<!param name="yAxis" value="5.9 13.5 6 2">
+<!param name="decimals" value="3">
+<!param name="maxSummaries" value="999.999 999.999 999.99 9.999">
+<!param name="leftProportion" value="0.6">
+<!param name="componentName" value="Total#Linear#Quadratic#Residual">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="400">
+<param name="appletName" value="varianceProg.QuadDataFApplet">
+<param name="yVarName" value="Lettuce/plot">
+<param name="xVarName" value="Nitrogen (lb/acre)">
+<param name="xValues" value="4@0 4@50 4@100 4@150 4@200">
+<param name="yValues" value="104 114 90 140 134 130 144 174 146 142 152 156 147 160 160 163 131 148 154 163">
+<param name="xAxis" value="0 210 0 50">
+<param name="yAxis" value="90 180 100 10">
+<param name="decimals" value="3">
+<param name="maxSummaries" value="99999.9 99999.9 999.99 9.999">
+<param name="leftProportion" value="0.6">
+<param name="componentName" value="Total#Linear#Quadratic#Residual">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="400">
+<!param name="appletName" value="varianceProg.QuadDataFApplet">
+<!param name="yVarName" value="Soybean yield">
+<!param name="xVarName" value="Ozone level (ppm)">
+<!param name="yValues" value="238.3 270.7 210.0 248.7 242.4 235.1 228.9 236.2 255.0 228.9 236.2 208.0 243.5 233.0 233.0 178.7 186.0 206.9 215.3 219.5">
+<!param name="xValues" value="5@0.02 5@0.07 5@0.11 5@0.15">
+<!param name="xAxis" value="0 0.17 0 0.05">
+<!param name="yAxis" value="170 280 180 20">
+<!param name="decimals" value="3">
+<!param name="maxSummaries" value="99999.9 99999.9 999.99 9.999">
+<!param name="leftProportion" value="0.6">
+<!param name="componentName" value="Total#Linear#Quadratic#Residual">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="400">
+<!param name="appletName" value="varianceProg.QuadDataFApplet">
+<!param name="yVarName" value="Heat loss">
+<!param name="xVarName" value="Temperature">
+<!param name="yValues" value="58 62 54 39 41 36 22 26 20 10 13 15">
+<!param name="xValues" value="3@-10 3@0 3@10 3@20">
+<!param name="xAxis" value="-12 22 -10 10">
+<!param name="yAxis" value="5 70 10 10">
+<!param name="decimals" value="3">
+<!param name="maxSummaries" value="9999.99 9999.99 999.99 9.999">
+<!param name="leftProportion" value="0.6">
+<!param name="componentName" value="Total#Linear#Quadratic#Residual">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="400">
+<!param name="appletName" value="varianceProg.QuadDataFApplet">
+<!param name="yVarName" value="log(PCB)">
+<!param name="xVarName" value="Age">
+<!param name="yValues" value="-0.5108 0.4700 -0.6931 0.1823 0.6931 0.2624 0.9163 0.7885 0.8755 0.1823 1.2528 1.4110 1.6292 1.7405 1.2238 2.2721 2.1518 1.3863 1.7047 2.3514 2.8622 2.5953 1.5041 3.4144 2.5177 2.5953 3.2658 2.0015">
+<!param name="xValues" value="1 1 1 1 2 2 2 3 3 3 4 4 4 5 6 6 6 7 7 7 8 8 8 9 11 12 12 12">
+<!param name="xAxis" value="0 13 0 2">
+<!param name="yAxis" value="-1 3.5 -1 1">
+<!param name="decimals" value="3">
+<!param name="maxSummaries" value="9.9999 9.9999 999.99 9.999">
+<!param name="leftProportion" value="0.6">
+<!param name="componentName" value="Total#Linear#Quadratic#Residual">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="400">
+<!param name="appletName" value="varianceProg.QuadDataFApplet">
+<!param name="xVarName" value="Age (years)">
+<!param name="yVarName" value="Crown length (mm)">
+<!param name="xValues" value=".06 .08 .18 .28 .36 .56 .83 1.02 1.223 1.77 1.94 2.14 2.44">
+<!param name="yValues" value="5.05 4.95 4.85 4.40 5.25 4.40 5.15 4.30 4.15 3.35 3.40 3.05 2.65">
+<!param name="xAxis" value="0 2.5 0.0 0.5">
+<!param name="yAxis" value="2.5 5.3 2.5 0.5">
+<!param name="decimals" value="3">
+<!param name="maxSummaries" value="9.9999 9.9999 999.99 9.999">
+<!param name="leftProportion" value="0.6">
+<!param name="componentName" value="Total#Linear#Quadratic#Residual">
+<!/APPLET>
+
+
+</BODY>
+</HTML>

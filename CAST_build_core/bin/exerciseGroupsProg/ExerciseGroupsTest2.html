@@ -1,0 +1,132 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="700">
+<!param name="appletName" value="exerciseGroupsProg.PickTestTypeApplet">
+<!param name="nQuestions" value="1">
+<!param name="question" value="Identify the appropriate test for the scenarios described below.">
+<!param name="popSampText" value="A 2-sample t test#A paired t test">
+<!param name="summaryMessage" value="A 2-sample t test should be used to compare group means when you have independent samples. A paired test is needed when each sampled item in one group is associated with an item sampled from the other group.">
+<!param name="nDescriptions" value="5">
+
+<!param name="title0" value="Supermarket prices">
+<!param name="scenario0" value="A consumer decided to compare prices in supermarkets A and B.">
+<!param name="popnDescription0" value="20 canned items were randomly selected from supermarket A and their prices were recorded. In supermarket B, prices were found from 20 canned items were randomly selected in the same way. The prices should be compared with ...">
+<!param name="sampleDescription0" value="20 categories of canned food were picked as the focus of the comparison. The price of a randomly selected can of each type was found from supermarket A and similar prices were found from supermarket B. The prices should be compared with ...">
+<!param name="popnMessages0" value="A can selected from supermarket A is not associated with one from supermarket B since there might not be one of the same type. The data are not paired but are independent samples.">
+<!param name="sampleMessages0" value="Each of the cans selected from supermarket A is associated with one of the same type from supermarket B, making the data paired. (A paired t test takes advantage of this.)">
+
+<!param name="title1" value="Lamb weight">
+<!param name="scenario1" value="Researchers were interested in whether giving newborn lambs an injected vitamin supplement increases their weight gain.">
+<!param name="popnDescription1" value="30 lambs were randomly selected and given the vitamin whereas another randomly selected 30 lambs got no vitamin (the control group). The weights of all lambs were recorded after 10 weeks. The best way to assess whether the vitamin affects lamb weight is with ...">
+<!param name="sampleDescription1" value="30 sets of twin lambs were used in an experiment. In each set of twins one lamb was randomly selected to get the vitamin supplement; the other got no extra vitamin. The best way to assess whether the vitamin affects lamb weight is with  ...">
+<!param name="popnMessages1" value="Each lamb getting the vitamin is not specifically associated with one in the control group so the data are not paired. The data are independent samples.">
+<!param name="sampleMessages1" value="Each lamb getting the vitamin is associated with its twin that did not receive the supplement, making the data paired. (A paired t test takes advantage of this.)">
+
+<!param name="title2" value="Teaching methods">
+<!param name="scenario2" value="An educator was interested in whether a period of strenuous exercise affected performance in a mathematics test.">
+<!param name="popnDescription2" value="The 30 students in a class were randomly split into two groups. 15 of them were asked to run round a track for 10 minutes, followed by a 10 minute recovery period, then all students sat a maths test. The best way to assess whether exercise affects results is with ...">
+<!param name="sampleDescription2" value="The 30 students in one class were given a maths test. On the next day, they were asked to run round a track for 10 minutes, followed by a 10 minute recovery period, then sat a second maths test of similar level. The best way to assess whether exercise affects results is with ...">
+<!param name="popnMessages2" value="The 15 students getting the exercise are not each associated with one of the students getting no exercise so the data are not paired. The data are independent samples.">
+<!param name="sampleMessages2" value="The test results after exercise are from the same students who sat the test without exercising. This makes the data paired. (A paired t test takes advantage of this.)">
+
+<!param name="title3" value="Spider walking speed">
+<!param name="scenario3" value="A biologist was interested in whether praying mantis excrement affected the behaviour of wolf spiders.">
+<!param name="popnDescription3" value="Walking speeds of 24 spiders were measured over 1 hour when in a container containing filter paper; for a randomly selected 12 spiders, the filter paper was smeared with the excrement. The best way to assess whether the excrement affects walking speed is with ...">
+<!param name="sampleDescription3" value="Walking speeds of 12 spiders were measured over 1 hour when in a container containing clean filter paper. The filter paper was then smeared with the excrement and the spiders' walking speeds recorded again. The best way to assess whether the excrement affects walking speed is with ...">
+<!param name="popnMessages3" value="Different groups of spiders were in the two groups; a spider in the first group is not specifically paired with one in the second group. The data are independent samples.">
+<!param name="sampleMessages3" value="The walking speeds of the spiders exposed to the excrement are measured from the same spiders in the test without excrement. This makes the data paired. (A paired t test takes advantage of this.)">
+
+<!param name="title4" value="Zinc in drinking water">
+<!param name="scenario4" value="Drinking water containing high concentrations of trace metals can be a health hazard. An experiment was conducted to assess whether zinc concentration is different on the surface than in bottom water.">
+<!param name="popnDescription4" value="30 samples of water were obtained from different locations and these were randomly separated into groups of 15. In one group, zinc concentration was  measured at the surface, whereas it was measured at the bottom of the other sample. The best way to assess whether the mean concentrations are different is with ...">
+<!param name="sampleDescription4" value="Fifteen samples of water were obtained from different locations. Zinc concentration was measured at the surface and at the bottom of each sample. The best way to assess whether the mean concentrations are different is with ...">
+<!param name="popnMessages4" value="Different samples of water were in the two groups; there is no connection between any sample in the first group and one in the second group. The data are independent samples.">
+<!param name="sampleMessages4" value="The surface and bottom concentrations were measured from the same samples, making the data paired. (A paired t test takes advantage of this.)">
+<!/APPLET>
+
+
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="850">
+<param name="appletName" value="exerciseGroupsProg.TestPairedDiffApplet">
+<param name="nQuestions" value="3">
+
+<param name="question0" value="A random sample of #n(12)# items were selected and a response measurement was made from each item both before and after an intervention.\nTest whether the mean response before the intervention, #mu##sub1#, is #?:string[tail](lower than*???*higher than*???*different from)# that after the intervention, #mu##sub2#.">
+<param name="qnParam0" value="tail[](0,2,4)#mean1(10:15)#sd(1)#corr(0.8)#dataDecimals(1)#seDecimals(3)#var1Name(Before)#var2Name(After)#maxSampleMean(99.99)#maxSampleSd(9.999)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( the Before mean is lower*???* the Before mean is higher*???* the Before and After means are different)#">
+
+<param name="question0" value="A study involved #n(10:20)# items identical twins who had been raised apart. In each pair of twins, one was classified as being raised in a Better home than the other. A measurement was made from each child about an aspect of mental health.\nTest whether the mean mental health of those in the Better homes, #mu##sub1#, is #?:string[tail](lower than*???*higher than*???*different from)# that of those from Poorer homes, #mu##sub2#.">
+<param name="qnParam0" value="tail[](0,2,4)#mean1(100:150)#sd(20)#corr[](0.7)#dataDecimals(0)#seDecimals(2)#var1Name(Better)#var2Name(Poorer)#maxSampleMean(999.99)#maxSampleSd(99.99)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( the Better home mean is lower*???* the Better home mean is higher*???* Better and Poorer homes are different)#">
+
+<param name="question1" value="An agricultural researcher conducted an experiment to compare two corn varieties, A and B, using #n(10:20)# plots of land. Each plot was split into two with the two varieties randomly allocated to the two sub-plots. The yield of corn was recorded from each sub-plot in tonnes per hectare.\nTest whether the mean yield for variety A, #mu##sub1#, is #?:string[tail](lower than*???*higher than*???*different from)# that for variety B, #mu##sub2#.">
+<param name="qnParam1" value="tail[](0,2,4)#mean1(5:15)#sd(1.5)#corr[](0.7)#dataDecimals(2)#seDecimals(3)#var1Name(Variety A)#var2Name(Variety B)#maxSampleMean(99.999)#maxSampleSd(99.999)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( Variety A is worse*???* Variety A is better*???* the varieties are different)#">
+
+<param name="question2" value="A medical insurance company was concerned about charges made by two physiotherapists, A and B. A group of patients with running injuries were split into #n(30:50)# pairs with the injured runners in each pair assessed to have similar injuries. In each pair, one person was randomly sent to A and the other to B. The total treatment cost in $ from each runner was recorded.\nTest whether the charge from physiotherapist A, #mu##sub1#, is #?:string[tail](lower than*???*higher than*???*different from)# that for physiotherapist B, #mu##sub2#.">
+<param name="qnParam2" value="tail[](0,2,4)#mean1(800)#sd(200)#corr[](0.7)#dataDecimals(0)#seDecimals(1)#var1Name(Physio A)#var2Name(Physio B)#maxSampleMean(9999.99)#maxSampleSd(999.99)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( Physio B charges more*???* Physio B charges less*???* there is a difference between the physios)#">
+</APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="610" HEIGHT="700">
+<!param name="appletName" value="exerciseGroupsProg.MatchAnovaFormulaeApplet">
+<!param name="r2Text" value="... is the percentage of response variation explained by the factor.">
+<!param name="msTotalText" value="... describes the overall variance of the response.">
+<!param name="msWithinText" value="... describes the variance of the response after taking account of variation caused by the factor.">
+<!param name="fText" value="... contains most of the information about whether or not the factor affects the response.">
+<!param name="nQuestions" value="1">
+
+<!param name="question0" value="The Anova table above summarises information from an experiment that examines whether an explanatory factor affects a numerical response.\nMatch the following four formulae with the textual descriptions on the right.">
+<!param name="qnParam0" value="response(response)#factor(factor)">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="610" HEIGHT="750">
+<!param name="appletName" value="exerciseGroupsProg.AnovaSummariesApplet">
+<!param name="residSdText" value="The best estimate of the standard deviation of #yVarName# for #individuals# #groupName# is #edit#.">
+<!param name="rSquaredText" value="A percentage #edit#% of variation in #yVarName# is explained by differences in #xVarName#.">
+<!param name="totalSdText" value="If differences between levels of #xVarName# are ignored, the overall standard deviation of #yVarName# is #edit#.">
+<!param name="individualsText" value="The total number of #individuals# from which #yVarName# was measured was #edit#.">
+<!param name="factorLevelsText" value="The total number of levels of #xVarName# used in the experiment was #edit#.">
+
+<!param name="nQuestions" value="1">
+
+<!param name="question0" value="An experiment was conducted using a group of individuals to assess how differences between factor levels affect a response measurement. The #individuals(individuals)# used in the experiment were randomly allocated to different values of #xVarName(the factor)# and #yVarName(the response)# was recorded from each.\nThe Anova table below summarises the results. Use the information in it to complete the five statements underneath.">
+<!param name="qnParam0" value="levelIndex[](0,1,2)#xNames[levelIndex](in_Group_1 in_Group_2*in_Group_1 in_Group_2 in_Group_3*in_Group_1 in_Group_2 in_Group_3 in_Group_4)#xValues[levelIndex](6@0 6@1*6@0 6@1 6@2*6@0 6@1 6@2 6@3)#yModel[](5 1 6 1 7 1 8 1*6 1 6 1 6 1 6 1)#componentNames(Total*Between groups*Within groups)#maxSsq(99.99)#maxMss(9.999)#maxF(99.99)#maxRSquared(9.999)#sdDecimals(3)">
+
+<!param name="question0" value="An experiment was conducted to assess how different varieties of wheat affect yield. A field was split into plots of equal area and the varieties were randomly allocated to #individuals(plots)# with the resulting yield of wheat recorded in tonnes per hectare from each plot.\\nThe Anova table below summarises the results. Use the information in it to complete the five statements underneath.">
+<!param name="qnParam0" value="yVarName(the yield of wheat)#xVarName(wheat variety)#levelIndex[](0,1,2)#xNames[levelIndex](getting_Variety_A getting_Variety_B*getting_Variety_A getting_Variety_B getting_Variety_C*getting_Variety_A getting_Variety_B getting_Variety_C getting_Variety_D)#xValues[levelIndex](10@0 10@1*6@0 6@1 6@2*6@0 6@1 6@2 6@3)#yModel[](3 0.2 3.1 0.2 3.2 0.2 3.3 0.2*2.8 0.2 3.0 0.2 3.2 0.2 3.4 0.2)#componentNames(Total*Between varieties*Within varieties)#maxSsq(9.999)#maxMss(9.999)#maxF(999.99)#maxRSquared(9.999)#sdDecimals(3)">
+
+<!param name="question0" value="A new synthetic fibre is being developed and an experiment is conducted to assess its tensile strength when combined with various percentages of cotton. The experiment concentrated on a few different cotton percentages and several #individuals(batches of fibre)# were produced and tested at each of these percentages, with #yVarName(the tensile strength)# of each batch measured.\nThe Anova table below summarises the results. Use the information in it to complete the five statements underneath.">
+<!param name="qnParam0" value="xVarName(percentage of cotton)#levelIndex[](0,1,2)#xNames[levelIndex](with_10%_cotton with_20%_cotton*with_10%_cotton with_20%_cotton with_30%_cotton*with_10%_cotton with_20%_cotton with_30%_cotton with_40%_cotton)#xValues[levelIndex](10@0 10@1*6@0 6@1 6@2*6@0 6@1 6@2 6@3)#yModel[](10 1.5 11 1.5 12 1.5 13 1.5*10 1 11 1 12 1 13 1)#componentNames(Total*Between groups*Within groups)#maxSsq(999.99)#maxMss(99.999)#maxF(999.99)#maxRSquared(9.999)#sdDecimals(3)">
+
+<!param name="question0" value="Patients suffering from rheumatic diseases or osteoporosis often suffer critical losses in bone mineral density (BMD) and alendronate is a medication often prescribed to counteract this. The change in BMD over a fixed period for a group of #individuals(patients)# with rheumatoid arthritis was recorded, as was this variable for other groups of patients with other diseases.\nThe Anova table below summarises the results. Use the information in it to complete the five statements underneath.">
+<!param name="qnParam0" value="yVarName(the change in BMD)#xVarName(disease group)#levelIndex[](0,1,2)#xNames[levelIndex](with_rheumatoid_arthritis with_lupus*with_rheumatoid_arthritis with_lupus with_vasculitic_diseases*with_rheumatoid_arthritis with_lupus with_vasculitic_diseases with_osteoarthritis)#xValues[levelIndex](30@0 30@1*25@0 25@1 25@2*20@0 20@1 20@2 20@3)#yModel[](10 5 11 5 12 5 13 5*10 5 12 5 14 5 16 5)#componentNames(Total*Between diseases*Within diseases)#maxSsq(999.99)#maxMss(99.999)#maxF(999.99)#maxRSquared(9.999)#sdDecimals(3)">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="610" HEIGHT="550">
+<!param name="appletName" value="exerciseGroupsProg.AnovaConclusionApplet">
+<!param name="noneEqual" value="none of #means are equal#">
+<!param name="atLeastTwoDiff" value="at least two of #means are different#">
+<!param name="allEqual" value="all of #means are equal#">
+<!param name="atLeastTwoEqual" value="at least two of #means are equal#">
+
+<!param name="nQuestions" value="1">
+
+<!param name="question0" value="An experiment was conducted using a group of individuals to assess how differences between factor levels affect a response measurement. The individuals used in the experiment were randomly allocated to different values of #xVarName(the factor)# and #yVarName(the response)# was recorded from each.\nThe Anova table below summarises the results. What are your conclusions from it?">
+<!param name="qnParam0" value="levelIndex[](0,1,2)#xNames[levelIndex](in_Group_1 in_Group_2*in_Group_1 in_Group_2 in_Group_3*in_Group_1 in_Group_2 in_Group_3 in_Group_4)#xValues[levelIndex](6@0 6@1*6@0 6@1 6@2*6@0 6@1 6@2 6@3)#yModel[](5 1 6 1 7 1 8 1*6 1 6 1 6 1 6 1)#componentNames(Total*Between groups*Within groups)#maxSsq(99.99)#maxMss(9.999)#maxF(99.99)#maxRSquared(9.999)#equalMeans(the group means are equal)#differentMeans(the group means are different)">
+
+<!param name="question0" value="An experiment was conducted to assess how different varieties of wheat affect yield. A field was split into plots of equal area and the varieties were randomly allocated to plots with the resulting yield of wheat recorded in tonnes per hectare from each plot.\\nThe Anova table below summarises the results. What are your conclusions from it?">
+<!param name="qnParam0" value="yVarName(the yield of wheat)#xVarName(wheat variety)#levelIndex[](0,1,2)#xNames[levelIndex](getting_Variety_A getting_Variety_B*getting_Variety_A getting_Variety_B getting_Variety_C*getting_Variety_A getting_Variety_B getting_Variety_C getting_Variety_D)#xValues[levelIndex](10@0 10@1*6@0 6@1 6@2*6@0 6@1 6@2 6@3)#yModel[](3 0.2 3.1 0.2 3.2 0.2 3.3 0.2*2.8 0.2 3.0 0.2 3.2 0.2 3.4 0.2)#componentNames(Total*Between varieties*Within varieties)#maxSsq(9.999)#maxMss(9.999)#maxF(999.99)#maxRSquared(9.999)#equalMeans(the mean yields for varieties are the same)#differentMeans(the mean yields for varieties are different)">
+
+<!param name="question0" value="A new synthetic fibre is being developed and an experiment is conducted to assess its tensile strength when combined with various percentages of cotton. The experiment concentrated on a few different cotton percentages and several batches of fibre were produced and tested at each of these percentages, with #yVarName(the tensile strength)# of each batch measured.\nThe Anova table below summarises the results. What are your conclusions from it?">
+<!param name="qnParam0" value="xVarName(percentage of cotton)#levelIndex[](0,1,2)#xNames[levelIndex](with_10%_cotton with_20%_cotton*with_10%_cotton with_20%_cotton with_30%_cotton*with_10%_cotton with_20%_cotton with_30%_cotton with_40%_cotton)#xValues[levelIndex](10@0 10@1*6@0 6@1 6@2*6@0 6@1 6@2 6@3)#yModel[](10 1.5 11 1.5 12 1.5 13 1.5*10 1 11 1 12 1 13 1)#componentNames(Total*Between groups*Within groups)#maxSsq(999.99)#maxMss(99.999)#maxF(999.99)#maxRSquared(9.999)#equalMeans(the cotton percents have the same mean strength)#differentMeans(the cotton percents have different mean strengths)">
+
+<!param name="question0" value="Patients suffering from rheumatic diseases or osteoporosis often suffer critical losses in bone mineral density (BMD) and alendronate is a medication often prescribed to counteract this. The change in BMD over a fixed period for a group of patients with rheumatoid arthritis was recorded, as was this variable for other groups of patients with other diseases.\nThe Anova table below summarises the results. What are your conclusions from it?">
+<!param name="qnParam0" value="yVarName(the change in BMD)#xVarName(disease group)#levelIndex[](0,1,2)#xNames[levelIndex](with_rheumatoid_arthritis with_lupus*with_rheumatoid_arthritis with_lupus with_vasculitic_diseases*with_rheumatoid_arthritis with_lupus with_vasculitic_diseases with_osteoarthritis)#xValues[levelIndex](30@0 30@1*25@0 25@1 25@2*20@0 20@1 20@2 20@3)#yModel[](10 5 11 5 12 5 13 5*10 5 12 5 14 5 16 5)#componentNames(Total*Between diseases*Within diseases)#maxSsq(999.99)#maxMss(99.999)#maxF(999.99)#maxRSquared(9.999)#equalMeans(the diseases have the same mean drop in BMD)#differentMeans(the diseases have different mean drops in BMD)">
+<!/APPLET>
+
+</BODY>
+</HTML>

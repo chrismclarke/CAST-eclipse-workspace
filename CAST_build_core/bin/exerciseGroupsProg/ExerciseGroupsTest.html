@@ -1,0 +1,125 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="750">
+<!param name="appletName" value="exerciseGroupsProg.SumDiffProbApplet">
+<!param name="nQuestions" value="4">
+
+<!param name="question0" value="Two values are independently recorded from a normal distribution with mean #mu# = #mean1(100:300)# and standard deviation #sigma# = #sd1(20:40)#.\n">
+<!param name="qnParam0" value="maxMeanParam(9999)#maxSdParam(99.999)">
+<!param name="questionExtra0" value="What is the probability that #group-cut-offs(2.5:0:the first value:the second value:null:the total)#?">
+
+<!param name="question1" value="The weights of one variety of apple have a normal distribution with mean #mu# = #mean1(100:200)# grams and standard deviation #sigma# = #sd1(8:12)# grams. Two of these apples are randomly selected.\n">
+<!param name="qnParam1" value="maxMeanParam(9999)#maxSdParam(99.999)">
+<!param name="questionExtra1" value="What is the probability that #group-cut-offs(2.5:0:the first apple weight:the second apple weight:grams:the total weight of the two apples)#?">
+
+<!param name="question2" value="The mark of a student in a Maths exam has a normal distribution with mean #mu##sub1# = #mean1(60:80)# and standard deviation #sigma##sub1# = #sd1(5:10)#. The students mark in an English exam independently has a normal distribution with mean #mu##sub2# = #mean2(50:70)# and standard deviation #sigma##sub2# = #sd2(5:10)#.\n">
+<!param name="qnParam2" value="maxMeanParam(9999)#maxSdParam(9.9999)">
+<!param name="questionExtra2" value="For a randomly selected student, what is the probability that #group-cut-offs(:2:0:the students Maths mark:the students English mark:null:the students total mark)?">
+
+<!param name="question3" value="The life of a particular brand of watch battery is normally distributed with mean #mu##sub1# = #mean1(1000:1300)# days and standard deviation #sigma##sub1# = #sd1(40:60)# days. A second brand's battery life has a normal distribution with mean #mu##sub2# = #mean2(700:1000)# days and standard deviation #sigma##sub2# = #sd2(40:60)# days.\n">
+<!param name="qnParam3" value="maxMeanParam(99999)#maxSdParam(99.999)">
+<!param name="questionExtra3" value="If one battery of each type is simultaneously tested, what is the probability that #group-cut-offs(2:0:the life of the battery of the first brand:the life of the battery of the second brand:days:their total lifetime)#?">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="750">
+<!param name="appletName" value="exerciseGroupsProg.DiffMeanProbApplet">
+<!param name="nQuestions" value="3">
+
+<!param name="question0" value="Values in Group A have a normal distribution with mean #mu##sub1# = #mean1(150:250)# and standard deviation #sigma##sub1# = #sd1(50:90)#. Values in Group B are also normally distributed but with mean #mu##sub2# = #mean2(150:250)# and standard deviation #sigma##sub2# = #sd2(50:90)#.\n">
+<!param name="qnParam0" value="maxMeanParam(9999)#maxSdParam(99.999)">
+<!param name="questionExtra0" value="singleOrMean(0)#What is the probability that #group-cut-offs(2.5:0:a value from Group A:a value from Group B)#?||||singleOrMean(1)#If n#sub1# = #n1(4:12)# values are sampled from Group A and n#sub2# = #n2(4:12)# values from Group B, what is the probability that #group-cut-offs(2.5:0:the Group A mean:the Group B mean)#?">
+
+<!param name="question1" value="The weights of one variety of apple have a normal distribution with mean #mu# = #mean1(100:200)# grams and standard deviation #sigma# = #sd1(8:12)# grams.\n">
+<!param name="qnParam1" value="maxMeanParam(9999)#maxSdParam(99.9999)">
+<!param name="questionExtra1" value="singleOrMean(0)#If two apples are selected, what is the probability that #group-cut-offs(2.5:0:the weight of the first apple:the weight of the second apple:grams)#?||||singleOrMean(1)#If two samples of size n#sub1# = #n1(4:12)# and n#sub2# = #n2(4:12)# apples are selected, what is the probability that #group-cut-offs(2.5:0:the mean apple weight in the first sample:the mean apple weight in the second sample:grams)#?">
+
+<!param name="question2" value="The life of a particular brand of watch battery is normally distributed with mean #mu##sub1# = #mean1(1000:1200)# days and standard deviation #sigma##sub1# = #sd1(80:100)# days. A second brands battery life has a normal distribution with mean #mu##sub2# = #mean2(1100:1300)# days and standard deviation #sigma##sub2# = #sd2(80:100)# days.\n">
+<!param name="qnParam2" value="maxMeanParam(99999)#maxSdParam(999.999)">
+<!param name="questionExtra2" value="singleOrMean(0)#If one battery of each type is simultaneously tested, what is the probability that #group-cut-offs(2.5:0:the first brands lifetime:the second brands lifetime:days)#?||||singleOrMean(1)#If a sample of n#sub1# = #n1(4:12)# watches of the first brand and n#sub2# = #n2(4:12)# of the second brand are selected, what is the probability that #group-cut-offs(2.5:0:the mean lifetime for the first brand:the mean lifetime for the second brand:days)#?">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="750">
+<!param name="appletName" value="exerciseGroupsProg.CiDiffMeanApplet">
+<!param name="options" value="only95,lowHigh,seTemplates">
+<!param name="nQuestions" value="1">
+
+<!param name="question0" value="Values in #group1Name(Group A)# and #group2Name(Group B)# have normal distributions, possibly with different means, #mu##sub1# and #mu##sub2#, and standard deviations, #sigma##sub1# and #sigma##sub2#. Random samples of size n#sub1# = #n1(10:20)# and  n#sub2# = #n2(10:20)# are selected from these groups.\n Find a #ciLevel(:)#% confidence interval for the difference between the group means.">
+<!param name="qnParam0" value="varName(Response)#groupVarName(Group)#mean1[](150,200)#mean2[](150,200)#sd1(20)#sd2(20)#axis(90 260 100 50)#maxSe(99.999)#maxPlusMinus(99.999)#maxSampleMean(150.99)#maxSampleSd(20.99)">
+
+<!param name="question1" value="The weights of #group1Name(Male)# mammals of one species have normal distributions with mean #mu##sub1# and standard deviation #sigma##sub1#. The distribution of #group2Name(Female)# weights has parameters #mu##sub2# and #sigma##sub2#. Random samples of size n#sub1# = #n1(10:20)# and  n#sub2# = #n2(10:20)# are selected from these groups.\n Find a #ciLevel(:)#% confidence interval for the difference between their mean weights.">
+<!param name="qnParam1" value="varName(Weight)#groupVarName(Sex)#units(kg)#mean1[](15,20)#mean2[](15,20)#sd1(2.0)#sd2(2.0)#axis(9 26 10 5)#maxSe(9.999)#maxPlusMinus(9.999)#maxSampleMean(15.999)#maxSampleSd(2.999)">
+
+<!param name="question2" value="The resting heart rates of a random sample of n#sub1# = #n1(10:20)# adult patients with a viral infection and another n#sub2# = #n2(20:30)# healthy adults were recorded.\n Assuming normal distributions for the heart rates, find a #ciLevel(:)#% confidence interval for the difference between the mean heart rates of infected and healthy adults.">
+<!param name="qnParam2" value="varName(Heart rate)#group1Name(Diseased)#group2Name(Healthy)#units(beats per minute)#mean1(72)#mean2[](72,90)#sd1(10)#sd2(10)#axis(45 120 50 10)#maxSe(99.999)#maxPlusMinus(99.999)#maxSampleMean(150.99)#maxSampleSd(20.99)">
+
+<!param name="question3" value="Two machines for packing cartons with jars are being compared. The times taken to pack n#sub1# = #n1(5:10)# cartons with the first machine and n#sub2# = #n2(20:30)# cartons using the second machine were recorded.\n Assuming normal distributions for the packing times, find a #ciLevel(:)#% confidence interval for the difference between the mean packing times for the two machines.">
+<!param name="qnParam3" value="varName(Packing time)#group1Name(Machine 1)#group2Name(Machine 2)#units(sec)#mean1(42)#mean2[](40,42,44)#sd1(1)#sd2(1)#axis(37 47 38 2)#maxSe(99.999)#maxPlusMinus(9.999)#maxSampleMean(45.999)#maxSampleSd(9.999)">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="800">
+<!param name="appletName" value="exerciseGroupsProg.TestDiffMeansApplet">
+<!param name="options" value="tTemplate">
+<!param name="nQuestions" value="4">
+
+<!param name="question0" value="A random sample of n#sub1# = #n1# values from Group A has standard deviation s#sub1# = #sd1# and mean x#bar##sub1# = #mean1#. Another random sample of n#sub2# = #n2# values from Group B has standard deviation s#sub2# = #sd2# and mean x#bar##sub2# = #mean2#.\nTest whether #?:string[tail](the mean in the first group is less than that in the second group*???*the mean in the first group is more than that in the second group*???*the underlying group means are different from each other)#.">
+<!param name="qnParam0" value="tail[](0,2,4)#n1(10:20)#sd1(15:25)#mean1(100:150)#n2(10:20)#sd2(15:25)#mean2(:)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( group A mean is lower*???* group A mean is higher*???* the means are different)">
+
+<!param name="question1" value="A random sample of n#sub1# = #n1# male mammals of one species had weights with standard deviation s#sub1# = #sd1# kg and mean  x#bar##sub1# = #mean1# kg. A similar sample of n#sub2# = #n2# females had standard deviation s#sub2# = #sd2# kg and mean x#bar##sub2# = #mean2# kg.\nTest whether #?:string[tail](the mean weight of males is less than that of females*???*the mean weight of males is more than that of females*???*the underlying mean weights of males and females are different)#.">
+<!param name="qnParam1" value="tail[](0,2,4)#n1(10:20)#sd1(1.5:2.5)#mean1(15:25)#n2(10:20)#sd2(1.5:2.5)#mean2(:)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( male weights are lower*???* male weights are higher*???* male and female weights are different)">
+
+<!param name="question2" value="The resting heart rates of a random sample of n#sub1# = #n1# adult patients with a viral infection had standard deviation s#sub1# = #sd1# and mean x#bar##sub1# = #mean1# beats per minute. Those of a similar sample of n#sub2# = #n2# healthy adults had standard deviation s#sub2# = #sd2# and mean x#bar##sub2# = #mean2#.\nTest whether #?:string[tail](the mean heart rate of those with the infection is lower*???*the mean heart rate of those with the infection is higher*???*there is any difference between the mean heart rates of those with and without the infection)#.">
+<!param name="qnParam2" value="tail[](0,2,4)#n1(10:20)#sd1(7:13)#mean1(65:80)#n2(20:30)#sd2(7:13)#mean2(:)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( the heart rates of infected adults are lower*???* the heart rates of infected adults are higher*???* heart rates are different for the two groups)">
+
+<!param name="question3" value="Two machines for packing cartons with jars are being compared. The times taken to pack n#sub1# = #n1# cartons with the first machine had standard deviation s#sub1# = #sd1# sec and mean x#bar##sub1# = #mean1# sec. The packing times for n#sub2# = #n2# cartons packed by the second machine had standard deviation s#sub2# = #sd2# sec and mean x#bar##sub2# = #mean2# sec.\nTest whether #?:string[tail](the first machine packs cartons more quickly*???*the first machine packs cartons more slowly*???*there is any difference between the mean packing times of the two machines)#.">
+<!param name="qnParam3" value="tail[](0,2,4)#n1(10:20)#sd1(7:13)#mean1(65:80)#n2(20:30)#sd2(7:13)#mean2(:)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( the first machine packs cartons more quickly*???* the first machine packs cartons more slowly*???* the packing times are different for the two machines)">
+<!/APPLET>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="750">
+<!param name="appletName" value="exerciseGroupsProg.CiDiffPropnApplet">
+<!param name="options" value="only95,lowHigh,seTemplates">
+<!param name="nQuestions" value="1">
+
+<!param name="question0" value="Out of n#sub1# = #n1(40:70)# trials in #group1Name(Group A)#, there were x#sub1# = #x1(:)# successes. In #group2Name(Group B)#, there were n#sub2# = #n2(40:70)# trials and x#sub2# = #x2(:)# successes.\nFind a #ciLevel(:)#% confidence interval for the difference between the probabilities of success in the two groups.">
+<!param name="qnParam0" value="varName(Propn of successes)#groupVarName(Group)#pi1[](0.5,0.8)#pi2[](0.5,0.8)#seDecimals(4)#pDecimals(4)">
+
+<!param name="question1" value="A new production method is being trialed to reduce the number of defective items produced. Out of n#sub1# = #n1[](200,250,300,400,500)# items produced by the #group1Name(Old method)#, there were x#sub1# = #x1(:)# defectives. With the #group2Name(New method)#, out of n#sub2# = #n2[](200,250,300,400,500)# items, there were x#sub2# = #x2(:)# defectives.\nFind a #ciLevel(:)#% confidence interval for the difference between the probabilities of defectives.">
+<!param name="qnParam1" value="varName(prob of defective)#groupVarName(Production method)#pi1(0.10)#pi2(0.03)#seDecimals(4)#pDecimals(4)">
+
+<!param name="question0" value="A random sample of n#sub1# = #n1(50:100)# lizards of #group1Name(Species A)# contained x#sub1# = #x1(:)# males. In a different random sample of n#sub2# = #n2(50:100)# lizards of #group2Name(Species B)#, there were x#sub2# = #x2(:)# males.\nFind a #ciLevel(:)#% confidence interval for the difference between the proportion of males in the two species.">
+<!param name="qnParam0" value="varName(prob of male)#groupVarName(Species)#pi1(0.3:0.6)#pi2(0.3:0.6)#seDecimals(4)#pDecimals(4)">
+
+<!param name="question0" value="In an assessment of the side effects of a drug, in a sample of n#sub1# = #n1(50:100)# patients who had been given the drug, there were x#sub1# = #x1(:)# who reported side effects. In a similar sample of n#sub2# = #n2(50:100)# patients who were given a placebo instead of the drug (the control group), x#sub2# = #x2(:)# reported side effects.\nFind a #ciLevel(:)#% confidence interval for the difference between the probability of side effects in the two groups.">
+<!param name="qnParam0" value="group1Name(Drug group)#group2Name(Control group)#varName(prob of side effects)#groupVarName(Drug)#pi1(0.2:0.4)#pi2(0.2:0.4)#seDecimals(4)#pDecimals(4)">
+<!/APPLET>
+
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="950">
+<param name="appletName" value="exerciseGroupsProg.TestDiffProbsApplet">
+<param name="options" value="seTemplates">
+<param name="nQuestions" value="1">
+
+<param name="question0" value="Out of n#sub1# = #n1# trials in #group1Name(Group A)#, there were x#sub1# = #x1(:)# successes. In #group2Name(Group B)#, there were n#sub2# = #n2# trials and x#sub2# = #x2(:)# successes.\nTest whether #?:string[tail](the probability of success in the first group is less than that in the second group*???*the probability of success in the first group is more than that in the second group*???*the underlying group probabilities of success are different from each other)#.">
+<param name="qnParam0" value="tail[](0,2,4)#groupVarName(Group)#pi1[](0.5,0.8)##n1(40:70)##n2(40:70)#successes(:)#seDecimals(4)#pDecimals(4)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( group A probability is lower*???* group A probability is higher*???* the probabilities are different)">
+
+<param name="question0" value="n#sub1# = #n1# lizards of #group1Name(Species A)# and n#sub2# = #n2# of #group2Name(Species B)# were collected in a jungle area. In the sample, there were x#sub1# = #x1(:)# males in Species A and x#sub2# = #x2(:)# males in Species B.\nTest whether #?:string[tail](the proportion of males is less in Species A than in Species B*???*the proportion of males is higher in Species A than in Species B*???*the proportions of males in the two species are different from each other)#.">
+<param name="qnParam0" value="tail[](0,2,4)#groupVarName(Species)#pi1[](0.5,0.8)##n1(40:70)##n2(40:70)#successes(:)#seDecimals(4)#pDecimals(4)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( there are fewer males in Species A*???* there are more males in Specied A*???* the proportions of males are different)">
+
+<param name="question0" value="In an assessment of the side effects of a drug, in a sample of n#sub1# = #n1# patients who had been given the drug, there were x#sub1# = #x1(:)# who reported side effects. In a similar sample of n#sub2# = #n2# patients who were given a placebo instead of the drug (the control group), x#sub2# = #x2(:)# reported side effects.\nTest whether #?:string[tail](the drug reduces the probability of side effects*???*the drug increases the probability of side effects*???*the drug affects the probability of side effects)#.">
+<param name="qnParam0" value="tail[](0,2,4)#group1Name(Drug group)#group2Name(Control group)#groupVarName(Group)#pi1[](0.5,0.8)##n1(50:100)##n2(50:100)#successes(:)#seDecimals(4)#pDecimals(4)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( the drug lowers the prob of side effects*???* the drug increases the prob of side effects*???* the drug affects the prob of side effects)">
+
+<param name="question0" value="A factory has two production lines making plastic widgets. In #group1Name(Production line 1)#, quality control sampled n#sub1# = #n1# widgets and found that x#sub1# = #x1(:)# were defective. In a similar sample of n#sub2# = #n2# widgets from #group2Name(Production line 2)#, x#sub2# = #x2(:)# were defective.\nTest whether #?:string[tail](production line 1 has a lower probability of defectives*???*production line 1 produces has a higher probability of defectives*???*the probability of a defective widget is different in the two production lines)#.">
+<param name="qnParam0" value="tail[](0,2,4)#groupVarName(Production line)#pi1[](0.03,0.05)##n1(500:1000)##n2(500:1000)#successes(:)#seDecimals(5)#pDecimals(5)#conclusions(There_is_no_evidence_that There_is_only_weak_evidence_that There_is_moderately_strong_evidence_that There_is_very_strong_evidence_that It_is_almost_certain_that)#conclusionEnding[tail]( Production Line 1 has fewer defectives*???* Production Line 1 has more defectives*???* the lines have different probs of defectives)">
+</APPLET>
+
+
+</BODY>
+</HTML>

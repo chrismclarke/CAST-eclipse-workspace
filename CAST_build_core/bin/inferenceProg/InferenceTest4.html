@@ -1,0 +1,67 @@
+<HTML>
+<BODY>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="350">
+<param name="appletName" value="inferenceProg.CIKnownSigmaApplet">
+<param name="random" value="16 140 3 875636431 2.5">
+<param name="sampleSize" value="4 8 *16 32">
+<param name="varName" value="glucose content (mg per g)">
+<param name="dataAxis" value="133 147 134 2 ">
+<param name="errorAxis" value="-4 4 -4 2">
+<param name="probAxis" value="0 0.8 500 1">
+<param name="seDecimals" value="2">
+<param name="maxPlusMinus" value="9.99">
+<param name="customText" value="Distn of errors=Distn of errors#error is between=error is between#95% CI for * is=95% CI for * is">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="300">
+<!param name="appletName" value="inferenceProg.AdjustKIntervalApplet">
+<!param name="varName" value="Sample data">
+<!param name="random" value="20 10 2 6497052 2.5">
+<!param name="meanSDDecimals" value="2">
+<!param name="ciDecimals" value="3">
+<!param name="horizAxis" value="0 20 0 5">
+<!param name="kLimits" value="0.00 5.00 1.96">
+<!param name="sampleSize" value="3 5 12 *30">
+<!param name="maxMeanSD" value="99.99 9.99">
+<!param name="customText" value="Constant=Constant#Confidence level=Confidence level">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="350">
+<!param name="appletName" value="inferenceProg.SePGraphApplet">
+<!param name="catLabels" value="success failure">
+<!param name="n" value="100">
+<!param name="seAxis" value="0 0.055 0 0.01">
+<!param name="pAxis" value="-0.05 1.05 0 0.5">
+<!param name="decimals" value="4">
+<!param name="customText" value="No. of=No. of#Sample proportion=Sample proportion#95% Conf Interval=95% Conf Interval">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="350">
+<!param name="appletName" value="inferenceProg.MarginOfErrorApplet">
+<!param name="catLabels" value="success failure">
+<!param name="n" value="50 *100 200">
+<!param name="ciAxis" value="-0.1 1.1 0 0.5">
+<!param name="pAxis" value="-0.1 1.1 0 0.5">
+<!param name="decimals" value="4">
+<!param name="customText" value="No. of=No. of#Sample proportion=Sample proportion#95% CI=95% CI#Margin of error=Margin of error">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="300">
+<!param name="appletName" value="inferenceProg.FindNForMeanApplet">
+<!param name="maxWidth" value="9999.00">
+<!param name="guessLimits" value="100 10000 5000 198">
+<!param name="nLimits" value="20 400 100">
+<!param name="customText" value="Guess at value of * (and s)=Guess at value of * (and s)">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="400" HEIGHT="300">
+<!param name="appletName" value="inferenceProg.FindNForPiApplet">
+<!param name="maxWidth" value="9.0000">
+<!param name="guessLimits" value="0.01 0.99 0.4 98">
+<!param name="nLimits" value="300 3000 1000">
+<!param name="customText" value="Guess at value of * (and p)=Guess at value of * (and p)">
+<!/APPLET>
+
+</BODY>
+</HTML>

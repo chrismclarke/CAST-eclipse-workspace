@@ -1,0 +1,90 @@
+<HTML>
+<BODY>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="450">
+<param name="appletName" value="multiRegnProg.Predict3DApplet">
+<param name="yAxis" value="0 50 0 10">
+<param name="xAxis" value="65 120 70 10">
+<param name="zAxis" value="63 76 65 5">
+<param name="yVarName" value="Body fat">
+<param name="xVarName" value="Abdomen">
+<param name="zVarName" value="Height">
+<param name="modelParams" value="30.0 0.53 -0.80 0.0">
+<param name="predictMinMax" value="0.00 50.00 65.0 120.0 63.0 76.0">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="450">
+<!param name="appletName" value="multiRegnProg.ShowResidApplet">
+<!param name="yAxis" value="0 50 0 10">
+<!param name="xAxis" value="65 120 70 10">
+<!param name="zAxis" value="63 76 65 5">
+<!param name="yVarName" value="Body fat">
+<!param name="xVarName" value="Abdomen">
+<!param name="zVarName" value="Height">
+<!param name="yValues" value="12 16.5 9.4 31.3 5 24 13.2 18.6 14.3 21.7 21 17.9 15 20.1 24.5 22 16.5 16.8 23.8 22.6 11.3 15.1 16.9 28.8 28.3">
+<!param name="xValues" value="88.6 100.5 83.5 108.1 70.4 98.3 84.6 98.6 86.5 94 92.3 87.5 87 106.6 106.8 92.4 90.8 104.5 101.2 89.7 84.4 88.7 93 100.5 111.5">
+<!param name="zValues" value="73.5 73.5 69 67 66.75 65.75 71.5 69.25 73 72 69.25 72.25 69.75 75 70.25 71.5 69.5 74.5 68.25 67.5 70.75 69.25 68.5 65.75 66">
+<!param name="modelParams" value="22.0 0.53 -0.80 0.0">
+<!param name="predictMinMax" value="0.00 50.00">
+<!param name="xzyMax" value="120.0 76.0 100.00">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="500">
+<!param name="appletName" value="multiRegnProg.ResidSsqDistnApplet">
+<!param name="yAxis" value="0 50 0 10">
+<!param name="xAxis" value="65 120 70 10">
+<!param name="zAxis" value="63 76 65 5">
+<!param name="yVarName" value="Body fat">
+<!param name="xVarName" value="Abdomen">
+<!param name="zVarName" value="Height">
+<!param name="noOfDataSets" value="3">
+<!param name="dataName" value="n = 8">
+<!param name="xValues" value="88.6 100.5 83.5 108.1 70.4 98.3 84.6 98.6">
+<!param name="zValues" value="73.5 73.5 69 67 66.75 65.75 71.5 69.25">
+<!param name="dataName2" value="n = 25">
+<!param name="xValues2" value="88.6 100.5 83.5 108.1 70.4 98.3 84.6 98.6 86.5 94 92.3 87.5 87 106.6 106.8 92.4 90.8 104.5 101.2 89.7 84.4 88.7 93 100.5 111.5">
+<!param name="zValues2" value="73.5 73.5 69 67 66.75 65.75 71.5 69.25 73 72 69.25 72.25 69.75 75 70.25 71.5 69.5 74.5 68.25 67.5 70.75 69.25 68.5 65.75 66">
+<!param name="dataName3" value="n = 100">
+<!param name="xValues3" value="85.2 83.0 87.9 86.4 100.0 94.4 90.7 88.5 82.5 88.6 83.6 90.9 91.6 101.8 96.4 92.8 96.4 97.5 89.6 100.5 95.9 98.8 76.4 80.0 76.3 79.7 74.6 88.7 73.9 83.5 88.7 84.5 79.1 100.5 115.6 113.1 100.9 98.8 108.1 104.3 111.2 104.3 76.0 81.5 73.7 79.5 83.4 70.4 86.7 77.9 82.0 79.6 77.6 100.0 99.8 104.2 105.3 98.3 104.8 94.7 102.4 99.7 105.5 100.3 83.9 86.6 78.4 84.6 91.5 82.8 82.9 76.0 83.3 81.8 78.8 95.0 95.4 98.6 95.8 89.0 97.8 94.9 99.8 89.7 88.1 90.9 86.0 86.5 95.6 93.2 83.1 97.5 88.8 91.6 86.7 88.2 94.0 95.0 92.0 89.2">
+<!param name="zValues3" value="67.75 72.25 66.25 72.25 71.25 74.75 69.75 72.50 74.00 73.50 74.50 76.00 69.50 71.25 69.50 66.00 71.00 71.00 67.75 73.50 68.00 69.75 68.25 70.00 67.75 71.50 67.50 67.50 64.75 69.00 73.75 71.25 71.25 71.00 73.50 65.00 70.00 68.25 67.00 69.50 70.00 71.50 68.00 73.25 67.50 71.25 68.50 66.75 72.25 69.00 67.75 73.50 67.50 72.00 68.00 69.50 70.75 65.75 73.25 68.50 70.25 67.00 70.00 67.50 70.75 71.50 69.25 71.50 71.50 68.75 73.75 64.00 65.75 67.50 69.50 68.50 70.25 69.25 67.75 67.25 72.75 70.00 69.25 67.50 67.25 65.75 72.50 73.00 70.00 69.50 70.50 71.75 74.50 73.25 66.50 68.25 72.00 73.50 72.0 71.25">
+<!param name="multiRegnModel" value="30.0 0.53 -0.80 5.0">
+<!param name="randomSeed" value="755945782">
+<!param name="decimals" value="3">
+<!param name="maxSsq" value="9999.9 999.99 9.999 99.99">
+<!param name="ssqAxis" value="0 4000 0 1000">
+<!param name="meanSsqAxis" value="0 100 0 20">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="500">
+<!param name="appletName" value="multiRegnProg.CoeffSampleApplet">
+<!param name="yAxis" value="0 50 0 10">
+<!param name="xAxis" value="65 120 70 10">
+<!param name="zAxis" value="63 76 65 5">
+<!param name="yVarName" value="Body fat">
+<!param name="xVarName" value="Abdomen">
+<!param name="zVarName" value="Height">
+<!param name="dataName" value="n = 25">
+<!param name="xValues" value="88.6 100.5 83.5 108.1 70.4 98.3 84.6 98.6 86.5 94 92.3 87.5 87 106.6 106.8 92.4 90.8 104.5 101.2 89.7 84.4 88.7 93 100.5 111.5">
+<!param name="zValues" value="73.5 73.5 69 67 66.75 65.75 71.5 69.25 73 72 69.25 72.25 69.75 75 70.25 71.5 69.5 74.5 68.25 67.5 70.75 69.25 68.5 65.75 66">
+<!param name="multiRegnModel" value="30.0 0.53 -0.80 5.0">
+<!param name="randomSeed" value="755945782">
+<!param name="decimals" value="3">
+<!param name="maxCoeff" value="999.99 99.999 99.999">
+<!param name="coeffAxis0" value="-50 150 -50 50">
+<!param name="coeffAxis1" value="0 1 0 0.2">
+<!param name="coeffAxis2" value="-2 0.5 -2 0.5">
+<!param name="customText" value="Slope for=Slope for#Show theory=Show theory">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="200" HEIGHT="100">
+<!param name="appletName" value="multiRegnProg.TestApplet">
+<!param name="yVarName" value="y">
+<!param name="xVarName" value="x">
+<!param name="zVarName" value="z">
+<!param name="yValues" value="1 2.5 3 4">
+<!param name="xValues" value="1 2 3 4">
+<!param name="zValues" value="-1 1 1 -1">
+<!/APPLET>
+
+</BODY>
+</HTML>

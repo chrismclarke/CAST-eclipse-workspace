@@ -1,0 +1,1 @@
+package dataView;public interface ValueEnumeration {	public boolean hasMoreValues();	public Value nextValue();	public double nextDouble();	public RepeatValue nextGroup();}

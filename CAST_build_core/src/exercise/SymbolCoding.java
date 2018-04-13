@@ -1,0 +1,1 @@
+package exercise;import java.awt.*;public class SymbolCoding {	public String code;	public Image picture;	public int imageWidth, imageAscent;		public SymbolCoding(String code, Image picture, int imageWidth, int imageAscent) {		this.code = code;		this.picture = picture;		this.imageWidth = imageWidth;		this.imageAscent = imageAscent;	}}

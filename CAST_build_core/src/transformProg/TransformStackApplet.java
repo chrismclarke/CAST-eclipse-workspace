@@ -1,0 +1,1 @@
+package transformProg;import dataView.*;import axis.*;import dotPlot.*;public class TransformStackApplet extends TransformDotApplet {		protected DataView coreView(DataSet data, HorizAxis theHorizAxis) {		StackingDotPlotView theView = new StackingDotPlotView(data, this, theHorizAxis);		theView.initialiseToFinalFrame();		return theView;	}}

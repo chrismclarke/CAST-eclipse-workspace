@@ -1,0 +1,1 @@
+package cast.index;import java.io.*;class IndexTerm implements Serializable {	String term;	IndexReference reference[];		IndexTerm(String term, IndexReference reference[]) {		this.term = term;		this.reference = reference;	}}

@@ -1,0 +1,34 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="650">
+<!param name="appletName" value="exerciseProbProg.SumDiffTableApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="Two cards are selected at random #replacement[](with*without)# replacement from a pack of #?:string[index](3*4*5)# cards numbered #?:string[index](1, 2 and 3*1, 2, 3 and 4*1, 2, 3, 4 and 5)#.">
+<!param name="qnParam0" value="index(0:2)#cardNames(Card 1*Card 2)#cardValues[index](1 2 3*1 2 3 4*1 2 3 4 5)#directionIndex(0:4)">
+<!param name="questionExtra0" value="||| What is the probability that the total of the two card values is #?:string[directionIndex](greater than*greater than or equal to*less than*less than or equal to*equal to)# #cutoff[index](4,6,8)#?\n(The table below shows this total for all possible combinations of two cards.)||| What is the probability that the difference between the card values (Card 1 minus Card 2) is #?:string[directionIndex](greater than*greater than or equal to*less than*less than or equal to*equal to)# #cutoff[index](1,2,3)#?\n(The table below shows this difference for all possible combinations of two cards.)||| What is the probability that the absolute difference between the card values is #?:string[directionIndex](greater than*greater than or equal to*less than*less than or equal to*equal to)# #cutoff[index](1,2,3)#?\n(The table below shows this difference for all possible combinations of two cards.)">
+<!param name="question1" value="Consider a group of students aged #?:string[index](18, 19, 22 and 23*17, 18, 18, 20 and 22*17, 19, 20, 22, 23 and 27)#. Two of these students are selected at random #replacement[](with*without)# replacement.">
+<!param name="qnParam1" value="index(0:2)#cardNames(First age*Second age)#cardValues[index](18 19 22 23*17 18 18 20 22*17 19 20 22 23 27)#directionIndex(0:4)">
+<!param name="questionExtra1" value="||| What is the probability that the total age of the two students is #?:string[directionIndex](greater than*greater than or equal to*less than*less than or equal to*equal to)# #cutoff(38:41)#?\n(The table below shows total age for all possible pairs of students.)||| What is the probability that the first student selected is #?:string[directionIndex](more than*at least*less than*less than or equal to*exactly)# #cutoff(1)# year older than the second student selected?#\n(The table below shows the difference between the first and second ages for all pairs of students.)||| What is the probability that the two students are #?:string[directionIndex](more than*at least*less than*less than or equal to*exactly)# #cutoff(2)# years different in age?\n(The table below shows the absolute difference between the ages of all pairs of students.)">
+<!param name="question2" value="A club raffle is conducted by picking winners at random from member attending the club AGM. Each winner picks and keeps one of #?:string[index](3*4*5*6)# envelopes from a box containing #?:string[index]($10, $20 and $30*$10, $10, $20 and $30*$10, $15, $20, $25 and $30*$10, $15, $20, $25, $30 and $50)#.\n">
+<!param name="qnParam2" value="index(0:3)#replacement(without)#cardNames(First winner*Second winner)#cardValues[index](10 20 30*10 15 20 30*10 15 20 25 30*10 15 20 25 30 50)#directionIndex(0:4)">
+<!param name="questionExtra2" value="What is the probability that the total winnings of the first two prize winners is #?:string[directionIndex](greater than*greater than or equal to*less than*less than or equal to*equal to)# $#cutoff[index](40,45,50,40)#?\n(The table shows the total for all pairs of envelopes.)|||What is the probability that the first winner gets #?:string[directionIndex](over*at least*under*less than or equal to*exactly)# $#cutoff[index](10,15,10,20)# more than the second winner?\n(The table shows the differences for all first and second envelopes.)|||What is the probability that the two prizes are #?:string[directionIndex](more than*at least*less than*no more than*exactly)# $#cutoff(15)# different in value?\n(The table below shows the absolute difference for all pairs of envelopes.)">
+<!/APPLET>
+
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="600">
+<param name="appletName" value="exerciseProbProg.CardDiceTableApplet">
+<param name="nQuestions" value="2">
+<param name="question0" value="One card is randomly selected from a standard pack of 52 playing cards.\nWhat is the probability of picking a#?:string[cardSuit]( red card * red card * black card * black card * club * heart * diamond * spade * card * card * card * card )#whose value is">
+<param name="qnParam0" value="qnType(0)#cardSuit(0:11)">
+<param name="questionExtra0" value="cardQnType(0)# a jack, queen or king (J, Q or K)?|||cardQnType(1)# a jack, queen, king or ace (J, Q, K or A)?|||cardQnType(2)# a king or ace (K or A)?|||cardQnType(3)# #cardEquals[](A*2*3*4*5*6*7*8*9*10*J*Q*K)#?|||cardQnType(4)# #cardEquals[](A*2*3*4*5*6*7*8*9*10*J*Q*K)# or #cardInequality[](higher*lower)#?\n(Treat aces as having #cardAceType[](higher*lower)# value than other cards.)">
+<param name="question1" value="Two 6-sided dice are rolled.\nWhat is the probability">
+<param name="qnParam1" value="qnType(1)#dieInequality(0:2)">
+<param name="questionExtra1" value="dieQnType(0)# that the total is #dieInequality[](at least*less than or equal to*equal to)# #diceTotal(3:10)#?|||dieQnType(1)# that at least one is a #dieEquals(1:6)#?|||dieQnType(2)# that at least one of the dice is more than #dieEquals(1:5)#?|||dieQnType(3)# that both dice are the same?">
+</APPLET>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+package dataView;import java.awt.*;public class LabelValue extends Value {	public String label;		public LabelValue(String labelString) {		label = labelString;	}	public String toString() {		return label;	}		public void drawAtPoint(Graphics g, int x, int y) {		drawLeft(g, x, y);	}}

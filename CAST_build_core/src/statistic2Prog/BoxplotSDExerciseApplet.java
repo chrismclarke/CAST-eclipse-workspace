@@ -1,0 +1,1 @@
+package statistic2Prog;import axis.*;import dataView.*;import statistic2.*;public class BoxplotSDExerciseApplet extends HistoSDExerciseApplet {		protected BasicDataView getDataView(DataSet data, MultiHorizAxis axis, int meanDecimals,																														int sdDecimals) {		return new BasicBoxplotView(data, this, axis, null, meanDecimals, sdDecimals);	}	}

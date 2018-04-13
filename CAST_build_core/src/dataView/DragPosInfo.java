@@ -1,0 +1,1 @@
+package dataView;public class DragPosInfo implements PositionInfo {	public DragPosInfo(int x, int y) {		this.x = x;		this.y = y;	}		public boolean equals(PositionInfo otherPos) {		if (otherPos == null || !(otherPos instanceof DragPosInfo))			return false;		DragPosInfo other = (DragPosInfo)otherPos;		return (x == other.x) && (y == other.y);	}		public int x, y;}

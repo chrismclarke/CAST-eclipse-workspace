@@ -1,0 +1,250 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="350">
+<!param name="appletName" value="twoGroupProg.DiffDistnFitApplet">
+<!param name="descriptionWidth" value="200">
+<!param name="noOfDataSets" value="3">
+
+<!param name="yVarName3" value="birth weight">
+<!param name="yAxis3" value="1 5 1.0 0.5">
+<!param name="yValues3" value="3.3 3.06 2.89 3 3.86 3.78 3.38 3.97 2.88 2.47 1.98 3.2 4.02 4.77 3.85 3.46 3.06 3.14 3.82 2.45 4.71 3.36 3.099 3.64 3.31 4.37 3.08 2.65 3.67 4.49 3.19 1.3 3.25 2.99 3.76 3.61 3.71 3.72 3.89 3.85 4.07 3.79 3.23 3.27 3.72 2.78 3.43 3.17 3.4 2.54 2.56 3.59 3.67 3.09 3.91 3.42 2.53 3.4 4.17 4 3.75 2.81 2.88 3.44 3.44 3.28 2.62 3.43 3.26 2.85 3.38 3.17 4.05 4.43 3.84 2.9 3.98 3.33 2.84 3.19 3.39 4 3.27 4.17 3.22 3.94 4.33 2.6 3.11 3.5 3.93 3.85 3.98 3.15 3.74 3.44 4.39 4.97 2.93 3.29 3.32 3.22 3.25 4.12 4.16 2.82 4.21 3.49 3.39 3.46 3.13 3.54 3.8 3.48 3.88 3.17 2.97 4.27 3.58 3.72 2.69 4.19 3.17 3.63 3.42 3.6 2.215 4.08 3.51 3.96 3.62 3.37 3.44 3.81 3.19 3.05 3.71 3.87 4.1 2.36 1.26">
+<!param name="xVarName3" value="group">
+<!param name="xValues3" value="77@0 64@1">
+<!param name="xLabels3" value="winter summer">
+<!param name="dataName3" value="Birth weight by season">
+<!param name="summaryDecimals3" value="4">
+<!param name="description3" value="Distn of estimated increase in mean weight in summer.">
+<!param name="summaryAxis3" value="-0.2 0.4 -0.2 0.1">
+
+<!param name="yVarName2" value="shell density">
+<!param name="yAxis2" value="64 86 65 5">
+<!param name="yValues2" value="73.9 69.3 71.5 83.3 75.5 66.3 82.1 78.4 68.0 77.9 70.6 74.8 79.5 81.4 74.7 77.5 71.2 83.0 80.9 73.1 76.7 84.8 78.8 75.9">
+<!param name="xVarName2" value="diet">
+<!param name="xValues2" value="12@0 12@1">
+<!param name="xLabels2" value="#control# #supplemented#">
+<!param name="dataName2" value="Egg shell densities">
+<!param name="summaryDecimals2" value="3">
+<!param name="description2" value="Distn of estimated effect of diet.">
+<!param name="summaryAxis2" value="-3 11 -2 2">
+
+<!param name="yVarName" value="ventilation">
+<!param name="yAxis" value="3.5 6.0 3.5 0.5">
+<!param name="yValues" value="3.99 4.19 4.21 4.54 4.64 4.69 4.84 5.48 4.36 4.67 4.78 5.08 5.16 5.20 5.52 5.74">
+<!param name="xVarName" value="group">
+<!param name="xValues" value="8@0 8@1">
+<!param name="xLabels" value="#control# #pre-hypnosis#">
+<!param name="dataName" value="Anticipation of hypnosis">
+<!param name="summaryDecimals" value="2">
+<!param name="description" value="Distn of estimated effect of hypnosis.">
+<!param name="summaryAxis" value="-0.2 1.1 -0.2 0.2">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="650" HEIGHT="430">
+<param name="appletName" value="twoGroupProg.DiffDistnErrorApplet">
+<param name="descriptionWidth" value="200">
+<param name="pooled" value="true">
+<param name="noOfDataSets" value="18">
+
+<param name="yVarName" value="ventilation">
+<param name="yAxis" value="3.5 6.0 3.5 0.5">
+<param name="yValues" value="3.99 4.19 4.21 4.54 4.64 4.69 4.84 5.48 4.36 4.67 4.78 5.08 5.16 5.20 5.52 5.74">
+<param name="xVarName" value="group">
+<param name="xValues" value="8@0 8@1">
+<param name="xLabels" value="#control# #pre-hypnosis#">
+<param name="dataName" value="Anticipation of hypnosis">
+<param name="summaryDecimals" value="3">
+<param name="description" value="Error distn for estimated effect of hypnosis on ventilation.">
+<param name="summaryAxis" value="-0.65 0.65 -0.6 0.3">
+
+<param name="yVarName2" value="shell density">
+<param name="yAxis2" value="64 86 65 5">
+<param name="yValues2" value="73.9 69.3 71.5 83.3 75.5 66.3 82.1 78.4 68.0 77.9 70.6 74.8 79.5 81.4 74.7 77.5 71.2 83.0 80.9 73.1 76.7 84.8 78.8 75.9">
+<param name="xVarName2" value="diet">
+<param name="xValues2" value="12@0 12@1">
+<param name="xLabels2" value="#control# #supplemented#">
+<param name="dataName2" value="Egg shell densities">
+<param name="summaryDecimals2" value="3">
+<param name="description2" value="Error distn for estimated effect of diet on shell density.">
+<param name="summaryAxis2" value="-7 7 -6 2">
+
+<param name="yVarName3" value="birth weight">
+<param name="yAxis3" value="1 5 1.0 0.5">
+<param name="yValues3" value="3.3 3.06 2.89 3 3.86 3.78 3.38 3.97 2.88 2.47 1.98 3.2 4.02 4.77 3.85 3.46 3.06 3.14 3.82 2.45 4.71 3.36 3.099 3.64 3.31 4.37 3.08 2.65 3.67 4.49 3.19 1.3 3.25 2.99 3.76 3.61 3.71 3.72 3.89 3.85 4.07 3.79 3.23 3.27 3.72 2.78 3.43 3.17 3.4 2.54 2.56 3.59 3.67 3.09 3.91 3.42 2.53 3.4 4.17 4 3.75 2.81 2.88 3.44 3.44 3.28 2.62 3.43 3.26 2.85 3.38 3.17 4.05 4.43 3.84 2.9 3.98 3.33 2.84 3.19 3.39 4 3.27 4.17 3.22 3.94 4.33 2.6 3.11 3.5 3.93 3.85 3.98 3.15 3.74 3.44 4.39 4.97 2.93 3.29 3.32 3.22 3.25 4.12 4.16 2.82 4.21 3.49 3.39 3.46 3.13 3.54 3.8 3.48 3.88 3.17 2.97 4.27 3.58 3.72 2.69 4.19 3.17 3.63 3.42 3.6 2.215 4.08 3.51 3.96 3.62 3.37 3.44 3.81 3.19 3.05 3.71 3.87 4.1 2.36 1.26">
+<param name="xVarName3" value="group">
+<param name="xValues3" value="77@0 64@1">
+<param name="xLabels3" value="winter summer">
+<param name="dataName3" value="Birth weight by season">
+<param name="summaryDecimals3" value="4">
+<param name="description3" value="Error distn for estimated difference between mean summer and winter birth wt.">
+<param name="summaryAxis3" value="-0.35 0.35 -0.3 0.1">
+
+<param name="dataName4" value="X-rays, teeth and gender">
+<param name="yVarName4" value="spectropenetration gradient">
+<param name="yAxis4" value="3.3 7.0 3.5 0.5">
+<param name="yValues4" value="4.9 5.4 5.0 5.5 5.4 6.6 6.3 4.3 4.8 5.3 3.7 4.1 5.6 4.0 3.6 5.0">
+<param name="xVarName4" value="gender">
+<param name="xValues4" value="8@0 8@1">
+<param name="xLabels4" value="male female">
+<param name="summaryDecimals4" value="3">
+<param name="description4" value="Error distn for difference between male and female penetration gradient.">
+<param name="summaryAxis4" value="-1.2 1.2 -1.0 0.5">
+
+<param name="dataName5" value="Healthy and failed firms">
+<param name="yVarName5" value="Asset-to-liabilities ratio">
+<param name="yAxis5" value="0 3.5 0.0 0.5">
+<param name="yValues5" value="0.82 0.89 1.31 0.05 0.83 0.9 1.68 0.99 0.62 0.91 0.52 1.45 1.16 1.32 1.17 0.42 0.48 0.93 0.88 1.1 0.23 1.11 0.19 0.13 2.03 0.51 1.12 0.92 0.26 1.15 0.13 0.88 0.09 1.5 0.1 1.76 1.14 1.84 2.21 2.08 1.43 0.68 3.15 1.24 2.03 2.23 2.5 2.02 1.44 1.39 1.64 0.89 0.23 1.2 2.16 1.8 1.87 1.91 1.67 1.87 1.21 2.05 1.06 0.93 2.17 2.61 3.05 1.52 1.93 1.95 2.61 1.11 0.95 0.96 2.25 2.73 1.56 2.73 0.9 2.12 1.42 1.62 1.76 2.22 2.8 1.85 0.96 1.71 1.02 2.5 1.55 1.69 1.64 1.03 1.8 0.67 2.44 2.3 2.21 1.96 1.81">
+<param name="xVarName5" value="Company type">
+<param name="xValues5" value="33@0 68@1">
+<param name="xLabels5" value="Failed Healthy">
+<param name="summaryDecimals5" value="3">
+<param name="description5" value="Error distn for difference between healthy and failed mean asset-to-liability ratio.">
+<param name="summaryAxis5" value="-0.35 0.35 -0.3 0.1">
+
+<param name="dataName6" value="Bacteria and carpets">
+<param name="yVarName6" value="Bacteria per sqr ft">
+<param name="yAxis6" value="2 15 2 2">
+<param name="yValues6" value="11.8 8.2 7.1 13.0 10.8 10.1 14.6 14.0 12.1 8.3 3.8 7.2 12.0 11.1 10.1 13.7">
+<param name="xVarName6" value="Company type">
+<param name="xValues6" value="8@0 8@1">
+<param name="xLabels6" value="Carpeted Uncarpeted">
+<param name="summaryDecimals6" value="3">
+<param name="description6" value="Error distn for difference between bacteria densities in uncarpeted and carpeted rooms.">
+<param name="summaryAxis6" value="-5 5 -4 2">
+
+<param name="dataName7" value="Tapeworms in sheep">
+<param name="yVarName7" value="no of worms">
+<param name="yAxis7" value="10 60 10 10">
+<param name="yValues7" value="18 43 28 50 16 32 13 40 54 26 63 21 37 39">
+<param name="xVarName7" value="Worm treatment">
+<param name="xValues7" value="7@0 7@1">
+<param name="xLabels7" value="Treated Untreated">
+<param name="summaryDecimals7" value="3">
+<param name="description7" value="Error distn for difference between mean no of worms in treated and untreated sheep.">
+<param name="summaryAxis7" value="-25 25 -20 10">
+
+<param name="dataName8" value="Satellite classification of land">
+<param name="yVarName8" value="Infrared intensity">
+<param name="yAxis8" value="70 110 70 10">
+<param name="yValues8" value="77 77 78 78 81 81 82 82 82 82 82 83 83 84 84 84 84 85 86 86 86 86 86 87 87 87 87 87 87 87 89 89 89 89 89 89 89 90 90 90 91 91 91 91 91 91 91 91 91 91 93 93 93 93 93 93 94 94 94 94 94 94 94 94 94 94 94 94 95 95 95 95 95 96 96 96 96 96 96 97 97 97 97 97 97 97 97 97 98 99 100 100 100 100 100 100 100 100 100 101 101 101 101 101 101 102 102 102 102 102 102 103 103 104 104 104 105 107 71 72 73 74 75 77 78 79 79 79 79 80 80 80 81 81 81 82 82 82 82 84 84 84 84 84 84 85 85 85 85 85 85 86 86 87 88 90 91 94">
+<param name="xVarName8" value="Land cover">
+<param name="xValues8" value="118@0 40@1">
+<param name="xLabels8" value="Forest Urban">
+<param name="summaryDecimals8" value="3">
+<param name="description8" value="Error distn for difference between infrared intensity in urban and forest areas.">
+<param name="summaryAxis8" value="-3.2 3.2 -3 1">
+
+<param name="dataName9" value="Crack size in components">
+<param name="yVarName9" value="Crack size">
+<param name="yAxis9" value="0 0.45 0.0 0.1">
+<param name="yValues9" value=".003 .004 .012 .014 .021 .023 .024 .030 .034 .041 .041 .042 .043 .045 .057 .063 .074 .076 .022 .026 .026 .030 .031 .034 .042 .043 .044 .046 .046 .052 .055 .058 .060 .060 .070 .071 .073 .073 .078 .079 .079 .083 .090 .095 .095 .096 .100 .102 .103 .105 .114 .119 .120 .130 .160 .306 .328 .440">
+<param name="xVarName9" value="Classification">
+<param name="xValues9" value="18@0 40@1">
+<param name="xLabels9" value="Unflawed Flawed">
+<param name="summaryDecimals9" value="4">
+<param name="description9" value="Error distn for difference in mean crack size.">
+<param name="summaryAxis9" value="-0.05 0.05 -0.04 0.02">
+
+<param name="dataName10" value="Cola sales and supermarket location">
+<param name="yVarName10" value="Cola sales">
+<param name="yAxis10" value="20 94 20 20">
+<param name="yValues10" value="22 34 52 62 30 40 64 84 56 59 52 71 76 54 67 83 66 90 77 84">
+<param name="xVarName10" value="Location">
+<param name="xValues10" value="10@0 10@1">
+<param name="xLabels10" value="Mid-aisle End-aisle">
+<param name="summaryDecimals10" value="3">
+<param name="description10" value="Error distn for difference in sales.">
+<param name="summaryAxis10" value="-25 25 -20 10">
+
+<param name="dataName11" value="Percentage bonus by gender">
+<param name="yVarName11" value="Percentage bonus">
+<param name="yAxis11" value="6 13 6 2">
+<param name="yValues11" value="9.2 7.7 11.9 6.2 9.0 8.4 6.9 7.6 7.4 8.0 9.9 6.7 8.4 9.3 9.1 8.7 9.2 9.1 8.4 9.6 7.7 9.0 9.0 8.4 10.4 8.9 11.7 12.0 8.7 9.4 9.8 9.0 9.2 9.7 9.1 8.8 7.9 9.9 10.0 10.1 9.0 11.4 8.7 9.6 9.2 9.7 8.9 9.2 9.4 9.7 8.9 9.3 10.4 11.9 9.0 12.0 9.6 9.2 9.9 9.0">
+<param name="xVarName11" value="Gender">
+<param name="xValues11" value="24@0 36@1">
+<param name="xLabels11" value="Female Male">
+<param name="summaryDecimals11" value="3">
+<param name="description11" value="Error distn for difference in mean male and female bonuses.">
+<param name="summaryAxis11" value="-1.1 1.1 -1.0 0.5">
+
+<param name="dataName12" value="Homosexuality and androsterone level">
+<param name="yVarName12" value="Andresterone level">
+<param name="yAxis12" value="1 4.5 1.0 0.5">
+<param name="yValues12" value="3.9 4.0 3.8 3.9 2.9 3.2 4.6 4.3 3.1 2.7 2.3 2.5 1.6 3.9 3.4 2.3 1.6 2.5 3.4 1.6 4.3 2.0 1.8 2.2 3.1 1.3">
+<param name="xVarName12" value="Sexual preference">
+<param name="xValues12" value="11@0 15@1">
+<param name="xLabels12" value="Heterosexual Homosexual">
+<param name="summaryDecimals12" value="3">
+<param name="description12" value="Error distn for difference in mean androsterone level.">
+<param name="summaryAxis12" value="-0.5 0.5 -0.4 0.2">
+
+<param name="dataName13" value="Hyperactivity treatments">
+<param name="yVarName13" value="Hyperactivity score">
+<param name="yAxis13" value="10 40 10 5">
+<param name="yValues13" value="22 24 27 18 21 19 18 17 14 17 20 16 13 20 16 12 14 22 23 18 26 32 31 20 34 36 22 29 27 25 24 32 24 20 30 32 32 29 27 33">
+<param name="xVarName13" value="Treatment">
+<param name="xValues13" value="20@0 20@1">
+<param name="xLabels13" value="#Behaviour mod# Drug">
+<param name="summaryDecimals13" value="3">
+<param name="description13" value="Error distn for difference in mean hyperactivity level.">
+<param name="summaryAxis13" value="-5 5 -4 2">
+
+<param name="dataName14" value="Water quallity from effluent">
+<param name="yVarName14" value="Biochemical oxygen demand">
+<param name="yAxis14" value="5.5 10.0 6 1">
+<param name="yValues14" value="6.782 5.809 6.849 6.879 7.014 7.321 5.986 6.628 6.822 6.448 9.063 8.381 8.660 8.405 9.248 8.735 9.772 8.545 8.063 8.001">
+<param name="xVarName14" value="Location">
+<param name="xValues14" value="10@0 10@1">
+<param name="xLabels14" value="Upstream Downstream">
+<param name="summaryDecimals14" value="3">
+<param name="description14" value="Error distn for difference in mean BOC.">
+<param name="summaryAxis14" value="-0.7 0.7 -0.6 0.3">
+
+<param name="dataName15" value="Employee hostility and absenteeism">
+<param name="yVarName15" value="Hostility score">
+<param name="yAxis15" value="35 100 40 10">
+<param name="yValues15" value="62 93 71 90 69 90 71 76 86 71 81 84 65 61 69 55 56 57 60 48 60 53 65 64 46 41 67 66 64 42 59 70 75 69 72 74 55">
+<param name="xVarName15" value="Absenteeism">
+<param name="xValues15" value="15@0 22@1">
+<param name="xLabels15" value="High Low">
+<param name="summaryDecimals15" value="3">
+<param name="description15" value="Error distn for difference in mean hostility.">
+<param name="summaryAxis15" value="-12 12 -10 5">
+
+<param name="dataName16" value="Productivity and pay for welders">
+<param name="yVarName16" value="Output">
+<param name="yAxis16" value="90 140 90 10">
+<param name="yValues16" value="118 115 122 99 106 125 102 100 92 103 113 129 115 126 113 110 135 102 124 137 108 128">
+<param name="xVarName16" value="Pay method">
+<param name="xValues16" value="12@0 10@1">
+<param name="xLabels16" value="Salary #Piece work#">
+<param name="summaryDecimals16" value="3">
+<param name="description16" value="Error distn for difference in mean output.">
+<param name="summaryAxis16" value="-16 16 -15 5">
+
+<param name="dataName17" value="Cheese prices in US and Canada">
+<param name="yVarName17" value="Price (dollars per pound)">
+<param name="yAxis17" value="2.35 2.85 2.4 0.1">
+<param name="yValues17" value="2.50 2.60 2.80 2.70 2.60 2.40 2.55 2.60 2.50 2.40 2.65 2.55">
+<param name="xVarName17" value="Country">
+<param name="xValues17" value="6@0 6@1">
+<param name="xLabels17" value="USA Canada">
+<param name="summaryDecimals17" value="3">
+<param name="description17" value="Error distn for difference in mean price.">
+<param name="summaryAxis17" value="-0.25 0.25 -0.2 0.1">
+
+<param name="dataName18" value="Moderator effect on ideas">
+<param name="yVarName18" value="Number of ideas">
+<param name="yAxis18" value="35 115 40 10">
+<param name="yValues18" value="40 57 69 88 51 72 79 110">
+<param name="xVarName18" value="Moderator">
+<param name="xValues18" value="4@0 4@1">
+<param name="xLabels18" value="No Yes">
+<param name="summaryDecimals18" value="3">
+<param name="description18" value="Error distn for difference in mean ideas.">
+<param name="summaryAxis18" value="-50 50 -40 20">
+</APPLET>
+
+</BODY>
+</HTML>

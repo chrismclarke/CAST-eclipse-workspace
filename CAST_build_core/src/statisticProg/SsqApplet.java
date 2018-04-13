@@ -1,0 +1,1 @@
+package statisticProg;import statistic.*;public class SsqApplet extends DragAxisApplet {	protected Statistic getLowStatistic() {		return null;	}		protected Statistic getHighStatistic() {		return null;	}		protected Statistic getTotalStatistic() {		return new SqrDiffStatistic(Statistic.ALL, Statistic.SHOW_GRAPH, Statistic.SHOW_EQN, this);	}}

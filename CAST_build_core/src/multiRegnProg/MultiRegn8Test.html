@@ -1,0 +1,110 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="530" HEIGHT="580">
+<!param name="appletName" value="multiRegnProg.DataSeqAnovaApplet">
+<!param name="userName" value="stats@massey.ac.nz">
+<!param name="pin" value="60392">
+<!param name="noOfDataSets" value="4">
+<!param name="dataName" value="Leafing-out times of Maple seedlings">
+<!param name="description" value="Batches of maple seedlings from various locations in the US and Canada were grown in Wooster, Ohio. An index of the time to leafing-out of each batch (Y) may be related to the latitude (X degrees North) and mean July temperature (Z degrees F) of the source of the seeds.">
+<!param name="question" value="There is moderately strong evidence that latitude should not be dropped from the full model, but no evidence against dropping temperature. A model explaining leafing-out time in terms of only latitude seems best.">
+<!param name="yVarName" value="Leafing-out time">
+<!param name="xVarName" value="Latitude(X)">
+<!param name="zVarName" value="Temperature(Z)">
+<!param name="yValues" value="20.5 21.0 18.3 18.6 18.6 19.8 20.6 19.2 19.8 15.8 14.5 18.5 16.7 13.9 14.3 15.2 16.6 18.2 18.3 13.3 20.0 18.1 17.0 15.6 15.7 15.4 15.4 15.8 15.0 15.9 14.0 10.8">
+<!param name="xValues" value="46.95 45.55 45.00 45.42 44.50 46.37 45.03 43.00 42.80 42.70 42.42 40.75 41.38 40.35 40.80 40.92 40.33 41.58 41.92 40.12 42.75 42.00 42.55 41.50 39.25 37.45 38.33 36.25 35.80 31.38 32.83 30.75">
+<!param name="zValues" value="66.7 64.3 61.8 65.0 63.5 65.5 67.7 67.9 70.2 71.1 74.4 76.4 75.9 76.4 71.9 74.2 73.0 71.4 69.7 72.6 69.2 68.0 70.0 72.5 76.7 79.5 69.5 74.3 68.9 80.8 81.2 81.0">
+<!param name="yAxis" value="10 22 10 2">
+<!param name="xAxis" value="30 47 30 2">
+<!param name="zAxis" value="60 82 60 5">
+
+<!param name="dataName2" value="Body fat for sample of 25 men">
+<!param name="description2" value="Body fat was measured using an underwater weighing technique from 251 men. This data set shows percentage body fat (Y), abdomen circumference (X cm) and height (Z cm) from 25 of the men.">
+<!param name="question2" value="There is extremely strong evidence that body fat is related to both abdomen circumference and height. Neither explanatory variable should be dropped from the full model.">
+<!param name="yVarName2" value="Body fat">
+<!param name="xVarName2" value="Abdomen(X)">
+<!param name="zVarName2" value="Height(Z)">
+<!param name="yAxis2" value="0 40 0 10">
+<!param name="xAxis2" value="65 130 70 10">
+<!param name="zAxis2" value="63 76 65 5">
+<!param name="yValues2" value="12 16.5 9.4 31.3 5 24 13.2 18.6 14.3 21.7 21 17.9 15 20.1 24.5 22 16.5 16.8 23.8 22.6 11.3 15.1 16.9 28.8 28.3">
+<!param name="xValues2" value="88.6 100.5 83.5 108.1 70.4 98.3 84.6 98.6 86.5 94 92.3 87.5 87 106.6 106.8 92.4 90.8 104.5 101.2 89.7 84.4 88.7 93 100.5 111.5">
+<!param name="zValues2" value="73.5 73.5 69 67 66.75 65.75 71.5 69.25 73 72 69.25 72.25 69.75 75 70.25 71.5 69.5 74.5 68.25 67.5 70.75 69.25 68.5 65.75 66">
+
+<!param name="dataName3" value="Heart catheter length">
+<!param name="description3" value="In heart catheterisation, a catheter is passed through a major vein or artery from the leg into the heart. X-rays are used to position the tip of the catheter. The catheter length (Y cm), height (X in) and weight (Z lb) were recorded from 12 children.">
+<!param name="question3" value="There is no evidence against dropping either height or weight from the full model. Since the explained ssq for Weight on its own (601.88) is higher than that for Height (586.38) and both associated p-values are small, a model with only Weight seems best.">
+<!param name="yVarName3" value="Catheter">
+<!param name="xVarName3" value="Height">
+<!param name="zVarName3" value="Weight">
+<!param name="yValues3" value="37 50 34 36 43 28 37 20 34 30 38 47">
+<!param name="xValues3" value="42.8 63.5 37.5 39.5 45.5 38.5 43.0 22.5 37.0 23.5 33.0 58.0">
+<!param name="zValues3" value="40.0 93.5 35.5 30.0 52.0 17.0 38.5 8.5 33.0 9.5 21.0 79.0">
+<!param name="yAxis3" value="15 55 20 10">
+<!param name="xAxis3" value="20 65 20 10">
+<!param name="zAxis3" value="0 100 0 20">
+
+<!param name="dataName4" value="Blood pressure of children and parents">
+<!param name="description4" value="This data set contains the systolic blood pressures of the mother (X), father (Z) and first-born child (Y) from each of 20 families.">
+<!param name="question4" value="There is very strong evidence that both mothers and fathers blood pressures are related to that of their first-born child.">
+<!param name="yVarName4" value="Child BP">
+<!param name="xVarName4" value="Mother BP">
+<!param name="zVarName4" value="Father BP">
+<!param name="yValues4" value="90 85 120 100 105 100 110 140 115 105 100 80 70 115 90 90 115 110 90 100">
+<!param name="xValues4" value="130 125 140 110 145 160 120 180 120 130 125 110 90 120 150 145 130 155 110 125">
+<!param name="zValues4" value="140 120 180 150 175 120 145 160 190 135 150 125 140 170 150 155 160 125 140 150">
+<!param name="yAxis4" value="60 145 60 20">
+<!param name="xAxis4" value="80 190 80 20">
+<!param name="zAxis4" value="110 200 120 20">
+
+<!param name="maxSsq" value="999.99 99.999 99.99">
+<!param name="componentDecimals" value="2">
+<!param name="maxCoeff" value="99.999 9.999 -9.999">
+<!param name="maxT" value="99.999">
+<!param name="customText" value="after=after#Data set=Data set#Fitting order=Fitting order#Conclusion=Conclusion#then=then">
+<!/APPLET>
+
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="530" HEIGHT="580">
+<param name="appletName" value="multiRegnProg.DataOrthogAnovaApplet">
+<param name="userName" value="stats@massey.ac.nz">
+<param name="pin" value="60392">
+<param name="noOfDataSets" value="2">
+<param name="dataName" value="Energy expenditure of bees">
+<param name="description" value="A researcher recorded energy expenditure (joules/sec) for bees drinking water with different sucrose concentrations (%) and at different temperatures (degrees Celsius).">
+<param name="question" value="Both p-values are close to zero, so there is extremely strong evidence that both Temperature and Sucrose concentration affect energy expenditure of the bees. Each extra degree is estimated to increase energy expenditure by 0.394 joules/sec and each % increase in sucrose is estimated to increase energy by 0.206.">
+<param name="yVarName" value="Energy">
+<param name="xVarName" value="Temperature">
+<param name="zVarName" value="Sucrose">
+<param name="yValues" value="3.1 3.7 4.7 5.5 6.7 7.3 7.9 9.2 9.3 6.0 6.9 7.5 11.5 12.9 13.4 17.5 15.8 14.7 7.7 8.3 9.5 15.7 14.3 15.9 19.1 18.0 19.9">
+<param name="xValues" value="9@20 9@30 9@40">
+<param name="zValues" value="3@20 3@40 3@60 3@20 3@40 3@60 3@20 3@40 3@60">
+<param name="yAxis" value="0 20 0 5">
+<param name="xAxis" value="17 43 20 10">
+<param name="zAxis" value="15 65 20 20">
+
+<param name="dataName2" value="Soybean yields">
+<param name="description2" value="In an experiment to assess how applications of manganese (Mn) and copper (Cu) affect the yield of soybeans, a large field was subdivided into 32 plots with two randomly allocated to each combination of 4 Mn rates and 4 Cu rates. Soybeans were planted in rows 1 metre apart and the yield of soybeans (in tonnes per hectare) was recorded from each plot.">
+<param name="question2" value="There is extremely strong evidence that manganese affects yield, but no evidence that copper affects yield. Each increase of 1 unit Mg is estimated to increase yield by 0.016 tonnes/hectare. (Although increasing Cu by 1 unit is also estimated to increase yield by 0.012, its standard error must be much higher than that of Mg, so we cannot be sure that it is non-zero.)">
+<param name="yVarName2" value="Yield">
+<param name="xVarName2" value="Copper">
+<param name="zVarName2" value="Manganese">
+<param name="yValues2" value="1.558 1.578 2.003 2.033 2.49 2.47 2.83 2.81 1.59 1.61 2.02 2.051 2.62 2.632 2.86 2.841 1.558 1.55 2.003 2.01 2.49 2.69 2.93 2.91 1.328 1.427 2.01 2.031 2.887 2.832 2.96 2.941">
+<param name="xValues2" value="8@1 8@3 8@5 8@7">
+<param name="zValues2" value="2@20 2@50 2@80 2@110 2@20 2@50 2@80 2@110 2@20 2@50 2@80 2@110 2@20 2@50 2@80 2@110">
+<param name="yAxis2" value="1.2 3.1 1.5 0.5">
+<param name="xAxis2" value="0 8 1 2">
+<param name="zAxis2" value="10 120 20 30">
+
+<param name="maxSsq" value="999.99 99.999 99.99">
+<param name="componentDecimals" value="2">
+<param name="maxCoeff" value="99.999 9.999 -9.999">
+<param name="maxT" value="99.999">
+<param name="lsDecimals" value="3 3 3">
+<param name="customText" value="after=after#Data set=Data set#Conclusion=Conclusion">
+</APPLET>
+
+</BODY>
+</HTML>

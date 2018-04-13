@@ -1,0 +1,1 @@
+package histo;import dataView.*;public class ClassPosInfo implements PositionInfo {	public ClassPosInfo(int classIndex) {		this.classIndex = classIndex;	}		public boolean equals(PositionInfo otherPos) {		if (otherPos == null)			return false;		ClassPosInfo other = (ClassPosInfo)otherPos;		return classIndex == other.classIndex;	}		public int classIndex;}

@@ -1,0 +1,1 @@
+package exper;import java.awt.*;import axis.*;public class MinAxisLayout extends AxisLayout {	private int preferredWidth;		public MinAxisLayout(int preferredWidth) {		this.preferredWidth = preferredWidth;	}		public Dimension preferredLayoutSize(Container parent) {		return new Dimension(preferredWidth, 300);	}}

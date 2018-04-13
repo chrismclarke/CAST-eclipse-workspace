@@ -1,0 +1,1 @@
+package dataView;	public class ParsedValue {	public String leftDigits;	public String rightDigits;}

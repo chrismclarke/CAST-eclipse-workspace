@@ -1,0 +1,46 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="280">
+<!param name="appletName" value="residProg.DeleteInfluenceApplet">
+<!param name="yVarName" value="Response, y">
+<!param name="xVarName" value="Explanatory, x">
+<!param name="xValues" value="0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2 4.2">
+<!param name="yValues" value="37 36 40 43 44 42 45 48 49 63">
+<!param name="y2Values" value="37 36 40 43 44 42 45 48 49 40">
+<!param name="horizAxis" value="0.5 4.5 1 1">
+<!param name="vertAxis" value="30 65 30 10">
+<!param name="customText" value="high leverage=high leverage#high influence=high influence#low influence=low influence#Delete high leverage points=Delete high leverage points">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="280">
+<!param name="appletName" value="residProg.FitInfluenceApplet">
+<!param name="yVarName" value="Response, y">
+<!param name="xVarName" value="Explanatory, x">
+<!param name="xValues" value="0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2 4.2">
+<!param name="yValues" value="370 360 400 430 440 420 450 480 490 450">
+<!param name="xAxis" value="0.5 4.5 1 1">
+<!param name="yAxis" value="320 650 350 50">
+<!param name="fitChangeAxis" value="-170 100 -150 50">
+<!param name="dfitsAxis" value="-14 10 -10 5">
+<!param name="customText" value="Change in fitted value=Change in fitted value#DFITS=DFITS">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="330">
+<param name="appletName" value="residProg.ParamInfluenceApplet">
+<param name="yVarName" value="Response, y">
+<param name="xVarName" value="Explanatory, x">
+<param name="shortYVarName" value="y">
+<param name="shortXVarName" value="x">
+<param name="xValues" value="0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2 4.2">
+<param name="yValues" value="370 360 400 430 440 420 450 480 490 450">
+<param name="xAxis" value="0.5 4.5 1 1">
+<param name="yAxis" value="320 650 350 50">
+<param name="intChangeAxis" value="-30 80 -20 20">
+<param name="slopeChangeAxis" value="-60 30 -60 20">
+<param name="maxParam" value="-999.99 -99.99">
+<param name="customText" value="Change in intercept=Change in intercept#Change in slope=Change in slope#Full model=Full model#Deleted model=Deleted model">
+</APPLET>
+
+</BODY>
+</HTML>

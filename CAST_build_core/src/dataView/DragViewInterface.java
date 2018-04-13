@@ -1,0 +1,1 @@
+package dataView;public interface DragViewInterface {	public boolean getDoingDrag();}

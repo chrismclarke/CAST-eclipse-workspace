@@ -1,0 +1,1 @@
+package models;public interface SurfaceInterface {	public double getHeight(double[] x);//	public double getHeight(Value[] x);}

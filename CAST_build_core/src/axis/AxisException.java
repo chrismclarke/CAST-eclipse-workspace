@@ -1,0 +1,1 @@
+package axis;public class AxisException extends Exception {	public int axisProblem;	public AxisException(int theAxisProblem) {		axisProblem = theAxisProblem;	}		final public static int FORMAT_ERROR = 0;	final public static int TOO_LOW_ERROR = 1;	final public static int TOO_HIGH_ERROR = 2;}

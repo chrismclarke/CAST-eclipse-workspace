@@ -1,0 +1,1 @@
+package statistic2Prog;import axis.*;import dataView.*;import statistic2.*;public class SDBoxplotExerciseApplet extends SDHistoExerciseApplet {		protected BasicDataView getDataView(DataSet data, MultiHorizAxis axis, String yKey, int sdDecimals) {		return new BasicBoxplotView(data, this, axis, yKey, sdDecimals, sdDecimals);	}}

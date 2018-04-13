@@ -1,0 +1,1 @@
+package axis;import dataView.*;public class AxisLabel {	public AxisLabel(Value theLabel, double thePosition) {		label = theLabel;		position = thePosition;	}		public Value label;	public int labelWidth;	public double position;		//	fraction between 0 and 1}

@@ -1,0 +1,1 @@
+package randomisation;public interface RandomisationInterface {	static final public int kEndFrame = 40;		public void fixOldInfo();	public void doAnimation();}

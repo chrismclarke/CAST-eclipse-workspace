@@ -1,0 +1,1 @@
+package histo;import axis.*;public interface HistoDensityInfo {	public boolean changeMaximumDensity(double maxDensity, int maxWidth);	public int densityToPosition(double density) throws AxisException;	public double positionToDensity(int yPos) throws AxisException;}

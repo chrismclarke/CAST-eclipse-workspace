@@ -1,0 +1,112 @@
+<HTML>
+<BODY>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="650">
+<!param name="appletName" value="exerciseCategProg.BuildContinTableApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="There were #sampleSize(10:14)# students in a Statistics class. The list on the left below shows the final grades for the students and their genders. Create a contingency table describing the grades and genders.\n(For each successive row of the list, click on the appropriate cell of the contingency table to add one to its count.)">
+<!param name="qnParam0" value="xVarName(Gender)#xCategories(Male Female)#yVarName(Exam grade)#yCategories(A B C Fail)#jointProbs(0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125)">
+<!param name="question1" value="Researchers in a French ski resort investigated whether the severity of injuries is related to whether the skiers have had previous skiing experience. The list on the left below shows the severity of injury and previous experience for #sampleSize(20)# skiers who had medical assistance for injuries. Create a contingency table describing the injuries and experience.\n(For each successive row of the list, click on the appropriate cell of the contingency table to add one to its count.)">
+<!param name="qnParam1" value="xVarName(Background)#xCategories(Experienced Novice)#yVarName(Injury)#yCategories(Severe Minor)#jointProbs(.2 .3 .2 .3)">
+<!param name="question2" value="#sampleSize(10:14)# pregnant women were asked about their use of alcohol (oz per day) and nicotine (gm per day) during their pregnancy. Each row of the list on the left below shows the results from one woman. Create a contingency table describing use of these substances.\n(For each successive row of the list, click on the appropriate cell of the contingency table to add one to its count.)">
+<!param name="qnParam2" value="xVarName(Nicotine)#xCategories(No_nic 1_to_15 Over_15)#yVarName(Alcohol)#yCategories(No_alc Up_to_0.5 Over_0.5)#jointProbs(.23 .02 .02 .22 .05 .08 .22 .08 .08)">
+<!/APPLET>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="600">
+<!param name="appletName" value="exerciseCategProg.FindContinPropnApplet">
+<!param name="nQuestions" value="4">
+<!param name="question0" value="The contingency table below describes the state of grief (I to IV) of 66 mothers who had suffered a neonatal death and the amount of support given to these mothers.\n">
+<!param name="qnParam0" value="xVarName(Support)#xCategories(Good Adequate Poor)#yVarName(Grief state)#yCategories(Level_I Level_II Level_III Level_IV)#counts(17 6 3 1 9 5 5 2 8 1 4 5)">
+<!param name="questionExtra0" value="#probType(0)#What proportion of these mothers had #criticalX(0:2)# support and were also in grief state '#criticalY(0:3)#'?|||#probType(1)#What proportion of these mothers had #criticalX(0:2)# support?|||#probType(2)#What proportion of the mothers with grief state '#criticalY(0:3)#' had #criticalX(0:2)# support?|||#probType(3)#What proportion of these mothers had grief level that was categorised as '#criticalY(0:3)#'?|||#probType(4)#What proportion of the mothers with #criticalX(0:2)# support were classified as having grief at '#criticalY(0:3)#'?">
+<!param name="questionextra0" value="#probType(0)#What proportion of these mothers had #criticalX(0:2)# support and were also in grief state '#criticalY(0:3)#'?|||#probType(1)#What proportion of these mothers had #criticalX(0:2)# support?|||#probType(2)#What proportion of the mothers with grief state '#criticalY(0:3)#' had #criticalX(0:2)# support?|||#probType(3)#What proportion of these mothers had grief level that was categorised as '#criticalY(0:3)#'?|||#probType(4)#What proportion of the mothers with #criticalX(0:2)# support were classified as having grief at '#criticalY(0:3)#'?">
+<!param name="question1" value="Four hundred and forty five college students were classified according to both frequency of marijuana use and parental use of alcohol and psychoactive drugs. The contingency table below describes the data.\n">
+<!param name="qnParam1" value="xVarName(Parent)#xCategories(Both One Neither)#yVarName(Student)#yCategories(Never Occasionally Regularly)#counts(17 11 19 68 44 51 141 54 40)">
+<!param name="questionExtra1" value="#probType(0)#What proportion of the students had #criticalX(0:2)# of their parents who used alcohol or drugs and themselves #criticalY(0:2)# used marijuana?|||#probType(1)#What proportion of the students had #criticalX(0:2)# of their parents who used alcohol or drugs?|||#probType(2)#Of the students who '#criticalY(0:2)#' used marijuana, what proportion had #criticalX(0:2)# of their parents who used alcohol or drugs?|||#probType(3)#What proportion of the students '#criticalY(0:2)#' used marijuana?|||#probType(4)#Of the students with #criticalX(0:2)# of their parents who used drugs or alcohol, what proportion themselves '#criticalY(0:2)#' used marijuana?">
+<!param name="question2" value="The contingency table below describes the defects of four kinds that were detected in silicon wafers manufactured during three production shifts.\n">
+<!param name="qnParam2" value="xVarName(Defect)#xCategories(A B C D)#yVarName(Shift)#yCategories(1 2 3)#counts(15 26 33 21 31 17 45 34 49 13 5 20)">
+<!param name="questionExtra2" value="#probType(0)#What proportion of the wafers were made in shift #criticalY(0:2)# and had defect #criticalX(0:3)#?|||#probType(1)#What proportion of the wafers had defect #criticalX(0:3)#?|||#probType(2)#Of the wafers made on shift #criticalY(0:2)#, what proportion had defect #criticalX(0:3)#?|||#probType(3)#What proportion of the wafers were made on shift #criticalY(0:2)#?|||#probType(4)#What proportion of the wafers with defect #criticalX(0:3)# were made on shift #criticalY(0:2)#?">
+<!param name="question3" value="Weather forecasts are often inaccurate. The following contingency table describes the occasions during a year in which fog was predicted for the following day and the actual occurrence of fog on that day.\n">
+<!param name="qnParam3" value="xVarName(Actual)#xCategories(Fog No_fog)#yVarName(Forecast)#yCategories(Fog No_fog)#counts(28 17 5 315)">
+<!param name="questionExtra3" value="#probType(0)#On what proportion of days was the forecast #criticalY(0:1)# and had the actual weather #criticalX(0:1)#?|||#probType(1)#On what proportion of days was there #criticalX(0:1)#?|||#probType(2)#On what proportion of the days with forecast #criticalY(0:1)# was the actual weather #criticalX(0:1)#?|||#probType(3)#For what proportion of days was the forecast #criticalY(0:1)#?|||#probType(4)#Of the days in which the actual weather was #criticalX(0:1)#, on what proportion was it forecast that there would be #criticalY(0:1)#?">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="700">
+<!param name="appletName" value="exerciseCategProg.MatchBarPieApplet">
+<!param name="question" value="The bar charts of four data sets are shown on the left below. The four pie charts on the right describe the same data sets but are in a different order. Reorder them by dragging so that each pie chart describes the same data set as the bar chart on its left.">
+<!param name="nQuestions" value="3">
+<!param name="qnParam0" value="categories[](A B C*Group_1 Group_2 Group_3*Good Bad Ugly)#counts(10_10_5 5_10_10 10_5_10 5_5_10 5_10_5 10_5_5 15_10_5 15_5_10 10_15_5 10_5_15 5_10_15 5_15_10)">
+<!param name="qnParam1" value="categories[](Correct Wrong*Group_A Group_B*Male Female)#counts(10_10 9_11 8_12 5_15 11_9 12_8 15_5)">
+<!param name="qnParam2" value="categories[](A B C D*Agree Neutral Disagree Dont_know)#counts(12_8_3_5 10_4_10_6 8_12_5_3 8_10_8_4 12_5_3_8 8_6_12_6)">
+<!/APPLET>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="450" HEIGHT="700">
+<!param name="appletName" value="exerciseCategProg.FindPiePercentApplet">
+<!param name="nQuestions" value="5">
+<!param name="question0" value="The pie chart below describes the results from a questionnaire in which ratepayers were asked about the quality of their local bus service.\n">
+<!param name="qnParam0" value="varName(Support)#categories(Very_good Good Adequate Poor Very_poor)#defaultProbs(.1 .25 .3 .25 .1)">
+<!param name="questionExtra0" value="answer[](0,1,2,3)#cutoffType(0)#What percentage of respondents thought that the bus service was #cutoff(1)# or better?|||answer[](0,1,2,3)#cutoffType(0)#What percentage of respondents thought that the bus service was at least as good as #cutoff(1)#?|||answer[](1,2,3,4)#cutoffType(0)#What percentage of respondents thought that the bus service was #cutoff(2)# or better?|||answer[](1,2,3,4)#cutoffType(0)#What percentage of respondents thought that the bus service was at least as good as #cutoff(2)#?|||answer[](0,1,2,3)#cutoffType(1)#What percentage of respondents thought that the bus service was #cutoff(3)# or worse?|||answer[](1,2,3,4)#cutoffType(1)#What percentage of respondents thought that the bus service was #cutoff(2)# or worse?">
+<!param name="question1" value="The pie chart below describes household incomes of respondents to a telephone survey.\n">
+<!param name="qnParam1" value="varName(Income)#categories(Under_$20,000 $20,000_to_$40,000 $40,000_to_$70,000 $70,000_to_$100,000 $100,000_to_$150,000 Over_$150,000)#defaultProbs[](.1 .15 .3 .2 .15 .1*.2 .15 .3 .2 .1 .05*.1 .1 .2 .3 .15 .15)">
+<!param name="questionExtra1" value="#answer(3:4)#What percentage of respondents had incomes in the range '#lowCritical(1)#' or higher?|||#answer(2:3)#What percentage of respondents had incomes in the range '#lowCritical(2:3)#' or higher?|||#answer(0:1)#What percentage of respondents had incomes in the range '#lowCritical(4)#' or higher?|||#answer(0:1)#What percentage of respondents had incomes in the range '#highCritical(1)#' or lower?|||#answer(2:3)#What percentage of respondents had incomes in the range '#highCritical(2:3)#' or lower?|||#answer(3:4)#What percentage of respondents had incomes in the range '#highCritical(4)#' or lower?">
+<!param name="question2" value="An office recorded the reasons that staff gave for being late to work for a year. The pie chart below describes these reasons, ordered by their frequency of occurrence.\n">
+<!param name="qnParam2" value="varName(Reason for lateness)#categories(Traffic Child_care Bus/train Weather Overslept Emergency)#defaultProbs[](0.35 0.3 0.1 0.1 0.1 0.05*0.25 0.25 0.2 0.15 0.1 0.05)#ordinalPareto(1)">
+<!param name="questionExtra2" value="answer(0:4)#cutoffType(1)#What percentage of late arrivals resulted from the least common #cutoff(2:4)# causes?|||answer(0:4)#cutoffType(0)#What percentage of late arrivals resulted from the most common #cutoff(1:3)# causes?">
+<!param name="question3" value="There are occasionally mistakes when medicines are given to patients. The pie chart below describes the types of mistake that occurred in a hospital one year, ordered by their frequency of occurrence.\n">
+<!param name="qnParam3" value="varName(Type of mistake)#categories(Wrong_dose Wrong_time Wrong_medicine Wrong_patient Old_medicine Missed_dose)#defaultProbs[](0.35 0.3 0.1 0.1 0.1 0.05*0.25 0.25 0.2 0.15 0.1 0.05)#ordinalPareto(1)">
+<!param name="questionExtra3" value="answer(:)#cutoffType(0)#What percentage of mistakes was due to the most common #cutoff(1:3)# causes?|||answer(:)#cutoffType(1)#What percentage of mistakes was due to the least common #cutoff(2:4)# causes?">
+<!param name="question4" value="Quality control of parts produced by a factory results in some parts being rejected as defective. The pie chart below describes the types of defect, ordered by their frequency of occurrence.\n">
+<!param name="qnParam4" value="varName(Type of defect)#categories(Size_outside_specs Bad_parts Insufficient_glue Misaligned_weld Paint_out_of_limits)#defaultProbs[](0.4 0.3 0.15 0.1 0.05*0.35 0.25 0.25 0.1 0.05)#ordinalPareto(1)">
+<!param name="questionExtra4" value="answer(:)#cutoffType(0)#What percentage of defects was due to the most common #cutoff(1:2)# causes?|||answer(:)#cutoffType(1)#What percentage of defects was due to the least common #cutoff(2:3)# causes?">
+<!/APPLET>
+
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="480" HEIGHT="670">
+<!param name="appletName" value="exerciseCategProg.FindProbFromBarsApplet">
+<!param name="nQuestions" value="4">
+<!param name="question0" value="Two hundred girls in a high school were classified according to their weights. The bar chart below shows the data#?:string[index](.* for the children whose academic performance at school was rated as 'poor'.* for the children whose academic performance at school was rated as 'satisfactory'.* for the children whose academic performance at school was rated as 'above average'.)#\nIf one of these #?:string[index](200*31*150*19)# children is randomly selected, what is the probability that her weight is #successes(:)#">
+<!param name="qnParam0" value="index(0:3)#nSuccessCats(1:3)#varName(weight)#itemsName(girls)#categories(Underweight Normal Overweight Obese)#ordinal(true)#counts[index](25 110 40 25*4 16 7 4*18 84 30 18*3 10 4 2)#countAxis[index](0 125 0 20*0 18 0 2*0 95 0 20*0 12 0 2)">
+<!param name="question1" value="The bar chart below shows the day of the week in which all #?:string[index](daytime*evening*nighttime)# fatal road crashes (#?:string[index](6am to 6pm*6pm to 10pm*10pm to 6am)#) occured in New Zealand between 2004 and 2006.\nIf one of these #?:string[index](89*62*158)# fatal crashes is randomly selected, what is the probability that it was on #successes(:)#">
+<!param name="qnParam1" value="index(0:2)#nSuccessCats(1:3)#varName(day of the week)#itemsName(crashes)#categories(Mon Tues Wed Thurs Fri Sat Sun)#ordinal(true)#counts[index](9 9 5 16 12 22 16*6 8 11 9 8 11 9*7 5 16 26 44 56 4)#countAxis[index](0 25 0 5*0 13 0 2*0 62 0 10)">
+<!param name="question2" value="The bar chart below shows the types of people killed on New Zealand roads in 2007.\nIf one of these 321 fatalities is randomly selected, what is the probability that the type of person is #successes(:)#">
+<!param name="qnParam2" value="nSuccessCats(1:3)#varName(type of person killed)#itemsName(fatalities)#categories(Driver Passenger Motorbike_rider Motorbike_pillion Pedestrian Bicyclist Other)#ordinal(false)#counts(157 92 25 1 35 9 2)#countAxis(0 170 0 50)">
+<!param name="question3" value="The following bar chart shows the types of delivery for all births in the maternity ward of a hospital during one year.\nIf one of these #?:string[index](416*484*393)# births is randomly selected from hospital records, what is the probability that the delivery method was #successes(:)#">
+<!param name="qnParam3" value="index(0:2)#nSuccessCats(1:3)#varName(delivery type)#itemsName(mothers)#categories(Spontaneous Forceps Ventouse/Breech Caesarean)#ordinal(false)#counts[index](265 48 2 101*283 56 9 136*221 73 14 85)#countAxis[index](0 290 0 50*0 310 0 50*0 245 0 50)">
+<!/APPLET>
+
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="600" HEIGHT="600">
+<!param name="appletName" value="exerciseCategProg.ContinExpectedApplet">
+<!param name="options" value="useTemplate">
+<!param name="nQuestions" value="4">
+<!param name="question0" value="The contingency table below describes the state of grief (I to IV) of 66 mothers who had suffered a neonatal death and the amount of support given to these mothers.\nIf a mother's grief state is independent of her level of support, what is the expected number with grief state '#criticalY(0:3)#' and '#criticalX(0:2)#' support?">
+<!param name="qnParam0" value="xVarName(Support)#xCategories(Good Adequate Poor)#yVarName(Grief state)#yCategories(Level_I Level_II Level_III Level_IV)#counts(17 6 3 1 9 5 5 2 8 1 4 5)#maxExpected(99.999)">
+<!param name="question1" value="Four hundred and forty five college students were classified according to both frequency of marijuana use and parental use of alcohol and psychoactive drugs. The contingency table below describes the data.\nIf parental history of using alcohol or drugs is independent of a student's own use of marijuana, what is the expected number of the students with #criticalX(0:2)# of their parents using alcohol or drugs and themselves #criticalY(0:2)# using marijuana?">
+<!param name="qnParam1" value="xVarName(Parent)#xCategories(Both One Neither)#yVarName(Student)#yCategories(Never Occasionally Regularly)#counts(17 11 19 68 44 51 141 54 40)#maxExpected(999.99)">
+<!param name="question2" value="The contingency table below describes the defects of four kinds that were detected in silicon wafers manufactured during three production shifts.\nIf the probabilities of defects are the same for all shifts, what is the expected number of wafers made in shift #criticalY(0:2)# that had defect #criticalX(0:3)#?">
+<!param name="qnParam2" value="xVarName(Defect)#xCategories(A B C D)#yVarName(Shift)#yCategories(1 2 3)#counts(15 26 33 21 31 17 45 34 49 13 5 20)#maxExpected(99.99)">
+<!param name="question3" value="Weather forecasts are often inaccurate. The following contingency table describes the occasions during a year in which fog was predicted for the following day and the actual occurrence of fog on that day.\nIf the actual weather in a day is independent of the previous day's prediction, what is the expected number of days with forecast #criticalY(0:1)# and actual weather #criticalX(0:1)#?">
+<!param name="qnParam3" value="xVarName(Actual)#xCategories(Fog No_fog)#yVarName(Forecast)#yCategories(Fog No_fog)#counts(28 17 5 315)#maxExpected(999.99)">
+<!/APPLET>
+
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="550" HEIGHT="700">
+<param name="appletName" value="exerciseCategProg.Chi2TestApplet">
+<param name="nQuestions" value="3">
+<!param name="question0" value="The contingency table below summarises the relationship between two categorical variables, X and Y, based on a sample of #n[](40,100)# values.\nWhat would you conclude from the chi-squared test below?">
+<!param name="qnParam0" value="xName(Variable X)#xLabels(A1 A2 A3)#yName(Variable Y)#yLabels(B1 B2)#xMarginProbs(0.3 0.5 0.2)#yConditProbs(0.3 0.7 0.5 0.5 0.7 0.3)#maxExpected(99.99)#maxChi2(999.99)#dependentText(X and Y are related to each other)#independentText(X and Y are independent)">
+<param name="question0" value="A study was conducted to assess the effectiveness of a drug to reduce the duration of colds. #n[](50,100)# patients with cold symptoms were randomly given either the drug or a placebo (a tablet with no active ingredient). The contingency table below shows the reported cold durations of the patients.\nWhat would you conclude from the chi-squared test under the table?">
+<param name="qnParam0" value="xName(Treatment)#xLabels(Drug Placebo)#yName(Cold duration)#yLabels(1-2_days 3-4_days 5-8_days)#xMarginProbs(0.5 0.5)#yConditProbs[](0.4 0.3 0.3 0.3 0.4 0.3*0.4 0.4 0.2 0.2 0.3 0.5)#maxExpected(99.99)#maxChi2(999.99)#dependentText(Cold duration is affected by the drug)#independentText(Cold duration is not affected by the drug)">
+<param name="question1" value="Wildlife ecologists monitored the breeding habitats of mountain plovers for three years and made note of where the plovers nested. The contingency table below summarises the results.\nWhat would you conclude from the chi-squared test under the table?">
+<param name="qnParam1" value="n(150:250)#xName(Year)#xLabels(2013 2014 2015)#yName(Nesting location)#yLabels(Agricultural_field Prairie_dog_habitat Grassland)#xMarginProbs(0.33 0.33 0.34)#yConditProbs[](0.5 0.4 0.1 0.45 0.4 0.15 0.4 0.4 0.2*0.5 0.4 0.1 0.4 0.5 0.1 0.5 0.3 0.2)#maxExpected(999.9)#maxChi2(999.99)#dependentText(nesting locations were different in different years)#independentText(nesting locations were the same in all years)">
+<param name="question2" value="The operations manager of a company that manufactures tyres wants to determine whether there are any differences in the quality of workmanship among the three daily shifts. She randomly selects #n(400:800)# tires and carefully inspects them. Each tyre is either classified as perfect, satisfactory, or defective, and the shift that produced it is also recorded. The contingency table below summarises the data collected.\nWhat would you conclude from the chi-squared test under the table?">
+<param name="qnParam2" value="xName(Shift)#xLabels(Shift_1 Shift_2 Shift_3)#yName(Tyre quality)#yLabels(Perfect Satisfactory Poor)#xMarginProbs(0.35 0.35 0.3)#yConditProbs(0.4 0.5 0.1 0.45 0.45 0.1 0.55 0.35 0.1)#maxExpected(999.9)#maxChi2(999.99)#dependentText(there are differences in tyre quality between shifts)#independentText(tyre quality is the same in all shifts)">
+</APPLET>
+
+</BODY>
+</HTML>

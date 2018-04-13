@@ -1,0 +1,101 @@
+<HTML>
+<BODY>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="500">
+<!param name="appletName" value="exerciseSDProg.GuessSDApplet">
+<!param name="nQuestions" value="2">
+<!param name="question0" value="#The diagram below describes the distribution of lengths of #count(20:100)# widgets. Guess the standard deviation of the data.">
+<!param name="qnParam0" value="index(0:2)#varName(Length, cm)#axis[index](5.4 5.6 5.4 0.02*1.0 1.1 1.0 0.01*11.5 12.5 11.5 0.1)#histoClasses[index](5.4 0.02*1.0 0.01*11.5 0.1)#jointMeanSD(0.5:3)">
+<!param name="question1" value="#count(20:50)# #?:string[index](male*male*female*female)# Indian fruit bats were captured and weighed. The diagram below shows the distribution of their body mass. Guess the standard deviation.">
+<!param name="qnParam1" value="index(0:3)#varName(Body mass, gm)#axis[index](50 100 50 5*40 80 40 5*30 50 30 2*40 60 40 2)#histoClasses[index](50 5*40 5*30 2*40 2)#jointMeanSD(0.5:1)">
+<!param name="options" value="histo,boxPlot">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="540">
+<!param name="appletName" value="exerciseSDProg.GuessSDApplet">
+<!param name="nQuestions" value="1">
+<!param name="question0" value="The diagram below shows the weights of #count(20:100)# insects (in gm). Guess the standard deviation of the insect weights.">
+<!param name="qnParam0" value="index(0:1)##varName(Weight, gm)#axis[index](4 16 4 2*0 1 0 0.2)#histoClasses[index](4 1*0 0.2)#jointMeanSD(0.5:2)">
+<!param name="question1" value="A group of #count(20:100)# students sat a mathematics test; the diagram below shows their marks (out of 100). Guess the standard deviation of the marks.">
+<!param name="qnParam1" value="index(0:1)#varName(Mark out of 100)#axis[index](50 100 50 5*0 90 0 20)#histoClasses[index](50 5*0 10)#jointMeanSD(0.5:1)">
+<!param name="question2" value="The following diagram shows the annual salaries of #count(20:100)# workers. Guess the standard deviation of the salaries.">
+<!param name="qnParam2" value="index(0:2)#varName(Monthly salary, $000)#axis[index](10 20 10 1*20 50 20 5*40 100 40 5)#histoClasses[index](10 2*20 5*40 5)#jointMeanSD(0.5:1)">
+<!param name="question3" value="The diagram below describes the distribution of lengths of #count(20:100)# widgets. Guess the standard deviation of the data.">
+<!param name="qnParam3" value="index(0:2)#varName(Length, cm)#axis[index](5.4 5.6 5.4 0.02*1.0 1.1 1.0 0.01*11.5 12.5 11.5 0.1)#histoClasses[index](5.4 0.02*1.0 0.01*11.5 0.1)#jointMeanSD(0.5:3)">
+<!param name="question4" value="#count(20:50)# #?:string[index](male*male*female*female)# Indian fruit bats were captured and weighed. The diagram below shows the distribution of their body mass. Guess the standard deviation.">
+<!param name="qnParam4" value="index(0:3)#varName(Body mass, gm)#axis[index](50 100 50 5*40 80 40 5*30 50 30 2*40 60 40 2)#histoClasses[index](50 5*40 5*30 2*40 2)#jointMeanSD(0.5:1)">
+<!param NAME="options" value="histo">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="550">
+<!param name="appletName" value="exerciseSDProg.GuessSDNormalApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="The heights of a particular kind of flowering plant have the normal distribution shown below.\nThis distribution has mean #mu# = #mean(:)# cm. Guess the standard deviation of the heights, #sigma#.">
+<!param name="qnParam0" value="index(0:2)#varName(Height, cm)#axis[index](2 18 2 2*20 30 20 2*5 6 5.0 0.1)#jointMeanSD(0.5:2)">
+<!param name="question1" value="The annual rainfall in an African town has a normal distribution with mean #mu# = #mean(:)# mm.\nThe pdf of the distribution is shown below. Guess its standard deviation, #sigma#.">
+<!param name="qnParam1" value="index(0:3)#varName(Annual rainfall, mm)#axis[index](0 400 0 50*500 1600 600 200*0 1200 0 200*1000 1500 1000 100)#jointMeanSD(0.5:0)">
+<!param name="question2" value="Weekly household expenditure on food in a country has a distribution that is approximately normal with the shape shown below.\nThe mean expenditure is #mu# = $#mean(:)#. Guess its standard deviation, #sigma#.">
+<!param name="qnParam2" value="index(0:2)#varName(Household expenditure on food, $)#axis[index](100 200 100 20*50 200 60 20*200 250 200 10)#jointMeanSD(0.5:0)">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../MoodleTests/cast/java" ARCHIVE="exercise_cast.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="550">
+<!param name="appletName" value="exerciseSDProg.GuessSDNormalApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="The heights of a particular kind of flowering plant have the normal distribution shown below.\nThis distribution has mean #mu# = #mean(:)# cm. Guess the standard deviation of the heights, #sigma#.">
+<!param name="qnParam0" value="index(0:2)#varName(Height, cm)#axis[index](2 18 2 2*20 30 20 2*5 6 5.0 0.1)#jointMeanSD(0.5:2)">
+<!param name="question1" value="The annual rainfall in an African town has a normal distribution with mean #mu# = #mean(:)# mm.\nThe pdf of the distribution is shown below. Guess its standard deviation, #sigma#.">
+<!param name="qnParam1" value="index(0:3)#varName(Annual rainfall, mm)#axis[index](0 400 0 50*500 1600 600 200*0 1200 0 200*1000 1500 1000 100)#jointMeanSD(0.5:0)">
+<!param name="question2" value="Weekly household expenditure on food in a country has a distribution that is approximately normal with the shape shown below.\nThe mean expenditure is #mu# = $#mean(:)#. Guess its standard deviation, #sigma#.">
+<!param name="qnParam2" value="index(0:2)#varName(Household expenditure on food, $)#axis[index](100 200 100 20*50 200 60 20*200 250 200 10)#jointMeanSD(0.5:0)">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="500">
+<!param name="appletName" value="exerciseSDProg.SketchDistnApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="Annual rainfall in an African town was recorded in each of #count(10:50)# years. Its distribution has mean #mean(:)# mm and standard deviation #sd(:)# mm.\nSketch a box plot that might describe the distribution of rainfalls.">
+<!param name="qnParam0" value="correctAxis(0:3)#varName(Annual rainfall)#allAxes(0_400_0_50 500_1600_600_200 0_1200_0_200 1000_1500_1000_100)#allAxisNames(0_to_400 500_to_1600 0_to_1200 1000_to_1500)#jointMeanSD(0.5:-1)">
+<!param name="question1" value="In an Asian city, the maximum daily temperature was recorded in each of #count(100:200)# days. The mean temperature is #mean(:)##degrees#C and its standard deviation is #sd(:)##degrees#C.\nSketch a box plot that might describe the temperatures.">
+<!param name="qnParam1" value="correctAxis(0:4)#varName(Maximum daily temperature)#allAxes(22_30_22_1 26_30_26_1 20_24_20_1 15_25_15_1 10_20_10_1)#allAxisNames(22_to_30 26_to_30 20_to_24 15_to_25 10_to_20)#jointMeanSD(0.5:1)">
+<!param name="question2" value="The wind run in a New Zealand city was recorded in October of #count(20:25)# years. The mean of this distribution is #mean(:)# km and its standard deviation is #sd(:)# km.\nSketch a box plot that could possibly describe these wind runs.">
+<!param name="qnParam2" value="correctAxis(0:3)#varName(Monthly wind run, km)#allAxes(200_300_200_20 150_200_150_10 250_350_260_20 100_300_100_50)#allAxisNames(200_to_300 150_to_200 250_to_350 100_to_300)#jointMeanSD(0.5:0)">
+<!param name="options" value="boxplot,multipleAxes">
+<!/APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="500">
+<!param name="appletName" value="exerciseSDProg.SketchDistnApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="Annual rainfall in an African town was recorded in each of #count(10:50)# years. Its distribution has mean #mean(:)# mm and standard deviation #sd(:)# mm.\nSketch a dot plot that might describe the distribution of rainfalls.">
+<!param name="qnParam0" value="correctAxis(0:3)#varName(Annual rainfall)#allAxes(0_400_0_50 500_1600_600_200 0_1200_0_200 1000_1500_1000_100)#allAxisNames(0_to_400 500_to_1600 0_to_1200 1000_to_1500)#jointMeanSD(0.5:-1)">
+<!param name="question1" value="In an Asian city, the maximum daily temperature was recorded in each of #count(20:40)# days. The mean temperature is #mean(:)##degrees#C and its standard deviation is #sd(:)##degrees#C.\nSketch a dot plot that might describe the temperatures.">
+<!param name="qnParam1" value="correctAxis(0:4)#varName(Maximum daily temperature)#allAxes(22_30_22_1 26_30_26_1 20_24_20_1 15_25_15_1 10_20_10_1)#allAxisNames(22_to_30 26_to_30 20_to_24 15_to_25 10_to_20)#jointMeanSD(0.5:1)">
+<!param name="question2" value="The wind run in a New Zealand city was recorded in October of #count(20:25)# years. The mean of this distribution is #mean(:)# km and its standard deviation is #sd(:)# km.\nSketch a dot plot that could possibly describe these wind runs.">
+<!param name="qnParam2" value="correctAxis(0:3)#varName(Monthly wind run, km)#allAxes(200_300_200_20 150_200_150_10 250_350_260_20 100_300_100_50)#allAxisNames(200_to_300 150_to_200 250_to_350 100_to_300)#jointMeanSD(0.5:0)">
+<!param name="options" value="crosses">
+<!/APPLET>
+
+<APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="550">
+<param name="appletName" value="exerciseSDProg.SketchDistnApplet">
+<param name="nQuestions" value="3">
+<param name="question0" value="Annual rainfall in an African town was recorded in each of #count[](20,30,40,50)# years. Its distribution has mean #mean(:)# mm and standard deviation #sd(:)# mm.\nSketch a histogram that might describe the distribution of rainfalls.">
+<param name="qnParam0" value="correctAxis(0:3)#varName(Annual rainfall)#allAxes(0_400_0_50 500_1600_600_200 0_1200_0_200 1000_1500_1000_100)#allHistoClasses(0_50 500_100 0_100 1000_50)#allAxisNames(0_to_400 500_to_1600 0_to_1200 1000_to_1500)#jointMeanSD(0.5:-1)">
+<param name="question1" value="In an Asian city, the maximum daily temperature was recorded in each of #count[](100,120,140,160,180,200)# days. The mean temperature is #mean(:)##degrees#C and its standard deviation is #sd(:)##degrees#C.\nSketch a histogram that might describe the temperatures.">
+<param name="qnParam1" value="correctAxis(0:4)#varName(Maximum daily temperature)#allAxes(22_30_22_1 26_30_26_1 20_24_20_1 15_25_15_1 10_20_10_1)#allHistoClasses(22_1 26_0.5 20_0.5 15_1 10_1)#allAxisNames(22_to_30 26_to_30 20_to_24 15_to_25 10_to_20)#jointMeanSD(0.5:1)">
+<param name="question2" value="The wind run in a New Zealand city was recorded during October for #count(20:30)# years. The mean of this distribution is #mean(:)# km and its standard deviation is #sd(:)# km.\nSketch a histogram that could possibly describe these wind runs.">
+<param name="qnParam2" value="correctAxis(0:3)#varName(Monthly wind run, km)#allAxes(200_300_200_20 150_200_150_10 250_350_260_20 100_300_100_50)#allHistoClasses(200_10 150_5 250_10 100_20)#allAxisNames(200_to_300 150_to_200 250_to_350 100_to_300)#jointMeanSD(0.5:0)">
+<param name="options" value="histo,multipleAxes">
+</APPLET>
+
+<!APPLET CODEBASE="../../../CAST/core/java" ARCHIVE="coreCAST.jar" CODE="dataView.CastApplet.class" WIDTH="500" HEIGHT="550">
+<!param name="appletName" value="exerciseSDProg.SketchNormalDistnApplet">
+<!param name="nQuestions" value="3">
+<!param name="question0" value="Annual rainfall in an African town is approximately normally distributed with mean #mu# = #mean(:)# mm and standard deviation #sigma# = #sd(:)# mm.\nSketch this normal distribution.">
+<!param name="qnParam0" value="correctAxis(0:3)#varName(Annual rainfall)#allAxes(0_400_0_50 500_1600_600_200 0_1200_0_200 1000_1500_1000_100)#allAxisNames(0_to_400 500_to_1600 0_to_1200 1000_to_1500)#jointMeanSD(0.5:-1)">
+<!param name="question1" value="The maximum daily temperature in an Asian city during March is approximately normal with mean #mu# = #mean(:)##degrees#C and standard deviation #sigma# = #sd(:)##degrees#C.\nSketch this normal distribution.">
+<!param name="qnParam1" value="correctAxis(0:4)#varName(Maximum daily temperature)#allAxes(22_30_22_1 26_30_26_1 20_24_20_1 15_25_15_1 10_20_10_1)#allAxisNames(22_to_30 26_to_30 20_to_24 15_to_25 10_to_20)#jointMeanSD(0.5:1)">
+<!param name="question2" value="The monthly wind run in a New Zealand city in October is approximately normal with mean #mu# = #mean(:)# km and standard deviation #sigma# = #sd(:)# km.\nSketch this normal distribution.">
+<!param name="qnParam2" value="correctAxis(0:3)#varName(Monthly wind run, km)#allAxes(200_300_200_20 150_200_150_10 250_350_260_20 100_300_100_50)#allAxisNames(200_to_300 150_to_200 250_to_350 100_to_300)#jointMeanSD(0.5:1)">
+<!param name="options" value="multipleAxes">
+<!/APPLET>
+
+</BODY>
+</HTML>

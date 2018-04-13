@@ -1,0 +1,1 @@
+package dataView;public interface CatVariableInterface {	public void readLabels(String labelString);	public int noOfCategories();	public Value getLabel(int index);}

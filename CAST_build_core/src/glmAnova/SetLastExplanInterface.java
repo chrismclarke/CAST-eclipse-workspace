@@ -1,0 +1,1 @@
+package glmAnova;public interface SetLastExplanInterface {	public void setLastExplanatory(int lastSeparateX);}

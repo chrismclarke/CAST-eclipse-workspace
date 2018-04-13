@@ -1,0 +1,1 @@
+package histo;public class BarHeight {	public int ht;	public boolean tooHigh;		BarHeight(int ht, boolean tooHigh) {		this.ht = ht;		this.tooHigh = tooHigh;	}}

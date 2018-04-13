@@ -1,0 +1,1 @@
+package ssq;import java.awt.*;public interface ComponentPanelInterface {	public void actionComponentSelected(Component c);}

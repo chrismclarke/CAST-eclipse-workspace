@@ -1,0 +1,1 @@
+package models;public class SSComponent {	public double ssq;	public int df;	public SSComponent(double ssq, int df) {		this.ssq = ssq;		this.df = df;	}}

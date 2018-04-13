@@ -1,0 +1,1 @@
+package samplingProg;import sampling.*;public interface RandomDigitProgInterface {	public void noteNewValue(RandomDigitsPanel valuePanel);	public void noteClearedValue();}
