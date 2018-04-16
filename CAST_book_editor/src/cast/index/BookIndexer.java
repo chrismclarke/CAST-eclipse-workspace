@@ -66,7 +66,7 @@ public class BookIndexer extends CoreBookProcessor {
 	}
 	
 	protected void addUiControls() {
-		if (Options.hasMultipleCollections) {
+		if (Options.isMasterCast) {
 			debugCheck = new Checkbox("Show Output in System.out");
 			add(debugCheck);
 		}

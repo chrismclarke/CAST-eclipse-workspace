@@ -108,7 +108,7 @@ public class BookChoiceWindow extends JFrame {
 		coreDir = new File(castDir, "core");
 		localBookNames = getBookNames(coreDir);
 		
-		if (Options.hasMultipleCollections)
+		if (Options.isMasterCast)
 			setupWindow();
 		else
 			new SetupDatesTask(castDir, this).execute();		//	does nothing else until local and server dates have been found
@@ -232,7 +232,7 @@ public class BookChoiceWindow extends JFrame {
 				bookListPanel.setOpaque(false);
 				
 				JPanel updatePanel;
-				if (Options.hasMultipleCollections)
+				if (Options.isMasterCast)
 					updatePanel = createMasterHeadingPanel();
 				else if (noServerAccess)
 					updatePanel = createLocalHeadingPanel();
@@ -285,7 +285,7 @@ public class BookChoiceWindow extends JFrame {
 					
 				bottomPanel.add("North", checkboxPanel);
 			
-					if (Options.hasMultipleCollections)
+					if (Options.isMasterCast)
 						advancedButtonPanel = createMasterAdvancedPanel();
 					else if (noServerAccess)
 						advancedButtonPanel = createLocalAdvancedPanel();
@@ -373,7 +373,7 @@ public class BookChoiceWindow extends JFrame {
 		JPanel thePanel = new JPanel();
 		thePanel.setLayout(new BorderLayout(0, 20));
 		
-		if (!castNeedsUpdate && !Options.hasMultipleCollections) {
+		if (!castNeedsUpdate && !Options.isMasterCast) {
 			JLabel message = new JLabel(translate("CAST is up to date"), JLabel.CENTER);
 			message.setFont(new Font("SansSerif", Font.BOLD, 24));
 			thePanel.add("North", message);

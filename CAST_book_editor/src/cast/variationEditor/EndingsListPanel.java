@@ -80,7 +80,7 @@ public class EndingsListPanel extends JPanel {
 				
 			titlePanel.add("Center", title);
 			
-			if (!variation.isCoreVariation() || Options.hasMultipleCollections) {
+			if (!variation.isCoreVariation() || Options.isMasterCast) {
 				JPanel rightPanel = new JPanel();
 				rightPanel.setLayout(new VerticalLayout(VerticalLayout.CENTER, VerticalLayout.VERT_CENTER, 0));
 				rightPanel.setOpaque(false);

@@ -236,7 +236,7 @@ public class ExerciseListFrame extends JFrame {
 		buildMenu.setBackground(AdvancedWindow.kMenuBackground);
 		buildMenu.add(new JMenuItem(buildExercisesAction));
 		buildMenu.add(new JMenuItem(buildTestsAction));
-		if (Options.hasMultipleCollections)
+		if (Options.isMasterCast)
 			buildMenu.add(new JMenuItem(buildTestJarAction));
 		
 		mainMenuBar.add(buildMenu);

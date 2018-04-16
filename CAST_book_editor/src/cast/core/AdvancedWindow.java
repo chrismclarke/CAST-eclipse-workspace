@@ -325,7 +325,7 @@ public class AdvancedWindow extends JFrame {
 //		otherMenu.add(new JMenuItem(createTabletBookAction));
 		
 			JMenuItem updateItem = new JMenuItem(updateServerCastAction);
-			updateItem.setEnabled(Options.hasMultipleCollections && !noServerAccess);
+			updateItem.setEnabled(Options.isMasterCast && !noServerAccess);
 		toolMenu.add(updateItem);
 	}
 	

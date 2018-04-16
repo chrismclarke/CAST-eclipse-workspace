@@ -23,7 +23,7 @@ public class CastEbook {
 												"simulation", "slug", "mathStats"};
 	
 	static public boolean canEditBook(String shortBookName) {
-		if (Options.hasMultipleCollections)
+		if (Options.isMasterCast)
 			return true;
 		else {
 			for (int i=0 ; i<kPublicBooks.length ; i++) {
@@ -35,7 +35,7 @@ public class CastEbook {
 	}
 	
 	static public boolean isPreface(String filePrefix) {
-		if (Options.hasMultipleCollections)
+		if (Options.isMasterCast)
 			return false;
 		else
 			return filePrefix.equals("ch_preface") || filePrefix.equals("sec_aboutCast") || filePrefix.equals("sec_otherInfo");

@@ -22,10 +22,11 @@ import cast.utils.*;
 
 public class Options extends JDialog {
 	static public boolean hasMultipleCollections;
+	static public boolean isMasterCast;							//	Only true for when downloaded from GitHub
 																								//	Must be true to allow editing of public e-books or sections
 																								//	in public e-book folders.
 																								//
-																								//	If false, only variations in a custom file can be edited.
+																								//	Must be true to edit core variations of exercises.
 
 	static public String kCastInstallerUrl = null, kCastDownloadUrl = null, kCastUploadServer = null, kCastUploadPath = null, kHelpPath = null;
 /*
@@ -58,6 +59,9 @@ public class Options extends JDialog {
 		File settingsFile = new File(coreDir, "structure/servers.xml");
 		
 		hasMultipleCollections = hasMultipleCollections(castDir);
+		
+		File versionsFile = new File(castDir, "versions.text");
+		isMasterCast = versionsFile.exists();
 		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		dbf.setValidating(true);

@@ -23,7 +23,7 @@ public class OneVariation extends OneCoreVariation {
 		buttonPanel.setLayout(new VerticalLayout(VerticalLayout.CENTER, VerticalLayout.VERT_CENTER, 0));
 		buttonPanel.setOpaque(false);
 		
-		if (Options.hasMultipleCollections) {
+		if (Options.isMasterCast) {
 					final JPopupMenu popup = new JPopupMenu();
 					
 						JMenuItem menuItem = new JMenuItem("Edit");

@@ -37,7 +37,7 @@ public class OneCustomVariation extends OneCoreVariation {
 				innerPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 4, 0));
 				innerPanel.setOpaque(false);
 				
-				if (Options.hasMultipleCollections) {
+				if (Options.isMasterCast) {
 					final JPopupMenu popup = new JPopupMenu();
 					
 						JMenuItem menuItem = new JMenuItem("Edit");
